@@ -74,7 +74,7 @@ This is a prototype of our web application. The design may change as the project
 
 ![Architech Name Screen Shot][architech-screenshot]
 
-#### Things to do
+#### Things to do:
 
 - [ ] Functional Login
     - [ ] User Authentication
