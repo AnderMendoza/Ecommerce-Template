@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;708;800&family=Rubik:wght@300;400;500;600&display=swap');
+/*
+Fonts:
+- Poppins: 300, 400, 600, 700, 800
+- Rubik: 300, 400, 500, 600
+*/
+
+:root {
+    --primary-color: #ff6b6b;
+    --secundary-color: #794afa;
+    --secundary-dark-color: #453c5c;
+
+    --white-color: #ffffff;
+    --light-bg-color: #f2f3f5;
+    --light-text-color: #7c899a;
+    --border-color: #e5e8ec;
+    --dark-color: #0a021c;
+
+    --font-small: 13px;
+    --font-smaller: 11px;
+
+    --percent100: 100%;
+    --percent50: 50%;
+    
+    --fw3: 300;
+    --fw5: 500;
+    --fw6: 600;
+    --fw7: 700;
+    --fw8: 800;
+
+    --trans-background-color: background-color .3s, color .3s;
+    --trans-background: background-color .3s;
+    --trans-color: color .3s;
+}
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+*,::before,::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: var(--percent100);
+    vertical-align: middle;
+}
+strong {
+    font-weight: var(--fw8);
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input::placeholder {
+    font: inherit;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-size: calc(1.3cm + 1vw);
+    font-weight: var(--fw8);
+    line-height: 1;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 1.2cm;
+    font-weight: var(--fw7);
+}
+h4 {
+    font-size: 1em;
+    font-weight: var(--fw6);
+}
+
+/* ------------------
+ * REUSABLE SELECTOR
+ * ------------------ */
+
+ .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0.938cm;
+}
+.column {
+    margin-left: -0.938cm;
+    margin-right: -0.938cm;
+}
+.column .row {
+    padding: 0 0.938cm;
+}
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexitem {
+    display: flex;
+    align-items: center;
+}
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    gap: lem;
+}
+
+.main-links a:hover {
+    color: var(--secundary-color);
+}
+.second-links a:hover {
+    color: var(--light-text-color);
+}
+
+.icon-small, .icon-large {
+    display: flex;
+    align-items: center;
+    padding: 0 0.25em;
+    font-weight: normal;
+}
+.icon-small {
+    font-size: 1.25em;
+    margin: auto;
+}
+.icon-large {
+    font-size: 1.75em;
+    padding: 0 0.75em 0 0;
+}
+
+
+.mobile-hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------
+ * Structure Styling
+
+    00. Reusable selectors
+
+    01. HEADER
+        a. Header Top
+        b. Header Nav
+        c. Header Main, Departments Category
+        d. Search form
+        e. Responsive MENU - Off Canvas
+    02. SLIDER
+    03. BRANDS
+    04. PRODUCT
+        a. Global product
+        b. BIG product
+        c. MINI product
+        d. MAIN product
+    05. BANNER
+        a. News letter
+        b. Widgets
+        c. Footer Info
+    06. BOTTOM MENU
+        a.Search
+    07. OVERLAY
+    08. PAGE SINGLE
+        a. Breadcrumb
+        b. Product details
+        c. Product description
+        d. Product Review
+        e. Product Review Form
+    09. PAGE SINGLE: SPECIAL OFFER
+    10. PAGE CATEGORY
+        a. Sidebar products filter
+        b. products block
+    11. CART
+    12. PAGE CART
+    13. PAGE CHECKOUT
+    14. MODAL
+    15. RESPONSIVE
+ *
+ * ------------------ */
+
+
+/* ------------------
+ * 01. HEADER
+ * ------------------ */
+header li > a {
+    display: flex;
+    position: relative;
+    line-height: inherit;
+    transition: var(--trans-color);
+}
+
+
+
+
+    /* 01. HEADER --------------------------
+    *   a. Header Top
+    * ------------------ */
+
+
+
+
+    /* 01. HEADER --------------------------
+    *  a. Header Nav
+    * ------------------ */
+.header-nav {
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+.trigger {
+    font-size: 1.5em;
+    display: flex;
+    padding: 0.25em;
+    margin-right: 0.5em;
+}
+.logo a {
+    font-family: 'Poppins';
+    font-size: 1.75em;
+    position: relative;
+    font-weight: var(--fw8);
+    display: flex;
+    padding-left: 0.75em;
+    margin-right: 2em;
+}
+.circle {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--percent50);
+    background-color: var(--light-bg-color);
+    z-index: -1;
+}
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--percent50);
+    background-color: var(--secundary-color);
+    bottom: 5px;
+    right: 5px;
+    opacity: .4;
+}
+.header-nav nav > ul {
+    line-height: 100px;
+    gap: 2em;
+}
+
+.fly-item {
+    position: absolute;
+    height: 16px;
+    font-size: var(--font-smaller);
+    padding: 3px;
+    text-align: center;
+    line-height: 10px;
+    color: var(--white-color);
+}
+nav .fly-item {
+    top: 50%;
+    margin-top: -24px;
+    width: 30%;
+    border-radius: 3px;
+    right: -32px;
+    background-color: var(--primary-color);
+}
+.header-nav .right {
+    position: relative;
+    margin-left: auto;
+}
+.header-nav .right .icon-large {
+    position: relative;
+}
+.header-nav .right .fly-item {
+    top: 0;
+    right: 16px;
+    width: 16px;
+    background-color: var(--secundary-dark-color);
+    border-radius: var(--percent50);
+}
+
+    /* 01. HEADER --------------------------
+    *  a. Header Main, Departments Category
+    * ------------------ */
+
+
+
+
+    /* 01. HEADER --------------------------
+    *  a. Search Form
+    * ------------------ */
+
+
+
+
+    /* 01. HEADER --------------------------
+    *  a. Responsive MENU - Off Canvas
+    * ------------------ */
+
+
+
+
+
+/* ------------------
+ * 02. SLIDER
+ * ------------------ */
+
+
+
+
+/* ------------------
+ * 03. BRANDS
+ * ------------------ */
+
+
+
+
+/* ------------------
+ * 04. PRODUCT BLOCK STYLE
+ * ------------------ */ 
+
+
+
+
+    /* 04. PRODUCT --------------------------
+    *  a. Global product
+    * ------------------ */
+
+
+
+
+
+    /* 04. PRODUCT --------------------------
+    *  B. BIG product
+    * ------------------ */
+
+
+
+
+    /* 04. PRODUCT --------------------------
+    *  C. MINI product
+    * ------------------ */
+
+
+
+
+
+    /* 04. PRODUCT --------------------------
+    *  d. MAIN product
+    * ------------------ */
+
+
+
+
+
+/* ------------------
+ * 05. BANNER
+ * ------------------ */
+
+
+
+
+ /* ------------------
+ * 05. FOOTER
+ * ------------------ */
+
+
+    /* 05. FOOTER --------------------------
+    *  a. News Letter
+    * ------------------ */
+
+
+
+    /* 05. FOOTER --------------------------
+    *  b. Widgets
+    * ------------------ */
+
+
+
+
+    /* 05. FOOTER --------------------------
+    *  c. Footer Info
+    * ------------------ */
+
+
+
+
+/* ------------------
+ * 06. BOTTOM MENU
+ * ------------------ */
+
+
+
+
+    /* 06. BOTTOM MENU --------------------------
+    *  a. Search
+    * ------------------ */
+
+
+
+
+
+
+
+
+/* ------------------
+ * 07. OVERLAY
+ * ------------------ */
+
+
+
+
+
+
+/* ------------------
+ * 08. PAGE SINGLE
+ * ------------------ */
+
+
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  a. Breadcrumb
+    * ------------------ */
+
+
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  b. Product details
+    * ------------------ */
+
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  c. Product description
+    * ------------------ */
+
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  d. Product Review
+    * ------------------ */
+
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  e. Product Review Form
+    * ------------------ */
+
+
+
+
+/* ------------------
+ * 09. PAGE SINGLE: SPECIAL OFFER
+ * ------------------ */
+
+
+
+
+
+/* ------------------
+ * 10. PAGE CATEGORY
+ * ------------------ */
+
+
+
+
+
+    /* 10. PAGE CATEGORY --------------------------
+    *  a. Sidebar products filter
+    * ------------------ */
+
+
+
+
+
+    /* 10. PAGE CATEGORY --------------------------
+    *  b. products block
+    * ------------------ */
+
+
+
+
+
+
+/* ------------------
+ * 11. CART
+ * ------------------ */
+
+
+
+
+/* ------------------
+ * 12. PAGE CART
+ * ------------------ */
+
+
+
+
+
+
+
+/* ------------------
+ * 13. PAGE CHECKOUT
+ * ------------------ */
+
+
+
+
+
+
+
+/* ------------------
+ * 14. MODAL
+ * ------------------ */
+
+
+
+
+
+
+
+
+
+/* ------------------
+ * 15. RESPONSIVE
+ * ------------------ */
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .container {
+        padding: 0 2em;
+    }
+    .desktop-hide {
+        display: none;
+    }
+    .mobile-hide {
+        display: block;
+    }
+    .logo a {
+        margin-right: 2em;
+    }
+    .header-nav {
+        padding: 0;
+        margin: 0;
+        border-bottom: 0;
+    }
+    .header-nav .right li > a {
+        margin-left: 1em;
+    }
+}
