@@ -180,11 +180,10 @@ h4 {
     00. Reusable selectors
 
     01. HEADER
-        a. Header Top
-        b. Header Nav
-        c. Header Main, Departments Category
-        d. Search form
-        e. Responsive MENU - Off Canvas
+        a. Header Nav
+        b. Header Main, Departments Category
+        c. Search form
+        d. Responsive MENU - Off Canvas
     02. SLIDER
     03. BRANDS
     04. PRODUCT
@@ -227,13 +226,6 @@ header li > a {
     line-height: inherit;
     transition: var(--trans-color);
 }
-
-
-
-
-    /* 01. HEADER --------------------------
-    *   a. Header Top
-    * ------------------ */
 
 
 
@@ -320,21 +312,21 @@ nav .fly-item {
 }
 
     /* 01. HEADER --------------------------
-    *  a. Header Main, Departments Category
+    *  b. Header Main, Departments Category
     * ------------------ */
 
 
 
 
     /* 01. HEADER --------------------------
-    *  a. Search Form
+    *  c. Search Form
     * ------------------ */
 
 
 
 
     /* 01. HEADER --------------------------
-    *  a. Responsive MENU - Off Canvas
+    *  d. Responsive MENU - Off Canvas
     * ------------------ */
 
 
@@ -371,7 +363,7 @@ nav .fly-item {
 
 
     /* 04. PRODUCT --------------------------
-    *  B. BIG product
+    *  b. BIG product
     * ------------------ */
 
 
