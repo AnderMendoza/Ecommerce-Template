@@ -14,7 +14,7 @@
     <img src="./assets/logo/logoDark.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Stose</h3>
+  <h2 align="center">Stose</h2>
 
   <p align="center">
     Ecommerce website academic project
@@ -27,6 +27,11 @@
     <a href="https://github.com/AnderMendoza/Stose/issues">Report a Bug</a>
     ·
     <a href="https://github.com/AnderMendoza/Stose/issues">Request feature</a>
+  </p>
+  <p align="center">
+    <a href="/README.md">English</a>
+    ·
+    <a href="/READMEes.md">Español</a>
   </p>
 </div>
 
