@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/AnderMendoza/Stose">
-    <img src="./assets/logo/logoDark.png" alt="Logo" width="80" height="80">
+    <img src="./assets/images_readme/logo/logoDark.png" alt="Logo" width="80" height="80">
   </a>
 
   <h2 align="center">Stose</h2>
@@ -141,5 +141,5 @@ Nos gustaría agregar una lista de recursos que encontramos útiles para el desa
 [contributors-url]: https://github.com/AnderMendoza/Stose/graphs/contributors
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/anderson-mendoza-ramos-7551141b7/
-[architech-screenshot]: assets/architech/threeLevelArchitectureEs.png
-[mockups-screenshot]: assets/mockups/allMockups.png
+[architech-screenshot]: assets/images_readme/architech/threeLevelArchitectureEs.png
+[mockups-screenshot]: assets/images_readme/mockups/allMockups.png
