@@ -310,7 +310,8 @@ nav .fly-item {
     background-color: var(--secundary-dark-color);
     border-radius: var(--percent50);
 }
-.header-nav .right .login-text a{
+.header-nav .right .login-text {
+    display: none;
     position: relative;
     margin-left: auto;
     left: 1em;
@@ -319,6 +320,7 @@ nav .fly-item {
 
 /* Boton de registro por uiverse.io by @alexmaracinaru */
 .header-nav .right .cta {
+    display: none;
     position: relative;
     margin-left: 1em;
     padding: 12px 18px;
@@ -648,5 +650,14 @@ nav .fly-item {
     }
     .header-nav .right li > a {
         margin-left: 1em;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .header-nav .right .login-text {
+        display: block;
+    }
+    .header-nav .right .cta {
+        display: block;
     }
 }
