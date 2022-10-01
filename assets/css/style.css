@@ -412,8 +412,45 @@ header li > a {
     /* 01. HEADER --------------------------
     *  c. Search Form
     * ------------------ */
-
-
+    .header-main .right {
+        flex: 1;
+    }
+    form {
+        position: relative;
+    }
+    form.search input {
+        line-height: 3.25em;
+        padding: 0 7em 0 4.5em;
+        border: 0;
+        outline: 0;
+        width: var(--percent100);
+        border-radius: 7px;
+        font-size: 0.9em;
+        font-weight: var(--fw3);
+    }
+    form.search :where(span,button) {
+        position: absolute;
+        top: 0;
+        padding: 0.55em 1.5em;
+        font-size: 1em;
+        color: var(--light-text-color);
+        height: var(--percent100);
+    }
+    form.search button {
+        right: 0;
+        border: 0;
+        outline: 0;
+        font-size: 0.875em;
+        font-weight: var(--fw6);
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border-radius: 0 7px 7px 0;
+        cursor: pointer;
+        transition: var(--trans-background);
+    }
+    form.search button:hover {
+        background-color: var(--dark-color);
+    }
 
 
     /* 01. HEADER --------------------------
@@ -690,5 +727,9 @@ header li > a {
     }
     .header-nav .right .cta {
         display: block;
+    }
+    .header-main .right {
+        max-width: 600px;
+        margin-left: auto;
     }
 }
