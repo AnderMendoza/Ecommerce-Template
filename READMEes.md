@@ -24,9 +24,9 @@
     <br />
     <a href="https://github.com/AnderMendoza/Stose">Ver demostración</a>
     ·
-    <a href="https://github.com/AnderMendoza/Stose/issues">Reportar un error</a>
+    <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=bug_report_es.md&title=">Reportar un error</a>
     ·
-    <a href="https://github.com/AnderMendoza/Stose/issues">Solicitar función</a>
+    <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=feature_request_es.md&title=">Solicitar fusión</a>
   </p>
   <p align="center">
     <a href="/README.md">English</a>
