@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/filtro.css">
+    <link rel="stylesheet" href="../css/filtro2.css">
+    <link rel="stylesheet" href="../css/rango_precio.css">
+</head>
+
+<body>
+    <div id="page" class="site">
+        <header>
+            <!-- header-top -->
+            <div class="header-nav">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <div class="left flexitem">
+                            <div class="logo"><a href="/"><span class="circle"></span>.Stose</a></div>
+                            <nav class="mobile-hide">
+                                <ul class="flexitem second-links">
+                                    <li><a href="#">Inicio</a></li>
+                                    <li><a href="#">Tienda</a></li>
+                                    <li><a href="#">Libros</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem second-links">
+                                <li class="mobile-hide"><a href="#">
+                                        <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                        <div class="fly-item"><span class="item-number">0</span></div>
+                                    </a></li>
+                                <li><a href="#" class="iscart">
+                                        <div class="icon-large">
+                                            <i class="ri-shopping-cart-line"></i>
+                                            <div class="fly-item"><span class="item-number">0</span></div>
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="mini-text">Total</div>
+                                            <div class="cart-total">$0.00</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main></main>
+        <footer></footer>
+    </div>
+
+    <!-- fin del cabezal -->
+
+    <!-- categorias -->
+    <div class="wrap">
+        <h1>Libros</h1>
+        <div class="store-wrapper">
+            <div class="category_list">
+                <a href="#" class="category_item" category="all">todos</a>
+                <div id="header">
+                    <ul class="nav">
+                        <li><a href="#">Autores</a>
+                            <ul>
+                                <li><a href="#" class="category_item" category="Autor1">Autor 1</a></li>
+                                <li><a href="#" class="category_item" category="Autor2">Autor 2</a></li>
+                                <li><a href="#" class="category_item" category="Autor3">Autor 3</a></li>
+                                <li><a href="#" class="category_item" category="Autor4">Autor 4</a></li>
+                                <li><a href="#" class="category_item" category="Autor5">Autor 5</a></li>
+                                <li><a href="#" class="category_item" category="Autor6">Autor 6</a></li>
+                                <li><a href="#" class="category_item" category="Autor7">Autor 7</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div id="header">
+                    <ul class="nav">
+                        <li><a href="#">Año de Edicion</a>
+                            <ul>
+                                <li><a href="#" class="category_item" category2="2022">2022</a></li>
+                                <li><a href="#" class="category_item" category2="2021">2021</a></li>
+                                <li><a href="#" class="category_item" category2="2020">2020</a></li>
+                                <li><a href="#" class="category_item" category2="2019">2019</a></li>
+                                <li><a href="#" class="category_item" category2="2018">2018</a></li>
+                                <li><a href="#" class="category_item" category2="2017">2017</a></li>
+                                <li><a href="#" class="category_item" category2="2016">2016</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div id="header">
+                    <ul class="nav">
+                        <li><a href="#">Editorial</a>
+                            <ul>
+                                <li><a href="#" class="category_item" category3="Editorial1">Editorial 1</a></li>
+                                <li><a href="#" class="category_item" category3="Editorial2">Editorial 2</a></li>
+                                <li><a href="#" class="category_item" category3="Editorial3">Editorial 3</a></li>
+                                <li><a href="#" class="category_item" category3="Editorial4">Editorial 4</a></li>
+                                <li><a href="#" class="category_item" category3="Editorial5">Editorial 5</a></li>
+                                <li><a href="#" class="category_item" category3="Editorial6">Editorial 6</a></li>
+                                <li><a href="#" class="category_item" category3="Editorial7">Editorial 7</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                 <!-- rango de precio -->
+                <div class="wrapper2">
+                    <header class="header_rango">
+                        <h2>Rango de Precio</h2>
+                        <p>Utilice el control deslizante o introduzca el precio mínimo y máximo</p>
+                    </header class="header_rango">
+                    <div class="price-input">
+                        <div class="field">
+                            <span>Min</span>
+                            <input type="number" class="input-min" value="2500">
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="field">
+                            <span>Max</span>
+                            <input type="number" class="input-max" value="7500">
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                    </div>
+                </div>
+                <!-- fin rango de precio -->
+            </div>
+            <section class="products-list">
+                <div class="product-item" category="Autor1" category2="2019" category3="Editorial1">
+                    <img src="../images/ejemplo.png" alt="">
+                    <a href="#">Libro 1</a>
+                </div>
+                <div class="product-item" category="Autor2" category2="2022" category3="Editorial3">
+                    <img src="../images/ejemplo.png" alt="">
+                    <a href="#">Libro 2</a>
+                </div>
+                <div class="product-item" category="Autor3" category2="2020" category3="Editorial2">
+                    <img src="../images/ejemplo.png" alt="">
+                    <a href="#">Libro 3</a>
+                </div>
+                <div class="product-item" category="Autor4" category2="2016" category3="Editorial4">
+                    <img src="../images/ejemplo.png" alt="">
+                    <a href="#">Libro 4</a>
+                </div>
+                <div class="product-item" category="Autor5" category2="2017" category3="Editorial5">
+                    <img src="../images/ejemplo.png" alt="">
+                    <a href="#">Libro 5</a>
+                </div>
+                <div class="product-item" category="Autor6" category2="2019" category3="Editorial6">
+                    <img src="../images/ejemplo.png" alt="">
+                    <a href="#">Libro 6</a>
+                </div>
+                <div class="product-item" category="Autor7" category2="2018" category3="Editorial7">
+                    <img src="../images/ejemplo.png" alt="">
+                    <a href="#">Libro 7</a>
+                </div>
+                <div class="product-item" category="Autor1" category2="2021" category3="Editorial1">
+                    <img src="../images/ejemplo.png" alt="">
+                    <a href="#">Libro 8</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/filtro.js"></script>
+    <script src="../js/rango_precio.js"></script>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
