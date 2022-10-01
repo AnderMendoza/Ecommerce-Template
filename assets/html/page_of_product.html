@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/page_of_product_style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,12 +20,12 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><span class="circle"></span>.Stose</a></div>
+                            <div class="logo"><a href="/index.html"><span class="circle"></span>.Stose</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="#">Inicio</a></li>
-                                    <li><a href="#">Tienda</a></li>
-                                    <li><a href="#">Libros</a></li>
+                                    <li><a href="/index.html">Inicio</a></li>
+                                    <li><a href="../html/tienda.html">Libros</a></li>
+                                    <li><a href="#">Conócenos</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -45,7 +45,53 @@
                                             <div class="cart-total">$0.00</div>
                                         </div>
                                     </a></li>
+                                <div class="login-text">
+                                    <a href="#">Inicia Sesión</a>
+                                </div>
+                                <button class="cta">
+                                    <span>Registrate</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">Categorías</div>
+                                    <div class="mini-text mobile-hide">Total 49 libros</div>
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                    </a>
+                                </div>
+                                <div class="dpt-menu">
+                                    <ul class="second-links">
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-xxx-line"></i></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Buscar un libro">
+                                    <button type="submit">Buscar</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,19 +102,31 @@
                 <div class="bread-crumbs">
                     <ul>
                         <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="#">Categoria</a></li>
+                        <li><a href="#">Categorías</a></li>
                         <li><a href="#">Libro</a></li>
                     </ul>
                 </div>
-                <div class="product">
-                    <div class="img_container">
-                        <img src="../images/romeo_y_julieta_libro_1.jpg" class="main_img">
+                <div class="product-detail">
+                    <div class="product">
+                        <div class="img_container">
+                            <img src="../images/romeo_y_julieta_libro_1.jpg" class="main_img">
+                        </div>
+                        <div class="thumbnail_container">
+                            <img class="thumbnail active" src="../images/romeo_y_julieta_libro_1.jpg">
+                            <img class="thumbnail" src="../images/romeo_y_julieta_libro_2.jpg">
+                            <img class="thumbnail" src="../images/romeo_y_julieta_libro_3.jpg">
+                            <img class="thumbnail" src="../images/romeo_y_julieta_libro_4.jpg">
+                        </div>
                     </div>
-                    <div class="thumbnail_container">
-                        <img class="thumbnail active" src="../images/romeo_y_julieta_libro_1.jpg">
-                        <img class="thumbnail" src="../images/romeo_y_julieta_libro_2.jpg">
-                        <img class="thumbnail" src="../images/romeo_y_julieta_libro_3.jpg">
-                        <img class="thumbnail" src="../images/romeo_y_julieta_libro_4.jpg">
+                    <div class="description">
+                        <h1>Descripción<h1>
+                                <div class="text-description">
+                                    <p>Lorem ipsum dolor sit amet. Ut perferendis assumenda sit voluptatem provident est
+                                        eveniet blanditiis ut architecto voluptatem aut dolor rerum. Qui voluptatum
+                                        voluptatem et assumenda voluptatem et illum deleniti sit magni iste et
+                                        voluptatum possimus qui incidunt fugiat. Cum mollitia esse sed debitis magnam
+                                        non tenetur ullam est soluta molestiae. </p>
+                                </div>
                     </div>
                 </div>
             </div>
