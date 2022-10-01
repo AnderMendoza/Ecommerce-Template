@@ -24,9 +24,9 @@
     <br />
     <a href="https://github.com/AnderMendoza/Stose">See demo</a>
     ·
-    <a href="https://github.com/AnderMendoza/Stose/issues">Report a Bug</a>
+    <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=bug_report.md&title=">Report a Bug</a>
     ·
-    <a href="https://github.com/AnderMendoza/Stose/issues">Request feature</a>
+    <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=feature_request.md&title=">Request feature</a>
   </p>
   <p align="center">
     <a href="/README.md">English</a>
