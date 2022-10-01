@@ -196,35 +196,35 @@ h4 {
         b. Header Main, Departments Category
         c. Search form
         d. Responsive MENU - Off Canvas
-    02. SLIDER
-    03. BRANDS
-    04. PRODUCT
+    02. MAIN
+        b. Product detail
+    03. PRODUCT
         a. Global product
         b. BIG product
         c. MINI product
         d. MAIN product
-    05. BANNER
+    04. BANNER
         a. News letter
         b. Widgets
         c. Footer Info
-    06. BOTTOM MENU
+    05. BOTTOM MENU
         a.Search
-    07. OVERLAY
-    08. PAGE SINGLE
+    06. OVERLAY
+    07. PAGE SINGLE
         a. Breadcrumb
         b. Product details
         c. Product description
         d. Product Review
         e. Product Review Form
-    09. PAGE SINGLE: SPECIAL OFFER
-    10. PAGE CATEGORY
+    08. PAGE SINGLE: SPECIAL OFFER
+    09. PAGE CATEGORY
         a. Sidebar products filter
         b. products block
-    11. CART
-    12. PAGE CART
-    13. PAGE CHECKOUT
-    14. MODAL
-    15. RESPONSIVE
+    10. CART
+    11. PAGE CART
+    12. PAGE CHECKOUT
+    13. MODAL
+    14. RESPONSIVE
  *
  * ------------------ */
 
@@ -369,8 +369,8 @@ nav .fly-item {
  * ------------------ */
 .bread-crumbs {
     position: relative;
-    margin-top: 2%;
-    left: 11%;
+    margin-top: 1%;
+    left: 10%;
 
 }
 
@@ -394,7 +394,7 @@ nav .fly-item {
     margin: 0 8px 0 0;
     font-size: 13px;
     text-decoration: none;
-    color: #8093a7;
+    color: #504d4d;
 }
 
 .bread-crumbs ul li a:after {
@@ -438,23 +438,27 @@ nav .fly-item {
 }
 
 .bread-crumbs ul li a:hover {
-    background: #c7b5d5;
+    background: #efe3fc;
 }
 
 .bread-crumbs ul li a:hover:after {
-    border-left-color: #c7b5d5;
+    border-left-color: #efe3fc;
     color: #fff;
 }
 
 /* ------------------
  * 02. MAIN
-    * b. Product
+    * b. Product detail
  * ------------------ */
+
+.product-detail {
+    display: flex;
+}
 
 .product {
     position: relative;
-    margin-top: 3%;
-    left: 11%;
+    margin-top: 2%;
+    left: 10%;
 }
 
 .product .img_container {
@@ -475,7 +479,6 @@ nav .fly-item {
 .product .thumbnail_container {
     height: 80px;
     display: block;
-    justify-content: space-between;
 }
 
 .product .thumbnail_container .thumbnail {
@@ -497,80 +500,57 @@ nav .fly-item {
     box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
 }
 
+/* ------------------
+ * 02. MAIN
+    * b. Product detail
+        * 01. Description
+ * ------------------ */
 
+.description {
+    background-color: #f3f5fa;
+    width: 350px;
+    height: 300px;
+    margin-top: 2%;
+    margin-left: 180px;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+.description h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.description p {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify;
+    margin-right: 6%;
+}
 
 
 /* ------------------
- * 03. BRANDS
+ * 03. FOOTER
  * ------------------ */
 
 
-
-
-/* ------------------
- * 04. PRODUCT BLOCK STYLE
- * ------------------ */
-
-
-
-
-/* 04. PRODUCT --------------------------
-    *  a. Global product
-    * ------------------ */
-
-
-
-
-
-/* 04. PRODUCT --------------------------
-    *  b. BIG product
-    * ------------------ */
-
-
-
-
-/* 04. PRODUCT --------------------------
-    *  C. MINI product
-    * ------------------ */
-
-
-
-
-
-/* 04. PRODUCT --------------------------
-    *  d. MAIN product
-    * ------------------ */
-
-
-
-
-
-/* ------------------
- * 05. BANNER
- * ------------------ */
-
-
-
-
-/* ------------------
- * 05. FOOTER
- * ------------------ */
-
-
-/* 05. FOOTER --------------------------
+/* 03. FOOTER --------------------------
     *  a. News Letter
     * ------------------ */
 
 
 
-/* 05. FOOTER --------------------------
+/* 03. FOOTER --------------------------
     *  b. Widgets
     * ------------------ */
 
 
 
 
-/* 05. FOOTER --------------------------
+/* 03. FOOTER --------------------------
     *  c. Footer Info
     * ------------------ */
 
@@ -578,13 +558,13 @@ nav .fly-item {
 
 
 /* ------------------
- * 06. BOTTOM MENU
+ * 04. BOTTOM MENU
  * ------------------ */
 
 
 
 
-/* 06. BOTTOM MENU --------------------------
+/* 04. BOTTOM MENU --------------------------
     *  a. Search
     * ------------------ */
 
@@ -596,7 +576,7 @@ nav .fly-item {
 
 
 /* ------------------
- * 07. OVERLAY
+ * 05. OVERLAY
  * ------------------ */
 
 
@@ -605,14 +585,14 @@ nav .fly-item {
 
 
 /* ------------------
- * 08. PAGE SINGLE
+ * 05. PAGE SINGLE
  * ------------------ */
 
 
 
 
 
-/* 08. PAGE SINGLE --------------------------
+/* 05. PAGE SINGLE --------------------------
     *  a. Breadcrumb
     * ------------------ */
 
@@ -620,28 +600,28 @@ nav .fly-item {
 
 
 
-/* 08. PAGE SINGLE --------------------------
+/* 05. PAGE SINGLE --------------------------
     *  b. Product details
     * ------------------ */
 
 
 
 
-/* 08. PAGE SINGLE --------------------------
+/* 05. PAGE SINGLE --------------------------
     *  c. Product description
     * ------------------ */
 
 
 
 
-/* 08. PAGE SINGLE --------------------------
+/* 05. PAGE SINGLE --------------------------
     *  d. Product Review
     * ------------------ */
 
 
 
 
-/* 08. PAGE SINGLE --------------------------
+/* 05. PAGE SINGLE --------------------------
     *  e. Product Review Form
     * ------------------ */
 
@@ -649,7 +629,7 @@ nav .fly-item {
 
 
 /* ------------------
- * 09. PAGE SINGLE: SPECIAL OFFER
+ * 05. PAGE SINGLE: SPECIAL OFFER
  * ------------------ */
 
 
@@ -657,7 +637,7 @@ nav .fly-item {
 
 
 /* ------------------
- * 10. PAGE CATEGORY
+ * 06. PAGE CATEGORY
  * ------------------ */
 
 
@@ -672,7 +652,7 @@ nav .fly-item {
 
 
 
-/* 10. PAGE CATEGORY --------------------------
+/* 06. PAGE CATEGORY --------------------------
     *  b. products block
     * ------------------ */
 
@@ -682,24 +662,14 @@ nav .fly-item {
 
 
 /* ------------------
- * 11. CART
+ * 07. CART
  * ------------------ */
 
 
 
 
 /* ------------------
- * 12. PAGE CART
- * ------------------ */
-
-
-
-
-
-
-
-/* ------------------
- * 13. PAGE CHECKOUT
+ * 08. PAGE CART
  * ------------------ */
 
 
@@ -709,7 +679,17 @@ nav .fly-item {
 
 
 /* ------------------
- * 14. MODAL
+ * 09. PAGE CHECKOUT
+ * ------------------ */
+
+
+
+
+
+
+
+/* ------------------
+ * 10. MODAL
  * ------------------ */
 
 
@@ -721,7 +701,7 @@ nav .fly-item {
 
 
 /* ------------------
- * 15. RESPONSIVE
+ * 11. RESPONSIVE
  * ------------------ */
 
 
