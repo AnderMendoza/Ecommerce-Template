@@ -37,3 +37,24 @@ ul, ol {
 	right:-140px;
 	top:0px;
 }
+
+#menu_desple{
+	position: relative;
+	left: 50%;
+}
+
+#menu_text{
+	position:absolute;
+	left: 61%;
+	top: 33%;
+}
+
+#menu_desple2{
+	position: relative;
+	left: 64%;
+}
+
+#ruta{
+	position: relative;
+	left: 20%;
+}
