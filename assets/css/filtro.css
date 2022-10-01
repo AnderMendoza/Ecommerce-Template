@@ -163,3 +163,8 @@ body{
 		margin-left: 0px;
 	}
 }
+
+.descri{
+	position:relative;
+	left: 15%;
+}
