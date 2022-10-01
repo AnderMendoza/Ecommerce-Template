@@ -1,20 +1,20 @@
 ---
-name: Reporte de bug
-about: Crea un informe para ayudarnos a mejorar
+name: Bug report
+about: Create a report to help us improve
 title: ''
 labels: 'bug'
 assignees: ''
 
 ---
 
-**Describa el error**
-Una descripción clara y concisa de lo que es el error.
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-**Navegador**
-¿Qué navegador estás usando? Ejemplos: Chrome, Firefox, etc.
+**Browser**
+What browser are you using? Examples: Chrome, Firefox, etc.
 
-**Capturas de pantalla**
-Envíe capturas de pantalla de la consola del desarrollador (clic con el botón derecho > Inspeccionar > Consola) en las páginas donde se produce el error.
+**Screenshots**
+Please send screenshots of the developer console (Right-click > Inspect > Console) on the pages where the bug is occurring.
 
-**Contexto adicional**
-Agregue cualquier otro contexto sobre el problema aquí.
+**Additional context**
+Add any other context about the problem here.
