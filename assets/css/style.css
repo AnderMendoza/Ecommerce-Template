@@ -583,7 +583,22 @@ h4 {
 
 
     /* 08. PAGE SINGLE --------------------------
-    *  a. Breadcrumb
+    /* a. Category
+    * ------------------ */
+    .ctg-trigger .ri-close-line,
+    .showctg .ctg-trigger .ri-menu-3-line{
+        display: none;
+    }
+    .showctg .ctg-trigger .ri-close-line {
+        display: block;
+    }
+
+    
+    
+    
+    
+    /* 08. PAGE SINGLE --------------------------
+    *  b. Breadcrumb
     * ------------------ */
 
 
@@ -591,28 +606,28 @@ h4 {
 
 
     /* 08. PAGE SINGLE --------------------------
-    *  b. Product details
+    *  c. Product details
     * ------------------ */
 
 
 
 
     /* 08. PAGE SINGLE --------------------------
-    *  c. Product description
+    *  d. Product description
     * ------------------ */
 
 
 
 
     /* 08. PAGE SINGLE --------------------------
-    *  d. Product Review
+    *  e. Product Review
     * ------------------ */
 
 
 
 
     /* 08. PAGE SINGLE --------------------------
-    *  e. Product Review Form
+    *  f. Product Review Form
     * ------------------ */
 
 
@@ -745,5 +760,12 @@ h4 {
     .header-main .right {
         max-width: 600px;
         margin-left: auto;
+    }
+
+    #page:not(.page-home) .ctg-menu {
+        display: none;
+    }
+    #page.showctg .ctg-menu {
+        display: block;
     }
 }
