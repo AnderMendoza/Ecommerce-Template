@@ -146,7 +146,7 @@ h4 {
 }
 .icon-small {
     font-size: 1.25em;
-    margin: auto;
+    margin-left: auto;
 }
 .icon-large {
     font-size: 1.75em;
@@ -184,7 +184,7 @@ h4 {
 
     01. HEADER
         a. Header Nav
-        b. Header Main, Departments Category
+        b. Header Main, Category
         c. Search form
         d. Responsive MENU - Off Canvas
     02. SLIDER
@@ -223,7 +223,7 @@ h4 {
 /* ------------------
  * 01. HEADER
  * ------------------ */
-header li > a {
+:where(.off-canvas, header) li > a {
     display: flex;
     position: relative;
     line-height: inherit;
@@ -338,7 +338,7 @@ header li > a {
         left: 0;
         display: block;
         border-radius: 50px;
-        background: #b1dae7;
+        background: #eaac88;
         width: 45px;
         height: 45px;
         transition: all 0.3s ease;
@@ -375,18 +375,18 @@ header li > a {
     }
 
     /* 01. HEADER --------------------------
-    *  b. Header Main, Departments Category
+    *  b. Header Main, Category
     * ------------------ */
     .header-main {
         background-color: var(--secundary-dark-color);
         padding: 1.5em 0;
         margin-bottom: 2em;
     }
-    .dpt-cat {
+    .ctg-cat {
         position: relative;
         z-index: 10;
     }
-    .dpt-cat .dpt-head {
+    .ctg-cat .ctg-head {
     position: relative;
     width: 300px;
     padding: 0.75em 1.5em;
@@ -395,10 +395,10 @@ header li > a {
         color: var(--white-color);
         margin-bottom: -2.15em;
     }
-    .dpt-cat .dpt-head .mini-text {
+    .ctg-cat .ctg-head .mini-text {
         color: var(--light-bg-color);
     }
-    .dpt-cat .dpt-trigger {
+    .ctg-cat .ctg-trigger {
         position: absolute;
         right: 0;
         top: 0;
@@ -407,7 +407,11 @@ header li > a {
         width: 60px;
     }
 
-
+    .ctg-menu > ul > li > a {
+        font-size: var(--font-small);
+        height: 46px;
+        align-items: center;
+    }
 
     /* 01. HEADER --------------------------
     *  c. Search Form
@@ -456,8 +460,6 @@ header li > a {
     /* 01. HEADER --------------------------
     *  d. Responsive MENU - Off Canvas
     * ------------------ */
-
-
 
 
 
@@ -719,9 +721,21 @@ header li > a {
     .header-nav .right li > a {
         margin-left: 1em;
     }
-}
-
-@media screen and (min-width: 670px) {
+    /* Categorias menu */
+    .ctg-menu {
+        position: absolute;
+        top: var(--percent100);
+        width: 300px;
+        background-color: var(--white-color);
+        border: 1px solid var(--border-color);
+        border-top: 0;
+        border-bottom: 0;
+    }
+    .ctg-menu > ul > li > a {
+        font-weight: var(--fw5);
+        padding: 0 1.5em;
+        border-bottom: 1px solid var(--border-color);
+    }
     .header-nav .right .login-text {
         display: block;
     }
