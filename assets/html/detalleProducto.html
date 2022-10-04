@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/page_of_product_style.css">
+    <link rel="stylesheet" href="../css/detalleProducto.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
@@ -23,8 +23,8 @@
                             <div class="logo"><a href="./index.html"><span class="circle"></span>.Stose</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="./index.html">Inicio</a></li>
-                                    <li><a href="./assets/html/tienda.html">Libros</a></li>
+                                    <li><a href="/index.html">Inicio</a></li>
+                                    <li><a href="/assets/html/tienda.html">Libros</a></li>
                                     <li><a href="#">Conócenos</a></li>
                                 </ul>
                             </nav>
@@ -198,17 +198,19 @@
                 <div class="product-button">
                     <h1>Cantidad</h1>
                     <div class="card">
-                        <button onclick="decrement()">-</button>
+                        <button class="decrement-increment" onclick="decrement()">-</button>
                         <h2 id="root"></h2>
-                        <button onclick="increment()">+</button>
+                        <button class="decrement-increment" onclick="increment()">+</button>
                     </div>
+
+                    <a href="#" class="add-button">Añadir al carrito</a>
                 </div>
             </div>
         </main>
         <footer></footer>
     </div>
 
-    <script src="../js/page_of_product.js"></script>
+    <script src="../js/detalleProducto.js"></script>
 </body>
 
 </html>
