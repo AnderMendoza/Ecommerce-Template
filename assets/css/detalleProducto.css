@@ -512,6 +512,7 @@ nav .fly-item {
     height: 300px;
     margin-top: 2%;
     margin-left: 180px;
+    border: 1.5px solid;
     border-radius: 15px;
     position: relative;
 
@@ -565,19 +566,57 @@ h2 {
 
 }
 
-button {
+.decrement-increment {
     width: 50px;
     height: 50px;
-    outline: none;
     border-radius: 15px;
+    border: 1.5px solid;
     font-size: 30px;
     background-color: #e7ebf5;
     box-shadow: 3px 3px 5px #686768;
 }
 
-button:hover {
+.decrement-increment:hover {
     background-color: #efe3fc;
     border-color: #0a021c;
+}
+
+/* ------------------
+ * 02. MAIN
+    * b. Product button
+        * 01. Quantity
+        * 02. Add button
+ * ------------------ */
+
+/* From uiverse.io by @Zena4L */
+.add-button:link,
+.add-button:visited {
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 1.5px solid;
+    border-radius: 1000px;
+    display: inline-block;
+    transition: all .2s;
+    margin-top: 7%;
+    margin-left: 17.5%;
+    background-color: #e7ebf5;
+
+}
+
+.add-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+    background-color: #efe3fc;
+}
+
+.add-button:active {
+    transform: translateY(-3px);
+}
+
+.add-button:hover::after {
+    background-color: rgb(65, 66, 66);
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0;
 }
 
 /* ------------------
