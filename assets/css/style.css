@@ -466,9 +466,76 @@ h4 {
 /* ------------------
  * 02. SLIDER
  * ------------------ */
+.slider > div > .wrapper {
+    width: calc(96% - (300px + 2em));
+    margin-left: auto;
+}
+.slider .item {
+    position: relative;
+    height: 100px;
+}
+.slider .text-content {
+    margin-top: -150px;
+    height: var(--percent100);
+    justify-content: center;
+    padding: 0 0 10% 10%;
+    z-index: 1;
+}
+.slider h4 {
+    font-size: var(--font-small);
+    font-weight: var(--fw7);
+    width: fit-content;
+    padding: 4px 10px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 4px;
+}
+.slider h2 {
+    background-color: var(--white-color);
+    margin-right: 58%;
+}
 
-
-
+/* From uiverse.io by @alexroumi */
+.slider .shop{
+    padding: 9px 20px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #ffffff;
+    position: relative;
+    margin-top: -5%;
+    margin-left: 10%;
+    font-weight: 1000;
+    font-size: 15px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+   
+.slider button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+   
+.slider button:hover {
+    color: #e8e8e8;
+}
+   
+.slider button:hover::before {
+    width: 100%;
+}
 
 /* ------------------
  * 03. BRANDS

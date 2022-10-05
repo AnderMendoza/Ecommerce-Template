@@ -4,3 +4,15 @@ const ctgButton = document.querySelector('.ctg-cat .ctg-trigger'),
 ctgButton.addEventListener('click', function() {
     ctgClass.classList.toggle('showctg')
 })
+
+
+//slider
+const swiper = new Swiper('.swiper', {
+    loop: true,
+
+    //if we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+});
