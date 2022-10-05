@@ -24,3 +24,22 @@ function increment() {
     data = data + 1;
     document.getElementById("root").innerText = data;
 }
+
+//Like button
+$(document).ready(function () {
+    $(".like-button").click(function () {
+        $(".like-button").toggleClass("heart-active")
+        $(".like").toggleClass("heart-active")
+        $(".heart").toggleClass("heart-active")
+    });
+});
+
+//Report collapse
+var botones = document.querySelectorAll(".btn-expandir");
+var textos_expandir = document.querySelectorAll(".texto_expandir");
+
+botones.forEach((elemento, clave) => {
+    elemento.addEventListener("click", () => {
+        textos_expandir[clave].classList.toggle("open_close")
+    })
+});
