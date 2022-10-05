@@ -448,7 +448,9 @@ nav .fly-item {
 
 /* ------------------
  * 02. MAIN
+    * a. Routes
     * b. Product detail
+        * 01. Product image
  * ------------------ */
 
 .product-detail {
@@ -502,8 +504,10 @@ nav .fly-item {
 
 /* ------------------
  * 02. MAIN
+    * a. Routes
     * b. Product detail
-        * 01. Description
+        * 01. Product image
+        * 02. Description
  * ------------------ */
 
 .description {
@@ -511,7 +515,7 @@ nav .fly-item {
     width: 350px;
     height: 300px;
     margin-top: 2%;
-    margin-left: 180px;
+    margin-left: 185px;
     border: 1.5px solid;
     border-radius: 15px;
     position: relative;
@@ -534,7 +538,11 @@ nav .fly-item {
 
 /* ------------------
  * 02. MAIN
-    * b. Product button
+    * a. Routes
+    * b. Product detail
+        * 01. Product image
+        * 02. Description
+    * c. Product button
         * 01. Quantity
  * ------------------ */
 
@@ -542,8 +550,8 @@ nav .fly-item {
     width: 315px;
     height: 250px;
     position: relative;
-    left: 550px;
-    bottom: 235px;
+    left: 555px;
+    bottom: 230px;
 }
 
 .product-button h1 {
@@ -574,6 +582,7 @@ h2 {
     font-size: 30px;
     background-color: #e7ebf5;
     box-shadow: 3px 3px 5px #686768;
+    cursor: pointer;
 }
 
 .decrement-increment:hover {
@@ -583,12 +592,15 @@ h2 {
 
 /* ------------------
  * 02. MAIN
-    * b. Product button
+    * a. Routes
+    * b. Product detail
+        * 01. Product image
+        * 02. Description
+    * c. Product button
         * 01. Quantity
         * 02. Add button
  * ------------------ */
 
-/* From uiverse.io by @Zena4L */
 .add-button:link,
 .add-button:visited {
     text-transform: uppercase;
@@ -597,7 +609,7 @@ h2 {
     border-radius: 1000px;
     display: inline-block;
     transition: all .2s;
-    margin-top: 7%;
+    margin-top: 6%;
     margin-left: 17.5%;
     background-color: #e7ebf5;
 
@@ -618,6 +630,148 @@ h2 {
     transform: scaleX(1.4) scaleY(1.5);
     opacity: 0;
 }
+
+/* ------------------
+ * 02. MAIN
+    * a. Routes
+    * b. Product detail
+        * 01. Product image
+        * 02. Description
+    * c. Product button
+        * 01. Quantity
+        * 02. Add button
+        * 03. Like and Share button
+ * ------------------ */
+
+.like-button {
+    border: 1.5px solid rgb(175, 175, 175);
+    padding: 6px 6px;
+    border-radius: 5px;
+    margin-top: 7%;
+    margin-left: 32.5%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.like-button.heart-active {
+    border-color: #efe3fc;
+    border: 1.5px solid;
+    background: #efe3fc;
+}
+
+.like-button .heart {
+    height: 60px;
+    width: 60px;
+    background: url("/assets/images/heart.png") no-repeat;
+    background-position: left;
+    background-size: 2900%;
+    position: absolute;
+    margin-top: 3.8%;
+    margin-left: 3%;
+    transform: translate(-50%, -50%);
+}
+
+.heart.heart-active {
+    background-position: right;
+    animation: animate .8s steps(28) 1;
+}
+
+@keyframes animate {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.like {
+    margin-left: 27px;
+    font-size: 18px;
+    font-weight: 350;
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+
+}
+
+.like.heart-active {
+    color: black;
+}
+
+/* ------------------
+ * 02. MAIN
+    * a. Routes
+    * b. Product detail
+        * 01. Product image
+        * 02. Description
+    * c. Product button
+        * 01. Quantity
+        * 02. Add button
+        * 03. Like and Share button
+    * d. Report
+ * ------------------ */
+
+.report-collapse {
+    margin: 30px;
+    padding: 30px;
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
+    border: 1.5px solid;
+    position: relative;
+    left: 890px;
+    bottom: 830px;
+    justify-content: flex-start;
+}
+
+.report-collapse section:nth-child(n) {
+    text-align: justify;
+    position: relative;
+}
+
+.report-collapse section:nth-child(n) button {
+    margin: 10px 0 10px 0;
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1.5px solid;
+    border-radius: 10px;
+    background-color: #e7ebf5;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.report-collapse section:nth-child(n) button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+    background-color: #efe3fc;
+}
+
+.report-collapse section:nth-child(n) button:active {
+    transform: translateY(-3px);
+}
+
+.report-collapse section:nth-child(n) button:hover::after {
+    background-color: rgb(65, 66, 66);
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0;
+}
+
+
+
+.texto_expandir {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+.open_close {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
 
 /* ------------------
  * 03. FOOTER
