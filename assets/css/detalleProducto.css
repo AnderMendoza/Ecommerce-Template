@@ -1,361 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;708;800&family=Rubik:wght@300;400;500;600&display=swap');
-/*
-Fonts:
-- Poppins: 300, 400, 600, 700, 800
-- Rubik: 300, 400, 500, 600
-*/
-
-:root {
-    --primary-color: #ff6b6b;
-    --secundary-color: #794afa;
-    --secundary-dark-color: #453c5c;
-
-    --white-color: #ffffff;
-    --light-bg-color: #f2f3f5;
-    --light-text-color: #7c899a;
-    --border-color: #e5e8ec;
-    --dark-color: #0a021c;
-
-    --font-small: 13px;
-    --font-smaller: 11px;
-
-    --percent100: 100%;
-    --percent50: 50%;
-
-    --fw3: 300;
-    --fw5: 500;
-    --fw6: 600;
-    --fw7: 700;
-    --fw8: 800;
-
-    --trans-background-color: background-color .3s, color .3s;
-    --trans-background: background-color .3s;
-    --trans-color: color .3s;
-}
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-*,
-::before,
-::after {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--dark-color);
-    background-color: var(--white-color);
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    -webkit-tap-highlight-color: transparent;
-}
-
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: var(--percent100);
-    vertical-align: middle;
-}
-
-strong {
-    font-weight: var(--fw8);
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-input::placeholder {
-    font: inherit;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Poppins';
-}
-
-h1 {
-    font-size: calc(1.3cm + 1vw);
-    font-weight: var(--fw8);
-    line-height: 1;
-}
-
-h2 {
-    font-size: 2.5em;
-}
-
-h3 {
-    font-size: 1.2cm;
-    font-weight: var(--fw7);
-}
-
-h4 {
-    font-size: 1em;
-    font-weight: var(--fw6);
-}
-
-/* ------------------
- * REUSABLE SELECTOR
- * ------------------ */
-
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 0.938cm;
-}
-
-.column {
-    margin-left: -0.938cm;
-    margin-right: -0.938cm;
-}
-
-.column .row {
-    padding: 0 0.938cm;
-}
-
-.flexwrap {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flexcenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flexitem {
-    display: flex;
-    align-items: center;
-}
-
-.flexcol {
-    display: flex;
-    flex-direction: column;
-    gap: lem;
-}
-
-.main-links a:hover {
-    color: var(--secundary-color);
-}
-
-.second-links a:hover {
-    color: var(--light-text-color);
-}
-
-.icon-small,
-.icon-large {
-    display: flex;
-    align-items: center;
-    padding: 0 0.25em;
-    font-weight: normal;
-}
-
-.icon-small {
-    font-size: 1.25em;
-    margin: auto;
-}
-
-.icon-large {
-    font-size: 1.75em;
-    padding: 0 0.75em 0 0;
-}
-
-
-.mobile-hide {
-    display: none;
-}
-
-
-
-
 /* ------------------
  * Structure Styling
+    * 01. MAIN
+        * a. Routes
+        * b. Product detail
+            * 01. Product image
+            * 02. Description
+        * c. Product button
+            * 01. Quantity
+            * 02. Add button
+            * 03. Like and Share button
+        * d. Report
 
-    00. Reusable selectors
-
-    01. HEADER
-        a. Header Nav
-        b. Header Main, Departments Category
-        c. Search form
-        d. Responsive MENU - Off Canvas
-    02. MAIN
-        b. Product detail
-    03. PRODUCT
-        a. Global product
-        b. BIG product
-        c. MINI product
-        d. MAIN product
-    04. BANNER
-        a. News letter
-        b. Widgets
-        c. Footer Info
-    05. BOTTOM MENU
-        a.Search
-    06. OVERLAY
-    07. PAGE SINGLE
-        a. Breadcrumb
-        b. Product details
-        c. Product description
-        d. Product Review
-        e. Product Review Form
-    08. PAGE SINGLE: SPECIAL OFFER
-    09. PAGE CATEGORY
-        a. Sidebar products filter
-        b. products block
-    10. CART
-    11. PAGE CART
-    12. PAGE CHECKOUT
-    13. MODAL
-    14. RESPONSIVE
- *
  * ------------------ */
 
 
 /* ------------------
- * 01. HEADER
- * ------------------ */
-header li>a {
-    display: flex;
-    position: relative;
-    line-height: inherit;
-    transition: var(--trans-color);
-}
-
-
-
-
-/* 01. HEADER --------------------------
-    *  a. Header Nav
-    * ------------------ */
-.header-nav {
-    padding: 0.5em 0;
-    margin-bottom: 1.5em;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.trigger {
-    font-size: 1.5em;
-    display: flex;
-    padding: 0.25em;
-    margin-right: 0.5em;
-}
-
-.logo a {
-    font-family: 'Poppins';
-    font-size: 1.75em;
-    position: relative;
-    font-weight: var(--fw8);
-    display: flex;
-    padding-left: 0.75em;
-    margin-right: 2em;
-}
-
-.circle {
-    position: absolute;
-    top: -15px;
-    left: 0;
-    width: 38px;
-    height: 38px;
-    border-radius: var(--percent50);
-    background-color: var(--light-bg-color);
-    z-index: -1;
-}
-
-.circle::before {
-    content: '';
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    border-radius: var(--percent50);
-    background-color: var(--secundary-color);
-    bottom: 5px;
-    right: 5px;
-    opacity: .4;
-}
-
-.header-nav nav>ul {
-    line-height: 100px;
-    gap: 2em;
-}
-
-.fly-item {
-    position: absolute;
-    height: 16px;
-    font-size: var(--font-smaller);
-    padding: 3px;
-    text-align: center;
-    line-height: 10px;
-    color: var(--white-color);
-}
-
-nav .fly-item {
-    top: 50%;
-    margin-top: -24px;
-    width: 30%;
-    border-radius: 3px;
-    right: -32px;
-    background-color: var(--primary-color);
-}
-
-.header-nav .right {
-    position: relative;
-    margin-left: auto;
-}
-
-.header-nav .right .icon-large {
-    position: relative;
-}
-
-.header-nav .right .fly-item {
-    top: 0;
-    right: 16px;
-    width: 16px;
-    background-color: var(--secundary-dark-color);
-    border-radius: var(--percent50);
-}
-
-/* 01. HEADER --------------------------
-    *  b. Header Main, Departments Category
-    * ------------------ */
-
-
-
-
-/* 01. HEADER --------------------------
-    *  c. Search Form
-    * ------------------ */
-
-
-
-
-/* 01. HEADER --------------------------
-    *  d. Responsive MENU - Off Canvas
-    * ------------------ */
-
-
-
-
-
-/* ------------------
- * 02. MAIN
+ * 01. MAIN
  * ------------------ */
 .main {
     margin: 0;
@@ -364,7 +24,7 @@ nav .fly-item {
 }
 
 /* ------------------
- * 02. MAIN
+ * 01. MAIN
     * a. Routes
  * ------------------ */
 .bread-crumbs {
@@ -447,7 +107,7 @@ nav .fly-item {
 }
 
 /* ------------------
- * 02. MAIN
+ * 01. MAIN
     * a. Routes
     * b. Product detail
         * 01. Product image
@@ -503,7 +163,7 @@ nav .fly-item {
 }
 
 /* ------------------
- * 02. MAIN
+ * 01. MAIN
     * a. Routes
     * b. Product detail
         * 01. Product image
@@ -537,7 +197,7 @@ nav .fly-item {
 }
 
 /* ------------------
- * 02. MAIN
+ * 01. MAIN
     * a. Routes
     * b. Product detail
         * 01. Product image
@@ -591,7 +251,7 @@ h2 {
 }
 
 /* ------------------
- * 02. MAIN
+ * 01. MAIN
     * a. Routes
     * b. Product detail
         * 01. Product image
@@ -632,7 +292,7 @@ h2 {
 }
 
 /* ------------------
- * 02. MAIN
+ * 01. MAIN
     * a. Routes
     * b. Product detail
         * 01. Product image
@@ -700,7 +360,7 @@ h2 {
 }
 
 /* ------------------
- * 02. MAIN
+ * 01. MAIN
     * a. Routes
     * b. Product detail
         * 01. Product image
@@ -758,8 +418,6 @@ h2 {
     opacity: 0;
 }
 
-
-
 .texto_expandir {
     position: relative;
     overflow: hidden;
@@ -772,209 +430,82 @@ h2 {
     transition: max-height 0.5s ease-in;
 }
 
-
 /* ------------------
- * 03. FOOTER
+ * 01. MAIN
+    * a. Routes
+    * b. Product detail
+        * 01. Product image
+        * 02. Description
+    * c. Product button
+        * 01. Quantity
+        * 02. Add button
+        * 03. Like and Share button
+    * d. Report
+    * e. Related books
  * ------------------ */
 
+.related-books {
+    width: 1225px;
+    height: auto;
+    position: absolute;
+    margin-left: 10%;
+    top: 925px;
 
-/* 03. FOOTER --------------------------
-    *  a. News Letter
-    * ------------------ */
+}
 
+#related-books-list li {
+    display: inline;
 
+}
 
-/* 03. FOOTER --------------------------
-    *  b. Widgets
-    * ------------------ */
+.caption {
+    color: #000000;
+    font-weight: 400;
+    font-size: 35px;
+    cursor: default;
+}
 
-
-
-
-/* 03. FOOTER --------------------------
-    *  c. Footer Info
-    * ------------------ */
-
-
-
-
-/* ------------------
- * 04. BOTTOM MENU
- * ------------------ */
-
-
-
-
-/* 04. BOTTOM MENU --------------------------
-    *  a. Search
-    * ------------------ */
-
-
-
-
-
-
+.more {
+    color: #000000;
+    font-size: 20px;
+    padding-left: 67%;
+}
 
 
 /* ------------------
- * 05. OVERLAY
+    * copy of filtro.css "Productos"
  * ------------------ */
 
-
-
-
-
-
-/* ------------------
- * 05. PAGE SINGLE
- * ------------------ */
-
-
-
-
-
-/* 05. PAGE SINGLE --------------------------
-    *  a. Breadcrumb
-    * ------------------ */
-
-
-
-
-
-/* 05. PAGE SINGLE --------------------------
-    *  b. Product details
-    * ------------------ */
-
-
-
-
-/* 05. PAGE SINGLE --------------------------
-    *  c. Product description
-    * ------------------ */
-
-
-
-
-/* 05. PAGE SINGLE --------------------------
-    *  d. Product Review
-    * ------------------ */
-
-
-
-
-/* 05. PAGE SINGLE --------------------------
-    *  e. Product Review Form
-    * ------------------ */
-
-
-
-
-/* ------------------
- * 05. PAGE SINGLE: SPECIAL OFFER
- * ------------------ */
-
-
-
-
-
-/* ------------------
- * 06. PAGE CATEGORY
- * ------------------ */
-
-
-
-
-
-/* 10. PAGE CATEGORY --------------------------
-    *  a. Sidebar products filter
-    * ------------------ */
-
-
-
-
-
-/* 06. PAGE CATEGORY --------------------------
-    *  b. products block
-    * ------------------ */
-
-
-
-
-
-
-/* ------------------
- * 07. CART
- * ------------------ */
-
-
-
-
-/* ------------------
- * 08. PAGE CART
- * ------------------ */
-
-
-
-
-
-
-
-/* ------------------
- * 09. PAGE CHECKOUT
- * ------------------ */
-
-
-
-
-
-
-
-/* ------------------
- * 10. MODAL
- * ------------------ */
-
-
-
-
-
-
-
-
-
-/* ------------------
- * 11. RESPONSIVE
- * ------------------ */
-
-
-
-
-
-
-
-@media screen and (min-width: 992px) {
-    .container {
-        padding: 0 2em;
-    }
-
-    .desktop-hide {
-        display: none;
-    }
-
-    .mobile-hide {
-        display: block;
-    }
-
-    .logo a {
-        margin-right: 2em;
-    }
-
-    .header-nav {
-        padding: 0;
-        margin: 0;
-        border-bottom: 0;
-    }
-
-    .header-nav .right li>a {
-        margin-left: 1em;
-    }
+.products-list {
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.products-list .product-item {
+    width: 22%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.products-list .product-item img {
+    width: 100%;
+}
+
+.products-list .product-item a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #2D3E50;
+
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
 }
