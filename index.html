@@ -7,10 +7,67 @@
     <title>Stose | Inicio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <div id="page" class="site">
+
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head flexitem">
+                    <div class="logo"><a href="./index.html"><span class="circle"></span>.Stose</a></div>
+                    <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+                </div>
+                <div class="categories"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
+
         <header>
+            <!-- header top -->
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li class="links">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Productos Destacados</a></li>
+                                    <li><a href="#">Lista de deseos</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem main-links">
+                                <li><a href="#">Registrate</a></li>
+                                <li><a href="#">Mi Cuenta</a></li>
+                                <li><a href="#">Revision de Pedidos</a></li>
+                                <li><a href="#">USD <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <ul>
+                                        <li class="current"><a href="#">USD</a></li>
+                                        <li><a href="#">EURO</a></li>
+                                        <li><a href="#">GBP</a></li>
+                                        <li><a href="#">IDR</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Español <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <ul>
+                                        <li class="current"><a href="#">Español</a></li>
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">German</a></li>
+                                        <li><a href="#">Bahasa</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- header-nav -->
             <div class="header-nav">
                 <div class="container">
@@ -21,8 +78,9 @@
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
                                     <li><a href="./index.html">Inicio</a></li>
-                                    <li><a href="./assets/html/tienda.html">Libros</a></li>
-                                    <li><a href="#">Conócenos</a></li>
+                                    <li><a href="./assets/html/tienda.html">Tienda</a></li>
+                                    <li><a href="#">Costos de envío</a></li>
+                                    <li><a href="#">Nosotros</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -42,21 +100,12 @@
                                         <div class="cart-total">$0.00</div>
                                     </div>
                                 </a></li>
-                                <div class="login-text">
-                                    <a href="#">Inicia Sesión</a>
-                                </div>
-                                <button class="cta">
-                                    <span>Registrate</span>
-                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                      <path d="M1,5 L11,5"></path>
-                                      <polyline points="8 1 12 5 8 9"></polyline>
-                                    </svg>
-                                </button>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- header main -->
             <div class="header-main mobile-hide">
                 <div class="container">
@@ -65,7 +114,7 @@
                             <div class="ctg-cat">
                                 <div class="ctg-head">
                                     <div class="main-text">Categorías</div>
-                                    <div class="mini-text mobile-hide">Total 49 libros</div>
+                                    <div class="mini-text mobile-hide">Total 135 libros</div>
                                     <a href="#" class="ctg-trigger mobile-hide">
                                         <i class="ri-menu-3-line ri-xl"></i>
                                         <i class="ri-close-line ri-xl"></i>
@@ -79,27 +128,46 @@
                                                 Arte
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">Arquitectura</a></li>
+                                                <li><a href="#">Artes Escénicas</a></li>
+                                                <li><a href="#">Aspectos Generales del Arte</a></li>
+                                                <li><a href="#">Diseño Industrial y Comercial</a></li>
+                                                <li><a href="#">Enfoques del Arte</a></li>
+                                                <li><a href="#">Expresiones Artísticas del Arte</a></li>
+                                                <li><a href="#">Fotografía</a></li>
+                                                <li><a href="#">Música</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="has-child ficcion">
+                                        <li class="has-child biografia">
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-book-2-line"></i></div>
-                                                Ficción
+                                                Biografías
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">Biografías</a></li>
+                                                <li><a href="#">Historia y Crítica Literaria</a></li>
+                                                <li><a href="#">Obras de Teatro</a></li>
+                                                <li><a href="#">Textos Antiguos, Clásicos y Mediavales</a></li>
+                                                <li><a href="#">Poesía</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="has-child derecho">
+                                        <li class="has-child ciencia">
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-book-2-line"></i></div>
-                                                Derecho
+                                                Ciencias
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
-                                        </li>
-                                        <li class="has-child matematicas">
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-book-2-line"></i></div>
-                                                Matemáticas
-                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
-                                            </a>
+                                            <ul>
+                                                <li><a href="#">Ciencias de la Tierra/Geociencias</a></li>
+                                                <li><a href="#">El Medioambiente</a></li>
+                                                <li><a href="#">Geografía</a></li>
+                                                <li><a href="#">Planificación Regional y Zonal</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
                                         </li>
                                         <li class="has-child computacion">
                                             <a href="#">
@@ -107,6 +175,49 @@
                                                 Computación
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">Aplicaciones Empresariales y de Negocios</a></li>
+                                                <li><a href="#">Aplicaciones Gráficas y multimedia</a></li>
+                                                <li><a href="#">Aplicaciones Prácticas de Tecnología de la Información</a></li>
+                                                <li><a href="#">Bases de Datos</a></li>
+                                                <li><a href="#">Certificación Informática</a></li>
+                                                <li><a href="#">Ciencias de la Computación</a></li>
+                                                <li><a href="#">Redes y Comunicaciones</a></li>
+                                                <li><a href="#">Seguridad Informática</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child deporte">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                                Deportes
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Actividades Recreativas al Aire Libre</a></li>
+                                                <li><a href="#">Atletismo, Gimnasia y Deportes Relacionados</a></li>
+                                                <li><a href="#">Deporte: General</a></li>
+                                                <li><a href="#">Deportes con Vehículos</a></li>
+                                                <li><a href="#">Deportes de Combate y Defensa Personal</a></li>
+                                                <li><a href="#">Deportes de Invierno</a></li>
+                                                <li><a href="#">Deportes y Juegos Acuáticos</a></li>
+                                                <li><a href="#">Deportes y Juegos de Pelota</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child derecho">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                                Derecho
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Derecho de Países o Territorios Concretos y Áreas Específicas del Derecho</a></li>
+                                                <li><a href="#">Derecho Internacional</a></li>
+                                                <li><a href="#">Derecho: Guías de Estudio y Revisión</a></li>
+                                                <li><a href="#">Teoría General del Derecho</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
                                         </li>
                                         <li class="has-child economia">
                                             <a href="#">
@@ -114,34 +225,90 @@
                                                 Economía
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">Economía</a></li>
+                                                <li><a href="#">Empresa y Gestión</a></li>
+                                                <li><a href="#">Finanzas y Contabilidad</a></li>
+                                                <li><a href="#">Industria y Estudios Industriales</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="has-child historia">
+                                        <li class="has-child estilo-de-vida">
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-book-2-line"></i></div>
-                                                Historia
+                                                Estilos de Vida
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">Antigüedades, Objetos De Época («Vintage») Y Coleccionables</a></li>
+                                                <li><a href="#">Artesanías, Artes Decorativas Y Manualidades</a></li>
+                                                <li><a href="#">Artículos De Papelería Y Miscelánea</a></li>
+                                                <li><a href="#">Cocina / Comidas Y Bebidas, Etc</a></li>
+                                                <li><a href="#">Guías De Estilos Personales Y Estilos De Vida</a></li>
+                                                <li><a href="#">Humor</a></li>
+                                                <li><a href="#">Interés Local, Historia Familiar Y Nostalgia</a></li>
+                                                <li><a href="#">Jardinería</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="has-child infantiles">
+                                        <li class="has-child ficcion">
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-book-2-line"></i></div>
-                                                Infantiles
+                                                Ficción
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">Aventuras De Ficción</a></li>
+                                                <li><a href="#">Ciencia Ficción</a></li>
+                                                <li><a href="#">Fantasía</a></li>
+                                                <li><a href="#">Ficción Biográfica</a></li>
+                                                <li><a href="#">Ficción Deportiva</a></li>
+                                                <li><a href="#">Ficción Histórica</a></li>
+                                                <li><a href="#">Ficción Humorística</a></li>
+                                                <li><a href="#">Ficción Literaria</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="has-child medicina">
+                                        <li class="has-child filosofia-religion">
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-book-2-line"></i></div>
-                                                Medicina
+                                                Filosofía y Religión
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">Filosfía</a></li>
+                                                <li><a href="#">Religión y Creencias</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="has-child educativos">
+                                        <li class="has-child historia-arqueologia">
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-book-2-line"></i></div>
-                                                Educativos
+                                                Historia y Arqueología
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">Arqueología</a></li>
+                                                <li><a href="#">Historia</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child infantil-juvenil">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                                Infantiles y Juveniles
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Ficción Infantil / Ficción Juvenil e Historias Reales</a></li>
+                                                <li><a href="#">Infantil / Juvenil, Material De Consulta</a></li>
+                                                <li><a href="#">Infantil / Juvenil: Artículos De Escritorio Y Papelería Y Objetos Diversos</a></li>
+                                                <li><a href="#">Infantil / Juvenil: Cuestiones Personales Y Sociales</a></li>
+                                                <li><a href="#">Infantil/Juvenil: Anuarios, Antologías Y Poesía</a></li>
+                                                <li><a href="#">Infantil/Juvenil: Interés General</a></li>
+                                                <li><a href="#">Libros para niños: ilustrados, de actividades y de primeros conceptos de aprendizaje</a></li>
+                                                <li><a href="#">Material Educativo</a></li>
+                                                <li><a href="#">Otros</a></li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -160,10 +327,73 @@
                 </div>
             </div>
         </header>
-        <main></main>
+
+        <main>
+            <!-- slider -->
+            <div class="slider">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="myslider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./assets/slider/slider1.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Los mejores libros</h4>
+                                            <h2><span>Ven y encuentra</span><br>tu libro ideal</h2>
+                                            <a href="#" class="primary-button">Comprar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./assets/slider/slider0.jpg">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Tendencias</h4>
+                                            <h2><span>Consigue los libros</span><br>mas buscados</h2>
+                                            <a href="#" class="primary-button">Comprar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./assets/slider/slider3.jpg">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Pedidos</h4>
+                                            <h2><span>Te lo llevamos</span><br>directo a tu casa</h2>
+                                            <a href="#" class="primary-button">Comprar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./assets/slider/slider2.jpg">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Comunidad</h4>
+                                            <h2><span>Ayúdanos a</span><br>seguir creciendo</h2>
+                                            <a href="#" class="primary-button">Comprar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
         <footer></footer>
     </div>
-
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 </html>
