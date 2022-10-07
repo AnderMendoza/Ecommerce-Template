@@ -659,7 +659,7 @@ h4 {
 .brands .wrapper {
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 2em 0;
+    padding: 3em 0;
     margin-top: 1em;
 }
 .brands .item img {
@@ -674,29 +674,225 @@ h4 {
 /* ------------------
  * 04. PRODUCT BLOCK STYLE
  * ------------------ */ 
-
+.sectop {
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid var(--border-color);
+}
+.sectop h2 {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: var(--fw7);
+}
+.sectop h2 span:not(.circle) {
+    padding: 0 0 0 2em;
+}
+.sectop h2 .circle {
+    top: -5px;
+}
 
 
 
     /* 04. PRODUCT --------------------------
     *  a. Global product
     * ------------------ */
+.products .ofter {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.products .ofter p {
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+.products .ofter ul {
+    gap: 1em;
+}
+.products .ofter ul li {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    padding: 0.5em;
+    line-height: initial;
+    color: var(--secundary-dark-color);
+    background-color: var(--light-bg-color);
+    border-radius: 5px;
+}
+.products .ofter ul li:not(:last-child)::before {
+    content: ':';
+    position: absolute;
+    right: -0.6em;
+    color: var(--light-text-color);
+}
+.products :where(.image, .thumbnail) img {
+    transition: trasform .3s;
+}
+.products :where(.image, .thumbnail):hover img {
+    transform: scale(1.1);
+}
+.products .hoverable {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.products .hoverable li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0.25em;
+    margin: 0.25em;
+    border-radius: var(--percent50);
+    line-height: 1;
+    background-color: var(--white-color);
+    opacity: .8;
+    transition: var(--trans-background-color), opacity .3s;
+}
+.products .item:hover .hoverable li a {
+    opacity: 1;
+}
+.products .hoverable li a:hover {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+}
+.products .hoverable li.active a:hover {
+    background-color: var(--primary-color);
+}
+.products .hoverable li:not(.active) {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform .3s, opacity .2s;
+}
+.products .item:hover .hoverable li {
+    transform: translateX(0);
+    opacity: 1;
+}
+.products .hoverable li:last-child {
+    transition-delay: .1s;
+}
+.products .discount {
+    top: auto;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+.products .discount::before {
+    background-color: var(--dark-color);
+}
+.products .discount span {
+    position: relative;
+    font-size: var(--font-smaller);
+    font-weight: var(--fw5);
+    color: var(--white-color);
+}
 
+.products .content {
+    display: flex;
+    flex-direction: column;
+}
+.products:where(.big, .main.one) .content {
+    gap: 1em;
+    margin-top: 1.25em;
+}
+.products .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.products .rating .stars {
+    width: 80px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z' fill='rgba(241,196,14,1)'/%3E%3C/svg%3E");
+    background-position-y: top;
+    background-repeat-y: no-repeat;
+}
+.products h3 {
+    font-family: 'Rubik';
+    font-size: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.products h3 a:hover {
+    text-decoration: underline;
+}
+.products .price .current {
+    font-size: calc(1em + 1vw);
+    color: var(--primary-color);
+    margin-right: 0.25em;
+}
+.products .price .normal {
+    color: var(--light-text-color);
+    text-decoration: line-through;
+}
+.products .stock .qty {
+    display: flex;
+    justify-content: space-between;
+}
+.products .stock .bar {
+    height: 3px;
+    margin-top: 1em;
+    background-color: var(--border-color);
+    overflow: hidden;
+}
+.products .stock .available {
+    height: 3px;
+    width: 21%;
+    background-color: var(--secundary-color);
+}
 
+.products .item {
+    display: flex;
+    position: relative;
+}
+.products .stock-danger {
+    color: var(--primary-color);
+}
 
+.flexwrap .row {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 2em;
+}
 
 
     /* 04. PRODUCT --------------------------
     *  b. BIG product
     * ------------------ */
-
+.products.big .item {
+    flex-direction: column;
+    padding: 2.5em;
+    border: 2px solid var(--secundary-dark-color);
+    border-radius: 7px;
+    max-width: 460px;
+    margin: 0 auto;
+}
 
 
 
     /* 04. PRODUCT --------------------------
     *  C. MINI product
     * ------------------ */
-
+.products.mini .item {
+    margin-bottom: 2em;
+}
+.products.mini .media {
+    width: 130px;
+    height: 160px;
+    margin-right: 1.25em;
+}
+.products.mini .content {
+    margin: 0;
+    gap: 0.75em;
+}
+.products:where(.mini, .main) h3 {
+    font-weight: 400;
+}
 
 
 
@@ -905,7 +1101,14 @@ h4 {
 
 
 
-
+@media screen and (min-width: 768px) {
+    .products .price .current{
+        font-size: 1.25em; 
+    }
+    .products.mini {
+        flex: 0 0 50%;
+    }
+}
 
 
 
@@ -997,4 +1200,11 @@ h4 {
         display: block;
     }
 
+    /* trending books */
+    .trending .products {
+        flex: 0 0 33.3333%;
+    }
+    .products.big .media {
+        max-height: 373px;
+    }
 }
