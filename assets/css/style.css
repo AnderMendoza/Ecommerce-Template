@@ -975,13 +975,6 @@ h4 {
     /* 08. PAGE SINGLE --------------------------
     /* a. Category
     * ------------------ */
-    .ctg-trigger .ri-close-line,
-    .showctg .ctg-trigger .ri-menu-3-line{
-        display: none;
-    }
-    .showctg .ctg-trigger .ri-close-line {
-        display: block;
-    }
 
     
     
@@ -1193,12 +1186,6 @@ h4 {
         margin-left: auto;
     }
 
-    #page:not(.page-home) .ctg-menu {
-        display: none;
-    }
-    #page.showctg .ctg-menu {
-        display: block;
-    }
 
     /* trending books */
     .trending .products {
