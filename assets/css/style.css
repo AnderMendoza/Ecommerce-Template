@@ -958,7 +958,10 @@ h4 {
     /* 05. FOOTER --------------------------
     *  b. Widgets
     * ------------------ */
-
+.widgets {
+    padding: 3.5em 2.5em;
+    background-color: var(--light-bg-color);
+}
 
 
 
@@ -1134,7 +1137,8 @@ h4 {
     .products .price .current{
         font-size: 1.25em; 
     }
-    .products.mini {
+    .products.mini,
+    .widgets .row  {
         flex: 0 0 50%;
     }
     .products.main .item {
@@ -1234,7 +1238,8 @@ h4 {
         max-height: 373px;
     }
 
-    .products.main .item {
+    .products.main .item,
+    .widgets .row {
         flex: 0 0 25%;
     }
 
