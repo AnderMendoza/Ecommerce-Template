@@ -978,7 +978,35 @@ h4 {
     /* 05. FOOTER --------------------------
     *  c. Footer Info
     * ------------------ */
-
+.footer-info {
+    padding: 3.5em 0 5em;
+}
+.footer-info .wrapper .flexcol {
+    align-items: center;
+    gap: 0;
+}
+.footer-info ul li a {
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-bg-color);
+    border-radius: var(--percent50);
+    margin: 0.25em;
+    transition: var(--trans-background);
+}
+.footer-info ul li a:hover {
+    background-color: var(--border-color);
+}
+.footer-info .logo a {
+    margin: 0 0 1em -0.75em;
+}
+.footer-info .mini-text {
+    margin-top: 2em;
+    text-align: center;
+}
 
 
 
