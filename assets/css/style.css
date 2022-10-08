@@ -100,7 +100,7 @@ h4 {
  * REUSABLE SELECTOR
  * ------------------ */
 
- .container {
+.container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 0.938cm;
@@ -209,6 +209,16 @@ h4 {
 .mini-text {
     font-size: var(--font-smaller);
     color: var(--light-text-color);
+}
+
+.mini-links ul {
+    font-size: var(--font-small);
+    color: var(--light-text-color);
+    margin-top: 1em;
+    gap: 1em;
+}
+.mini-links li a:hover {
+    text-decoration: underline;
 }
 
 
