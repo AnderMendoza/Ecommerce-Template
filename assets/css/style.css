@@ -1014,7 +1014,7 @@ h4 {
  * 06. BOTTOM MENU
  * ------------------ */
 .menu-bottom {
-    position: inherit;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1064,6 +1064,13 @@ h4 {
     padding: 2.5em 0;
     background-color: var(--secundary-dark-color);
     z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    will-change: visibility, opacity;
+}
+.showsearch .search-bottom {
+    visibility: inherit;
+    opacity: 1;
 }
 .search-bottom .t-close {
     position: absolute;
