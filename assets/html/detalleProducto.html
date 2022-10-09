@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/page_of_product_style.css">
+    <link rel="stylesheet" href="../css/detalleProducto.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -23,8 +24,8 @@
                             <div class="logo"><a href="./index.html"><span class="circle"></span>.Stose</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="./index.html">Inicio</a></li>
-                                    <li><a href="./assets/html/tienda.html">Libros</a></li>
+                                    <li><a href="/index.html">Inicio</a></li>
+                                    <li><a href="/assets/html/tienda.html">Libros</a></li>
                                     <li><a href="#">Conócenos</a></li>
                                 </ul>
                             </nav>
@@ -32,27 +33,27 @@
                         <div class="right">
                             <ul class="flexitem second-links">
                                 <li class="mobile-hide"><a href="#">
-                                    <div class="icon-large"><i class="ri-heart-line"></i></div>
-                                    <div class="fly-item"><span class="item-number">0</span></div>
-                                </a></li>
-                                <li><a href="#" class="iscart">
-                                    <div class="icon-large">
-                                        <i class="ri-shopping-cart-line"></i>
+                                        <div class="icon-large"><i class="ri-heart-line"></i></div>
                                         <div class="fly-item"><span class="item-number">0</span></div>
-                                    </div>
-                                    <div class="icon-text">
-                                        <div class="mini-text">Total</div>
-                                        <div class="cart-total">$0.00</div>
-                                    </div>
-                                </a></li>
+                                    </a></li>
+                                <li><a href="#" class="iscart">
+                                        <div class="icon-large">
+                                            <i class="ri-shopping-cart-line"></i>
+                                            <div class="fly-item"><span class="item-number">0</span></div>
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="mini-text">Total</div>
+                                            <div class="cart-total">$0.00</div>
+                                        </div>
+                                    </a></li>
                                 <div class="login-text">
                                     <a href="#">Inicia Sesión</a>
                                 </div>
                                 <button class="cta">
                                     <span>Registrate</span>
                                     <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                      <path d="M1,5 L11,5"></path>
-                                      <polyline points="8 1 12 5 8 9"></polyline>
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
                                     </svg>
                                 </button>
                             </ul>
@@ -195,12 +196,76 @@
                                 </div>
                     </div>
                 </div>
+                <div class="product-button">
+                    <h1>Cantidad</h1>
+                    <div class="card">
+                        <button class="decrement-increment" onclick="decrement()">-</button>
+                        <h2 id="root"></h2>
+                        <button class="decrement-increment" onclick="increment()">+</button>
+                    </div>
+
+                    <a href="#" class="add-button">Añadir al carrito</a>
+
+                    <div class="like-button">
+                        <span class="heart"></span>
+                        <span class="like">Me gusta</span>
+                    </div>
+                </div>
+                <div class="report-collapse">
+                    <section>
+                        <button class="btn-expandir">Información</button>
+                        <p class="texto_expandir">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit qui
+                            quisquam minima nam officiis, fugit, inventore dolores culpa labore eos optio enim
+                            aliquam corporis nulla, corrupti error ex adipisci! Enim?</p>
+                    </section>
+                    <section>
+                        <button class="btn-expandir">Detalles</button>
+                        <p class="texto_expandir">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit qui
+                            quisquam minima nam officiis, fugit, inventore dolores culpa labore eos optio enim
+                            aliquam corporis nulla, corrupti error ex adipisci! Enim?</p>
+                    </section>
+                    <section>
+                        <button class="btn-expandir">Comentarios</button>
+                        <p class="texto_expandir">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit qui
+                            quisquam minima nam officiis, fugit, inventore dolores culpa labore eos optio enim
+                            aliquam corporis nulla, corrupti error ex adipisci! Enim?</p>
+                    </section>
+                </div>
+                <div class="related-books">
+                    <ul id="related-books-list">
+                        <li>
+                            <a class="caption" href="#">Libros relacionados</a>
+                        </li>
+                        <li><a class="more" href="#">Ver más</a></li>
+                    </ul>
+                    <hr>
+                    <br>
+                    <section class="products-list">
+                        <div class="product-item" category="Autor1" category2="2019" category3="Editorial1">
+                            <img src="../images/ejemplo.png" alt="">
+                            <a href="#">Libro 1</a>
+                        </div>
+                        <div class="product-item" category="Autor2" category2="2022" category3="Editorial3">
+                            <img src="../images/ejemplo.png" alt="">
+                            <a href="#">Libro 2</a>
+                        </div>
+                        <div class="product-item" category="Autor3" category2="2020" category3="Editorial2">
+                            <img src="../images/ejemplo.png" alt="">
+                            <a href="#">Libro 3</a>
+                        </div>
+                        <div class="product-item" category="Autor4" category2="2016" category3="Editorial4">
+                            <img src="../images/ejemplo.png" alt="">
+                            <a href="#">Libro 4</a>
+                        </div>
+                    </section>
+                </div>
             </div>
         </main>
         <footer></footer>
     </div>
 
-    <script src="../js/page_of_product.js"></script>
+    <script src="../js/detalleProducto.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
