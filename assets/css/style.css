@@ -317,8 +317,6 @@ h4 {
     }
     :where(.header-top, .thetop-nav).right ul ul li a {
         padding: 0.25em 1em;
-    }
-    :where(.header-top, .thetop-nav) .right ul ul li.current a {
         background-color: var(--border-color);
     }
     .header-top li:hover ul {
@@ -925,7 +923,7 @@ h4 {
 .products.main .item {
     flex-direction: column;
     flex: 0 0 100%;
-    padding: 0 0.938em;
+    padding: 0 1.4em;
     padding-bottom: 2em;
 }
 .products.main .media {
