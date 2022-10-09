@@ -1057,10 +1057,22 @@ h4 {
     /* 06. BOTTOM MENU --------------------------
     *  a. Search
     * ------------------ */
-
-
-
-
+.search-bottom {
+    position: fixed;
+    bottom: 60px;
+    width: var(--percent100);
+    padding: 2.5em 0;
+    background-color: var(--secundary-dark-color);
+    z-index: 1000;
+}
+.search-bottom .t-close {
+    position: absolute;
+    top: -54px;
+    right: 0;
+}
+.search-bottom .t-close:hover {
+    background-color: var(--primary-color);
+}
 
 
 
