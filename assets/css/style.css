@@ -100,7 +100,7 @@ h4 {
  * REUSABLE SELECTOR
  * ------------------ */
 
- .container {
+.container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 0.938cm;
@@ -209,6 +209,16 @@ h4 {
 .mini-text {
     font-size: var(--font-smaller);
     color: var(--light-text-color);
+}
+
+.mini-links ul {
+    font-size: var(--font-small);
+    color: var(--light-text-color);
+    margin-top: 1em;
+    gap: 1em;
+}
+.mini-links li a:hover {
+    text-decoration: underline;
 }
 
 
@@ -958,31 +968,118 @@ h4 {
     /* 05. FOOTER --------------------------
     *  b. Widgets
     * ------------------ */
-
+.widgets {
+    padding: 3.5em 2.5em;
+    background-color: var(--light-bg-color);
+}
 
 
 
     /* 05. FOOTER --------------------------
     *  c. Footer Info
     * ------------------ */
-
+.footer-info {
+    padding: 3.5em 0 5em;
+}
+.footer-info .wrapper .flexcol {
+    align-items: center;
+    gap: 0;
+}
+.footer-info ul li a {
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-bg-color);
+    border-radius: var(--percent50);
+    margin: 0.25em;
+    transition: var(--trans-background);
+}
+.footer-info ul li a:hover {
+    background-color: var(--border-color);
+}
+.footer-info .logo a {
+    margin: 0 0 1em -0.75em;
+}
+.footer-info .mini-text {
+    margin-top: 2em;
+    text-align: center;
+}
 
 
 
 /* ------------------
  * 06. BOTTOM MENU
  * ------------------ */
-
+.menu-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: var(--white-color);
+    box-shadow: 0 -2px 10px rgba(0 0 0 / 10%);
+    z-index: 900;
+}
+.menu-bottom nav li {
+    flex: 1;
+}
+.menu-bottom nav li a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 0;
+    color: var(--light-text-color);
+    transition: var(--trans-color);
+}
+.menu-bottom nav li a:hover {
+    color: var(--dark-color);
+}
+.menu-bottom nav li a span {
+    font-size: var(--font-smaller);
+}
+.menu-bottom nav li a i {
+    font-size: 1.25em;
+}
+.menu-bottom .fly-item {
+    right: 50%;
+    width: 16px;
+    border-radius: var(--percent50);
+    margin-right: -20px;
+    background-color: var(--secundary-dark-color);
+}
 
 
 
     /* 06. BOTTOM MENU --------------------------
     *  a. Search
     * ------------------ */
-
-
-
-
+.search-bottom {
+    position: fixed;
+    bottom: 60px;
+    width: var(--percent100);
+    padding: 2.5em 0;
+    background-color: var(--secundary-dark-color);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    will-change: visibility, opacity;
+}
+.showsearch .search-bottom {
+    visibility: inherit;
+    opacity: 1;
+}
+.search-bottom .t-close {
+    position: absolute;
+    top: -54px;
+    right: 0;
+}
+.search-bottom .t-close:hover {
+    background-color: var(--primary-color);
+}
 
 
 
@@ -1134,7 +1231,8 @@ h4 {
     .products .price .current{
         font-size: 1.25em; 
     }
-    .products.mini {
+    .products.mini,
+    .widgets .row  {
         flex: 0 0 50%;
     }
     .products.main .item {
@@ -1234,7 +1332,8 @@ h4 {
         max-height: 373px;
     }
 
-    .products.main .item {
+    .products.main .item,
+    .widgets .row {
         flex: 0 0 25%;
     }
 
