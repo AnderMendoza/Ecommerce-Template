@@ -43,3 +43,10 @@ botones.forEach((elemento, clave) => {
         textos_expandir[clave].classList.toggle("open_close")
     })
 });
+
+// show ctg menu
+const ctgButton = document.querySelector('.ctg-cat .ctg-trigger'),
+      ctgClass = document.querySelector('.site');
+ctgButton.addEventListener('click', function() {
+    ctgClass.classList.toggle('showctg')
+})
