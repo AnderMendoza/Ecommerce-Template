@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
+    <title>.Stose | Revisión de Pedido</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/detalleProducto.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/filtro.css">
-    <link rel="stylesheet" href="../css/filtro2.css">
-    <link rel="stylesheet" href="../css/rango_precio.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -25,8 +24,8 @@
                             <div class="logo"><a href="./index.html"><span class="circle"></span>.Stose</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="./index.html">Inicio</a></li>
-                                    <li><a href="./assets/html/tienda.html">Libros</a></li>
+                                    <li><a href="/index.html">Inicio</a></li>
+                                    <li><a href="/assets/html/tienda.html">Libros</a></li>
                                     <li><a href="#">Conócenos</a></li>
                                 </ul>
                             </nav>
@@ -164,117 +163,83 @@
                     </div>
                 </div>
             </div>
-
-            <!-- fin del cabezal -->
-
-            <!-- categorias -->
-            <h5 id="ruta">RUTA (inicio/Categoria/Libro)</h5>
-            <div class="wrap">
-                <h1>Libros</h1>
-                <h4 class="descri">Visita nuestra librería para encontrar los mejores libros en español para adultos,
-                    jóvenes y niños</h4>
-                <br>
-                <select name="" id="menu_desple">
-                    <option value="">Ordenar por Defecto</option>
-                    <option value="">Ordenar por Autor</option>
-                    <option value="">Ordenar por precio</option>
-                    <option value="">Ordenar por Año de Edicion</option>
-                    <option value="">Ordenar por Editorial</option>
-                </select>
-                <p id="menu_text">Articulo 10 de 20</p>
-                <select name="" id="menu_desple2">
-                    <option value="">Mostrar 10 por pagina</option>
-                    <option value="">Mostrar 20 por pagina</option>
-                    <option value="">Mostrar 30 por pagina</option>
-                    <option value="">Mostrar 40 por pagina</option>
-                    <option value="">Mostrar 50 por pagina</option>
-                </select>
-                <br>
-                <br>
-                <div class="store-wrapper">
-                    <div class="category_list">
-                        <a href="#" class="category_item" category="all">todos</a>
-                        <div id="header">
-                            <ul class="nav">
-                                <li><a href="#">Autores</a>
-                                    <ul>
-                                        <li><a href="#" class="category_item" category="Autor1">Autor 1</a></li>
-                                        <li><a href="#" class="category_item" category="Autor2">Autor 2</a></li>
-                                        <li><a href="#" class="category_item" category="Autor3">Autor 3</a></li>
-                                        <li><a href="#" class="category_item" category="Autor4">Autor 4</a></li>
-                                        <li><a href="#" class="category_item" category="Autor5">Autor 5</a></li>
-                                        <li><a href="#" class="category_item" category="Autor6">Autor 6</a></li>
-                                        <li><a href="#" class="category_item" category="Autor7">Autor 7</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+        </header>
+        <main>
+            <div class="main">
+                <div class="bread-crumbs">
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="#">Categorías</a></li>
+                        <li><a href="#">Libro</a></li>
+                    </ul>
+                </div>
+                <div class="product-detail">
+                    <div class="product">
+                        <div class="img_container">
+                            <img src="../images/romeo_y_julieta_libro_1.jpg" class="main_img">
                         </div>
-                        <br>
-                        <div id="header">
-                            <ul class="nav">
-                                <li><a href="#">Año de Edicion</a>
-                                    <ul>
-                                        <li><a href="#" class="category_item" category2="2022">2022</a></li>
-                                        <li><a href="#" class="category_item" category2="2021">2021</a></li>
-                                        <li><a href="#" class="category_item" category2="2020">2020</a></li>
-                                        <li><a href="#" class="category_item" category2="2019">2019</a></li>
-                                        <li><a href="#" class="category_item" category2="2018">2018</a></li>
-                                        <li><a href="#" class="category_item" category2="2017">2017</a></li>
-                                        <li><a href="#" class="category_item" category2="2016">2016</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <div class="thumbnail_container">
+                            <img class="thumbnail active" src="../images/romeo_y_julieta_libro_1.jpg">
+                            <img class="thumbnail" src="../images/romeo_y_julieta_libro_2.jpg">
+                            <img class="thumbnail" src="../images/romeo_y_julieta_libro_3.jpg">
+                            <img class="thumbnail" src="../images/romeo_y_julieta_libro_4.jpg">
                         </div>
-                        <br>
-                        <div id="header">
-                            <ul class="nav">
-                                <li><a href="#">Editorial</a>
-                                    <ul>
-                                        <li><a href="#" class="category_item" category3="Editorial1">Editorial 1</a>
-                                        </li>
-                                        <li><a href="#" class="category_item" category3="Editorial2">Editorial 2</a>
-                                        </li>
-                                        <li><a href="#" class="category_item" category3="Editorial3">Editorial 3</a>
-                                        </li>
-                                        <li><a href="#" class="category_item" category3="Editorial4">Editorial 4</a>
-                                        </li>
-                                        <li><a href="#" class="category_item" category3="Editorial5">Editorial 5</a>
-                                        </li>
-                                        <li><a href="#" class="category_item" category3="Editorial6">Editorial 6</a>
-                                        </li>
-                                        <li><a href="#" class="category_item" category3="Editorial7">Editorial 7</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- rango de precio -->
-                        <div class="wrapper2">
-                            <header class="header_rango">
-                                <h2>Rango de Precio</h2>
-                                <p>Utilice el control deslizante o introduzca el precio mínimo y máximo</p>
-                            </header class="header_rango">
-                            <div class="price-input">
-                                <div class="field">
-                                    <span>Min</span>
-                                    <input type="number" class="input-min" value="2500">
-                                </div>
-                                <div class="separator">-</div>
-                                <div class="field">
-                                    <span>Max</span>
-                                    <input type="number" class="input-max" value="7500">
-                                </div>
-                            </div>
-                            <div class="slider">
-                                <div class="progress"></div>
-                            </div>
-                            <div class="range-input">
-                                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                            </div>
-                        </div>
-                        <!-- fin rango de precio -->
                     </div>
+                    <div class="description">
+                        <h1>Descripción<h1>
+                                <div class="text-description">
+                                    <p>Lorem ipsum dolor sit amet. Ut perferendis assumenda sit voluptatem provident est
+                                        eveniet blanditiis ut architecto voluptatem aut dolor rerum. Qui voluptatum
+                                        voluptatem et assumenda voluptatem et illum deleniti sit magni iste et
+                                        voluptatum possimus qui incidunt fugiat. Cum mollitia esse sed debitis magnam
+                                        non tenetur ullam est soluta molestiae. </p>
+                                </div>
+                    </div>
+                </div>
+                <div class="product-button">
+                    <h1>Cantidad</h1>
+                    <div class="card">
+                        <button class="decrement-increment" onclick="decrement()">-</button>
+                        <h2 id="root"></h2>
+                        <button class="decrement-increment" onclick="increment()">+</button>
+                    </div>
+
+                    <a href="#" class="add-button">Añadir al carrito</a>
+
+                    <div class="like-button">
+                        <span class="heart"></span>
+                        <span class="like">Me gusta</span>
+                    </div>
+                </div>
+                <div class="report-collapse">
+                    <section>
+                        <button class="btn-expandir">Información</button>
+                        <p class="texto_expandir">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit qui
+                            quisquam minima nam officiis, fugit, inventore dolores culpa labore eos optio enim
+                            aliquam corporis nulla, corrupti error ex adipisci! Enim?</p>
+                    </section>
+                    <section>
+                        <button class="btn-expandir">Detalles</button>
+                        <p class="texto_expandir">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit qui
+                            quisquam minima nam officiis, fugit, inventore dolores culpa labore eos optio enim
+                            aliquam corporis nulla, corrupti error ex adipisci! Enim?</p>
+                    </section>
+                    <section>
+                        <button class="btn-expandir">Comentarios</button>
+                        <p class="texto_expandir">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit qui
+                            quisquam minima nam officiis, fugit, inventore dolores culpa labore eos optio enim
+                            aliquam corporis nulla, corrupti error ex adipisci! Enim?</p>
+                    </section>
+                </div>
+                <div class="related-books">
+                    <ul id="related-books-list">
+                        <li>
+                            <a class="caption" href="#">Libros relacionados</a>
+                        </li>
+                        <li><a class="more" href="#">Ver más</a></li>
+                    </ul>
+                    <hr>
+                    <br>
                     <section class="products-list">
                         <div class="product-item" category="Autor1" category2="2019" category3="Editorial1">
                             <img src="../images/ejemplo.png" alt="">
@@ -292,36 +257,15 @@
                             <img src="../images/ejemplo.png" alt="">
                             <a href="#">Libro 4</a>
                         </div>
-                        <div class="product-item" category="Autor5" category2="2017" category3="Editorial5">
-                            <img src="../images/ejemplo.png" alt="">
-                            <a href="#">Libro 5</a>
-                        </div>
-                        <div class="product-item" category="Autor6" category2="2019" category3="Editorial6">
-                            <img src="../images/ejemplo.png" alt="">
-                            <a href="#">Libro 6</a>
-                        </div>
-                        <div class="product-item" category="Autor7" category2="2018" category3="Editorial7">
-                            <img src="../images/ejemplo.png" alt="">
-                            <a href="#">Libro 7</a>
-                        </div>
-                        <div class="product-item" category="Autor1" category2="2021" category3="Editorial1">
-                            <img src="../images/ejemplo.png" alt="">
-                            <a href="#">Libro 8</a>
-                        </div>
                     </section>
                 </div>
             </div>
+        </main>
+        <footer></footer>
+    </div>
 
-
-
-
-
-
-            <script src="../js/jquery.min.js"></script>
-            <script src="../js/filtro.js"></script>
-            <script src="../js/rango_precio.js"></script>
-            <script src="/script.js"></script>
-
+    <script src="../js/detalleProducto.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
