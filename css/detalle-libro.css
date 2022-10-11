@@ -1115,7 +1115,15 @@ h4 {
 
     /* 08. PAGE SINGLE --------------------------
     /* a. Category
-    * ------------------ */  
+    * ------------------ */
+.ctg-trigger .ri-close-line,
+.showctg .ctg-trigger .ri-menu-3-line {
+    display: none;
+}
+.showctg .ctg-trigger .ri-close-line {
+    display: block;
+}
+    
     
     
     
@@ -1352,5 +1360,13 @@ h4 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    /* page single */
+    #page:not(.page-home) .ctg-menu {
+        display: none;
+    }
+    #page.showctg .ctg-menu {
+        display: block;
     }
 }
