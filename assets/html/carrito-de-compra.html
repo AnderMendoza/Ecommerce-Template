@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tabla-carrito.css">
+</head>
+<body>
+    <aside class="site-off desktop-hide">
+        <div class="off-canvas">
+            <div class="canvas-head flexitem">
+                <div class="logo"><a href="./index.html"><span class="circle"></span>.Stose</a></div>
+                <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+            </div>
+            <div class="categories"></div>
+            <nav></nav>
+            <div class="thetop-nav"></div>
+        </div>
+    </aside>
+
+    <header>
+        <!-- header top -->
+        <div class="header-top mobile-hide">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    <div class="left">
+                        <ul class="flexitem main-links">
+                            <li class="links">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Productos Destacados</a></li>
+                                <li><a href="#">Lista de deseos</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul class="flexitem main-links">
+                            <li><a href="#">Registrate</a></li>
+                            <li><a href="#">Mi Cuenta</a></li>
+                            <li><a href="#">Revision de Pedidos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header-nav -->
+        <div class="header-nav">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                    <div class="left flexitem">
+                        <div class="logo"><a href="./index.html"><span class="circle"></span>.Stose</a></div>
+                        <nav class="mobile-hide">
+                            <ul class="flexitem second-links">
+                                <li><a href="./index.html">Inicio</a></li>
+                                <li><a href="./assets/html/tienda.html">Tienda</a></li>
+                                <li><a href="#">Costos de envío</a></li>
+                                <li><a href="#">Nosotros</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right">
+                        <ul class="flexitem second-links">
+                            <li class="mobile-hide"><a href="#">
+                                <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                <div class="fly-item"><span class="item-number">0</span></div>
+                            </a></li>
+                            <li><a href="#" class="iscart">
+                                <div class="icon-large">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <div class="fly-item"><span class="item-number">0</span></div>
+                                </div>
+                                <div class="icon-text">
+                                    <div class="mini-text">Total</div>
+                                    <div class="cart-total">$0.00</div>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- tabla de carrito -->
+    <h1>Carrito de Compra</h1>
+    <div class="shadow p-3 mb-5 bg-body rounded" id="tabla">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Articulo</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Subtotal</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><img src="https://i.postimg.cc/ZKCjKspd/pc-specialist-fusion-311-383569564.jpg" class="img-thumbnail" alt="..."></td>
+                <td>una descripcion</td>
+                <td>$200</td>
+                <td>
+                    <!-- contador -->
+                    <div class="form-group text-white">
+                        <label for="clicks">Conteo</label>
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-primary" onClick="clickME()" id="bote">+</button>
+                            </div>
+                            <div class="col-auto">
+                                <input type="text" value="0" class="form-control" id="clicks" name="clicks" minlength="1" maxlength="3000" required>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-danger" onClick="clickME2()" id="boty">-</button>
+                            </div>
+                        </form>
+                    </div>
+                </td>
+                <td>$0.00</td>
+                <td><button type="button" class="btn btn-danger">x</button></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">2</th>
+                <td><img src="https://i.postimg.cc/sXBjrj81/th-590455490.jpg" class="img-thumbnail" alt="..."></td>
+                <td>una descripcion</td>
+                <td>$20</td>
+                <td>
+                    <div class="form-group text-white">
+                        <label for="clicks">Conteo</label>
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-primary" onClick="clickME()" id="bote">+</button>
+                            </div>
+                            <div class="col-auto">
+                                <input type="text" value="0" class="form-control" id="clicks" name="clicks" minlength="1" maxlength="3000" required>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-danger" onClick="clickME2()" id="boty">-</button>
+                            </div>
+                        </form>
+                    </div>
+                </td>
+                <td>$0.00</td>
+                <td><button type="button" class="btn btn-danger">x</button></td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td><img src="https://i.postimg.cc/50ZxNcdg/razer-rz01-02010100-r3u1-deathadder-elite-gaming-mouse-1322067-1244124931.jpg" class="img-thumbnail" alt="..."></td>
+                <td>una descripcion</td>
+                <td>$35</td>
+                <td>
+                    <div class="form-group text-white">
+                        <label for="clicks">Conteo</label>
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-primary" onClick="clickME()" id="bote">+</button>
+                            </div>
+                            <div class="col-auto">
+                                <input type="text" value="0" class="form-control" id="clicks" name="clicks" minlength="1" maxlength="3000" required>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-danger" onClick="clickME2()" id="boty">-</button>
+                            </div>
+                        </form>
+                    </div>
+                </td>
+                <td>$0.00</td>
+                <td><button type="button" class="btn btn-danger">x</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+      
+    
+
+    <script src="../js/contador.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
