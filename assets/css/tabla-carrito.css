@@ -1,5 +1,7 @@
 #tabla{
     width: 60%;
+    right: 35%;
+    position:absolute;
 }
 
 #clicks{
@@ -9,4 +11,28 @@
 #boty{
     position:absolute;
     right: 40%;
+}
+
+.cupon1{
+    position:absolute;
+    left: 67%;
+    width: 23%;
+    top: 39%;
+}
+
+.envioImpuesto{
+    position: absolute;
+    right: 11%;
+    top: 54%;
+    width: 23%;
+}
+
+.ruta{
+    position:relative;
+    left: 5%;
+}
+
+#text{
+    position: relative;
+    left: 5%;
 }

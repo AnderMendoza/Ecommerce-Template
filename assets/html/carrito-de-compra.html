@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/tabla-carrito.css">
 </head>
+
 <body>
     <aside class="site-off desktop-hide">
         <div class="off-canvas">
@@ -32,9 +34,9 @@
                     <div class="left">
                         <ul class="flexitem main-links">
                             <li class="links">
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Productos Destacados</a></li>
-                                <li><a href="#">Lista de deseos</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Productos Destacados</a></li>
+                            <li><a href="#">Lista de deseos</a></li>
                             </li>
                         </ul>
                     </div>
@@ -68,124 +70,200 @@
                     <div class="right">
                         <ul class="flexitem second-links">
                             <li class="mobile-hide"><a href="#">
-                                <div class="icon-large"><i class="ri-heart-line"></i></div>
-                                <div class="fly-item"><span class="item-number">0</span></div>
-                            </a></li>
-                            <li><a href="#" class="iscart">
-                                <div class="icon-large">
-                                    <i class="ri-shopping-cart-line"></i>
+                                    <div class="icon-large"><i class="ri-heart-line"></i></div>
                                     <div class="fly-item"><span class="item-number">0</span></div>
-                                </div>
-                                <div class="icon-text">
-                                    <div class="mini-text">Total</div>
-                                    <div class="cart-total">$0.00</div>
-                                </div>
-                            </a></li>
+                                </a></li>
+                            <li><a href="#" class="iscart">
+                                    <div class="icon-large">
+                                        <i class="ri-shopping-cart-line"></i>
+                                        <div class="fly-item"><span class="item-number">0</span></div>
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="mini-text">Total</div>
+                                        <div class="cart-total">$0.00</div>
+                                    </div>
+                                </a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-    <!-- tabla de carrito -->
-    <h1>Carrito de Compra</h1>
-    <div class="shadow p-3 mb-5 bg-body rounded" id="tabla">
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Articulo</th>
-                <th scope="col">Descripcion</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Subtotal</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td><img src="https://i.postimg.cc/ZKCjKspd/pc-specialist-fusion-311-383569564.jpg" class="img-thumbnail" alt="..."></td>
-                <td>una descripcion</td>
-                <td>$200</td>
-                <td>
-                    <!-- contador -->
-                    <div class="form-group text-white">
-                        <label for="clicks">Conteo</label>
-                        <form class="row g-3">
-                            <div class="col-auto">
-                                <button type="button" class="btn btn-primary" onClick="clickME()" id="bote">+</button>
-                            </div>
-                            <div class="col-auto">
-                                <input type="text" value="0" class="form-control" id="clicks" name="clicks" minlength="1" maxlength="3000" required>
-                            </div>
-                            <div class="col-auto">
-                                <button type="button" class="btn btn-danger" onClick="clickME2()" id="boty">-</button>
-                            </div>
-                        </form>
-                    </div>
-                </td>
-                <td>$0.00</td>
-                <td><button type="button" class="btn btn-danger">x</button></td>
-              </tr>
-              
-              <tr>
-                <th scope="row">2</th>
-                <td><img src="https://i.postimg.cc/sXBjrj81/th-590455490.jpg" class="img-thumbnail" alt="..."></td>
-                <td>una descripcion</td>
-                <td>$20</td>
-                <td>
-                    <div class="form-group text-white">
-                        <label for="clicks">Conteo</label>
-                        <form class="row g-3">
-                            <div class="col-auto">
-                                <button type="button" class="btn btn-primary" onClick="clickME()" id="bote">+</button>
-                            </div>
-                            <div class="col-auto">
-                                <input type="text" value="0" class="form-control" id="clicks" name="clicks" minlength="1" maxlength="3000" required>
-                            </div>
-                            <div class="col-auto">
-                                <button type="button" class="btn btn-danger" onClick="clickME2()" id="boty">-</button>
-                            </div>
-                        </form>
-                    </div>
-                </td>
-                <td>$0.00</td>
-                <td><button type="button" class="btn btn-danger">x</button></td>
-              </tr>
+        <!-- ruta -->
+        <div class="ruta">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Carrito</li>
+                </ol>
+            </nav>
+        </div>
 
-              <tr>
-                <th scope="row">3</th>
-                <td><img src="https://i.postimg.cc/50ZxNcdg/razer-rz01-02010100-r3u1-deathadder-elite-gaming-mouse-1322067-1244124931.jpg" class="img-thumbnail" alt="..."></td>
-                <td>una descripcion</td>
-                <td>$35</td>
-                <td>
-                    <div class="form-group text-white">
-                        <label for="clicks">Conteo</label>
-                        <form class="row g-3">
-                            <div class="col-auto">
-                                <button type="button" class="btn btn-primary" onClick="clickME()" id="bote">+</button>
-                            </div>
-                            <div class="col-auto">
-                                <input type="text" value="0" class="form-control" id="clicks" name="clicks" minlength="1" maxlength="3000" required>
-                            </div>
-                            <div class="col-auto">
-                                <button type="button" class="btn btn-danger" onClick="clickME2()" id="boty">-</button>
-                            </div>
-                        </form>
-                    </div>
-                </td>
-                <td>$0.00</td>
-                <td><button type="button" class="btn btn-danger">x</button></td>
-              </tr>
-            </tbody>
-          </table>
-    </div>
-    
-      
-    
 
-    <script src="../js/contador.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- tabla de carrito -->
+            <h1 id="text">Carrito de Compra</h1><br>
+            <div class="shadow p-3 mb-5 bg-body rounded" id="tabla">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Articulo</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><img src="https://i.postimg.cc/ZKCjKspd/pc-specialist-fusion-311-383569564.jpg"
+                                    class="img-thumbnail" alt="..."></td>
+                            <td>una descripcion</td>
+                            <td>$200</td>
+                            <td>
+                                <!-- contador -->
+                                <div class="form-group text-white">
+                                    <label for="clicks">Conteo</label>
+                                    <form class="row g-3">
+                                        <div class="col-auto">
+                                            <button type="button" class="btn btn-primary" onClick="clickME()"
+                                                id="bote">+</button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="text" value="0" class="form-control" id="clicks" name="clicks"
+                                                minlength="1" maxlength="3000" required>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button type="button" class="btn btn-danger" onClick="clickME2()"
+                                                id="boty">-</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </td>
+                            <td>$0.00</td>
+                            <td><button type="button" class="btn btn-outline-danger">x</button></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td><img src="https://i.postimg.cc/sXBjrj81/th-590455490.jpg" class="img-thumbnail"
+                                    alt="...">
+                            </td>
+                            <td>una descripcion</td>
+                            <td>$20</td>
+                            <td>
+                                <div class="form-group text-white">
+                                    <label for="clicks">Conteo</label>
+                                    <form class="row g-3">
+                                        <div class="col-auto">
+                                            <button type="button" class="btn btn-primary" onClick="clickME()"
+                                                id="bote">+</button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="text" value="0" class="form-control" id="clicks" name="clicks"
+                                                minlength="1" maxlength="3000" required>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button type="button" class="btn btn-danger" onClick="clickME2()"
+                                                id="boty">-</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </td>
+                            <td>$0.00</td>
+                            <td><button type="button" class="btn btn-outline-danger">x</button></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td><img src="https://i.postimg.cc/50ZxNcdg/razer-rz01-02010100-r3u1-deathadder-elite-gaming-mouse-1322067-1244124931.jpg"
+                                    class="img-thumbnail" alt="..."></td>
+                            <td>una descripcion</td>
+                            <td>$35</td>
+                            <td>
+                                <div class="form-group text-white">
+                                    <label for="clicks">Conteo</label>
+                                    <form class="row g-3">
+                                        <div class="col-auto">
+                                            <button type="button" class="btn btn-primary" onClick="clickME()"
+                                                id="bote">+</button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="text" value="0" class="form-control" id="clicks" name="clicks"
+                                                minlength="1" maxlength="3000" required>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button type="button" class="btn btn-danger" onClick="clickME2()"
+                                                id="boty">-</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </td>
+                            <td>$0.00</td>
+                            <td><button type="button" class="btn btn btn-outline-danger">x</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- formulario de cupon -->
+            <form class="row g-3 shadow p-3 mb-5 bg-body rounded cupon1">
+                <div class="col-auto">
+                    <label for="formCupon" class="visually-hidden">Cupon</label>
+                    <input type="text" class="form-control" id="formCupon" placeholder="Ingresar Cupon">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">Aplicar</button>
+                </div>
+            </form>
+
+            <!-- Envio e impuesto estimado -->
+            <div>
+                <form class="row g-3 envioImpuesto shadow p-3 mb-5 bg-body rounded">
+                    <h4>Envio e Impuesto estimado</h4>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Distrito/Provincia</option>
+                        <option value="1">Comas</option>
+                        <option value="2">El Agustino</option>
+                        <option value="3">San Juan de Lurigancho</option>
+                    </select>
+                    <br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Zip/Codigo Postal</option>
+                        <option value="1">15401</option>
+                        <option value="2">15003</option>
+                        <option value="3">12220</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="d-flex justify-content-between">
+                        <p>SubTotal</p>
+                        <p>$0.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Descuento</p>
+                        <p>$0.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Envio</p>
+                        <p>$0.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Total</p>
+                        <h3>$0.00</h3>
+                    </div>
+                    <button type="button" class="btn btn-outline-success">Verificar</button>
+                </form>
+            </div>
+
+
+
+        <script src="../js/contador.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
