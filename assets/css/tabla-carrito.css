@@ -16,15 +16,16 @@
 
 /* cuadro de cupones */
 .cupon1{
-    position:absolute;
+    position:relative;
     left: 67%;
     width: 23%;
     top: 39%;
+    min-width: 250px;
 }
 
 .envioImpuesto{
-    position: absolute;
-    right: 11%;
+    position:relative;
+    left: 67%;
     top: 54%;
     width: 23%;
 }
@@ -38,4 +39,37 @@
 #text{
     position: relative;
     left: 5%;
+}
+
+@media screen and (max-width:500px) {
+    #tabla{
+        min-width: 400px;
+        right: -100px;
+        width: 520px;
+    }
+
+    .cupon1{
+        min-width: 500px;
+        bottom: -570px;
+        left: 27px;
+    }
+
+    .envioImpuesto{
+        min-width: 400px;
+        bottom: -550px;
+        left: 30px;
+    }
+
+    .newsletter{
+        position: relative;
+        bottom: -550px;
+    }
+    .categoria{
+        position:absolute;
+        bottom: -2150px;
+    }
+    .footer-info{
+        position: relative;
+        bottom: -1650px;
+    }
 }
