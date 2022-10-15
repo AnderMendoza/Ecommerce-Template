@@ -707,7 +707,7 @@ h4 {
     top: -5px;
 }
 
-
+ 
 
     /* 04. PRODUCT --------------------------
     *  a. Global product
@@ -827,7 +827,7 @@ h4 {
 
 /* to set width of stars */
 .products .item:where(:nth-child(3), :nth-child(3)) .stars {
-    width: 80px;
+    width: 64px;
 }
 .products h3 {
     font-family: 'Rubik';
@@ -1106,11 +1106,387 @@ h4 {
 
 
 /* ------------------
+ * 08. PAGE SINGLE
+ * ------------------ */
+
+
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    /* a. Category
+    * ------------------ */
+.ctg-trigger .ri-close-line,
+.showctg .ctg-trigger .ri-menu-3-line {
+    display: none;
+}
+.showctg .ctg-trigger .ri-close-line {
+    display: block;
+}
+    
+    
+    
+    
+    /* 08. PAGE SINGLE --------------------------
+    *  b. Breadcrumb
+    * ------------------ */
+.breadcrumb {
+    font-size: var(--font-small);
+    margin-bottom: 2em;
+}
+.breadcrumb li:not(:last-child)::after {
+    content: '/';
+    padding: 0 0.35em;
+}
+.breadcrumb li:last-child {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--light-text-color);
+}
+
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  c. Product details
+    * ------------------ */
+.products.one .item {
+    flex-direction: column
+}
+.products.one .price .discount {
+    font-size: 1em;
+    font-weight: var(--fw7);
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    padding: 1em;
+    z-index: 2;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: var(--percent50);
+    margin: 0.5em;
+    margin-top: 2em;
+}
+
+.products.one .big-image {
+    position: relative;
+
+}
+.products.one :where(.big-image) img {
+    object-fit: container;
+    width: var(--percent100);
+    height: var(--percent100);
+    display: block;
+}
+
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  d. Product description
+    * ------------------ */
+.products.one .available {
+    font-size: var(--font-small);
+    font-weight: var(--fw5);
+    padding: 0.5em;
+    margin-right: 1em;
+    border-radius: 3px;
+    color: #10ac84;
+    background-color: var(--light-bg-color);
+}
+.products.one .add-review {
+    color: var(--dark-color);
+}
+.products.one .price {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products.one .price .current {
+    font-size: 2.5em;
+}
+.products :where(.actions) .circle {
+    display: block;
+    position: static;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.products .actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+.products .qty-control {
+    width: fit-content;
+    padding: 0.5em;
+    border: 1px solid var(--border-color);
+    margin: 0 2em 2em 0;
+}
+.products .actions :where(input, button) {
+    font-size: 1.25em;
+    outline: 0;
+    border: 0;
+}
+.products .actions input {
+    width: 50px;
+    text-align: center;
+}
+.products .qty-control button::before {
+    background-color: transparent;
+}
+.products .actions .button-cart {
+    flex: 1;
+    min-width: 200px;
+}
+.products .actions .button-cart button {
+    width: var(--percent100);
+    cursor: pointer;
+}
+.wish-share a {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: var(--fw7);
+    margin: 1em 2em 1em 0;
+    transition: var(--trans-color);
+}
+
+
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  e. Product Review
+    * ------------------ */
+.products .collapse .has-child > a {
+    position: relative;
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+    padding: 1em 1.25em;
+    border-top: 1px solid var(--border-color);
+    gap: 1em;
+    align-items: flex-start;
+}
+.products .collapse .has-child > a::before {
+    content: '+';
+    position: absolute;
+    left: 0;
+}
+.products .collapse .content {
+    margin: 0 0 1.5em 2em;
+    font-size: var(--font-small);
+}
+.products .collapse .content li span:first-child {
+    min-width: 100px;
+    display: inline-flex;
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+}
+.products .collapse .content {
+    display: none;
+}
+.products .collapse .expand .content {
+    display: flex;
+}
+.products .collapse .expand > a::before {
+    content: '-';
+}
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  f. Product Review
+    * ------------------ */
+.products .reviews h4 {
+    font-size: 2em;
+    color: var(--light-text-color);
+    padding-top: 1em;
+    margin: 1em 0 0.5em;
+    border-top: 1px solid var(--border-color);
+}
+.products .reviews-block {
+    color: initial;
+}
+.products .review-block-head > a {
+    display: block;
+    font-size: 1.25em;
+    width: var(--percent100);
+    margin-top: 1em;
+    text-align: center;
+}
+.products .review-block-body .item {
+    gap: 1em;
+    padding-bottom: 2.5em;
+    margin-top: 3.5em;
+}
+.products .review-block-body :where(.person, .review-title) {
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+}
+.products .review-block-body .review-title {
+    font-size: 1.25em;
+    justify-content: end;
+}
+.products .review-block-body :where(.review-title, .view-all) {
+    font-size: 1.25em;
+    justify-content: end;
+}
+.products .review-block-body .item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+
+    /* 08. PAGE SINGLE --------------------------
+    *  g. Product Review Form
+    * ------------------ */
+.review-form .rating {
+    flex-wrap: wrap;
+}
+.review-form p {
+    font-size: 1.25em;
+    margin-right: 1em;
+}
+.review-form .rate-this input {
+    display: none;
+}
+.review-form .rate-this label {
+    float: right;
+    font-size: 2em;
+    color: var(--secundary-dark-color);
+}
+.rate-this > input:checked ~ label,
+.rate-this:not(:checked) > label:hover,
+.rate-this:not(.checked) > label:hover ~ label{
+    color: #f1c40e;
+}
+.rate-this > input:checked + label:hover,
+.rate-this > input:checked ~ label:hover,
+.rate-this > label:hover ~ input:checked ~ label,
+.rate-this > input:checked ~ label:hover ~ label {
+    color: #ffed85;
+}
+.review-form form {
+    margin-top: 2.5em;
+}
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+form :where(input, textarea) {
+    line-height: 1;
+    padding: 1em;
+    border: 1px solid var(--border-color);
+    outline: 0;
+}
+form label {
+    font-weight: var(--fw5);
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+
+
+/* ------------------
+ * 09. PAGE SINGLE: SPECIAL OFFER
+ * ------------------ */
+
+
+
+
+
+/* ------------------
+
+ * 10. PAGE CATEGORY
+ * ------------------ */
+
+
+
+
+
+    /* 10. PAGE CATEGORY --------------------------
+    *  a. Sidebar products filter
+    * ------------------ */
+
+
+
+
+
+    /* 10. PAGE CATEGORY --------------------------
+    *  b. products block
+    * ------------------ */
+
+
+
+
+
+
+/* ------------------
+ * 11. CART
+ * ------------------ */
+
+
+
+
+/* ------------------
+ * 12. PAGE CART
+ * ------------------ */
+
+
+
+
+
+
+
+/* ------------------
+ * 13. PAGE CHECKOUT
+ * ------------------ */
+
+
+
+
+
+
+
+/* ------------------
+ * 14. MODAL
+ * ------------------ */
+
+
+
+
+
+
+
+
+
+/* ------------------
  * 15. RESPONSIVE
  * ------------------ */
 @media screen and (min-width: 481px) {
     .products.main .item {
         flex: 0 0 50%;
+    }
+
+    /* page single */
+    .products.one .big-image {
+        margin-bottom: 2em;
+    }
+    .products.one .image-show {
+        height: 690px;
+    }
+    .products.one .is_sticky,
+    .is_sticky {
+        position: sticky;
+        top: 1em;
     }
 }
 
@@ -1125,6 +1501,10 @@ h4 {
     }
     .products.main .item {
         flex: 0 0 33.3333%;
+    }
+    .products.one .row {
+        flex: 0 0 50%;
+        width: 50%;
     }
 }
 
@@ -1230,5 +1610,16 @@ h4 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    /* page single */
+    #page:not(.page-home) .ctg-menu {
+        display: none;
+    }
+    #page.showctg .ctg-menu {
+        display: block;
+    }
+    .products.one .flexwrap > .row:last-child > .item {
+        padding-left: 2em;
     }
 }
