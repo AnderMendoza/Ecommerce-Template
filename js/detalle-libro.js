@@ -58,4 +58,3 @@ searchButton.addEventListener('click', function() {
 tClose.addEventListener('click', function() {
     showClass.classList.remove('showsearch')
 })
-
