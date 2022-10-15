@@ -1188,6 +1188,76 @@ h4 {
     /* 08. PAGE SINGLE --------------------------
     *  d. Product description
     * ------------------ */
+.products.one .available {
+    font-size: var(--font-small);
+    font-weight: var(--fw5);
+    padding: 0.5em;
+    margin-right: 1em;
+    border-radius: 3px;
+    color: #10ac84;
+    background-color: var(--light-bg-color);
+}
+.products.one .add-review {
+    color: var(--dark-color);
+}
+.products.one .price {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products.one .price .current {
+    font-size: 2.5em;
+}
+.products :where(.actions) .circle {
+    display: block;
+    position: static;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.products .actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+.products .qty-control {
+    width: fit-content;
+    padding: 0.5em;
+    border: 1px solid var(--border-color);
+    margin: 0 2em 2em 0;
+}
+.products .actions :where(input, button) {
+    font-size: 1.25em;
+    outline: 0;
+    border: 0;
+}
+.products .actions input {
+    width: 50px;
+    text-align: center;
+}
+.products .qty-control button::before {
+    background-color: transparent;
+}
+.products .actions .button-cart {
+    flex: 1;
+    min-width: 200px;
+}
+.products .actions .button-cart button {
+    width: var(--percent100);
+    cursor: pointer;
+}
+.wish-share a {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: var(--fw7);
+    margin: 1em 2em 1em 0;
+    transition: var(--trans-color);
+}
+
 
 
 
