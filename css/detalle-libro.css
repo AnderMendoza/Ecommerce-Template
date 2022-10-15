@@ -707,7 +707,7 @@ h4 {
     top: -5px;
 }
 
-
+ 
 
     /* 04. PRODUCT --------------------------
     *  a. Global product
@@ -1152,6 +1152,35 @@ h4 {
     /* 08. PAGE SINGLE --------------------------
     *  c. Product details
     * ------------------ */
+.products.one .item {
+    flex-direction: column
+}
+.products.one .price .discount {
+    font-size: 1em;
+    font-weight: var(--fw7);
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    padding: 1em;
+    z-index: 2;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: var(--percent50);
+    margin: 0.5em;
+    margin-top: 2em;
+}
+
+.products.one .big-image {
+    position: relative;
+
+}
+.products.one :where(.big-image) img {
+    object-fit: container;
+    width: var(--percent100);
+    height: var(--percent100);
+    display: block;
+}
 
 
 
@@ -1186,6 +1215,7 @@ h4 {
 
 
 /* ------------------
+
  * 10. PAGE CATEGORY
  * ------------------ */
 
@@ -1256,6 +1286,14 @@ h4 {
     .products.main .item {
         flex: 0 0 50%;
     }
+
+    /* page single */
+    .products.one .big-image {
+        margin-bottom: 2em;
+    }
+    .products.one .image-show {
+        height: 690px;
+    }
 }
 
 
@@ -1269,6 +1307,10 @@ h4 {
     }
     .products.main .item {
         flex: 0 0 33.3333%;
+    }
+    .products.one .row {
+        flex: 0 0 50%;
+        width: 50%;
     }
 }
 
