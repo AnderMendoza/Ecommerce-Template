@@ -1265,7 +1265,37 @@ h4 {
     /* 08. PAGE SINGLE --------------------------
     *  e. Product Review
     * ------------------ */
-
+.products .collapse .has-child > a {
+    position: relative;
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+    padding: 1em 1.25em;
+    border-top: 1px solid var(--border-color);
+}
+.products .collapse .has-child > a::before {
+    content: '+';
+    position: absolute;
+    left: 0;
+}
+.products .collapse .content {
+    margin: 0 0 1.5em 2em;
+    font-size: var(--font-small);
+}
+.products .collapse .content li span:first-child {
+    min-width: 100px;
+    display: inline-flex;
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+}
+.products .collapse .content {
+    display: none;
+}
+.products .collapse .expand .content {
+    display: flex;
+}
+.products .collapse .expand > a::before {
+    content: '-';
+}
 
 
 
