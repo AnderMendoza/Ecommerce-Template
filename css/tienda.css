@@ -263,7 +263,7 @@ h4 {
     06. OVERLAY
     07. PAGE CATEGORY
         a. Sidebar products filter
-        b. products block
+        b. Head & products block
     08. CART
     09. PAGE CART
     10. PAGE CHECKOUT
@@ -1298,7 +1298,14 @@ form label {
 /* ------------------
  * 07. PAGE CATEGORY
  * ------------------ */
-
+.single-category .holder {
+    display: flex;
+    flex-direction: column;
+}
+.single-category .sidebar,
+.single-category .section {
+    flex: 1 0 100%;
+}
 
 
 
@@ -1385,7 +1392,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 
     /* 07. PAGE CATEGORY --------------------------
-    *  B. Products block
+    *  B. Head & products block
     * ------------------ */
 
 
@@ -1543,5 +1550,19 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .products.one .flexwrap > .row:last-child > .item {
         padding-left: 2em;
+    }
+
+    /* page category */
+    .single-category .holder {
+        flex-direction: row;
+    }
+    .single-category .sidebar {
+        flex: 1 0 25%;
+    }
+    .single-category .section {
+        flex: 1 0 75%;
+    }
+    .single-category .sidebar .filter {
+        padding-right: 1.5em;
     }
 }
