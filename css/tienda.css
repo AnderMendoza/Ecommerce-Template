@@ -261,11 +261,14 @@ h4 {
     05. BOTTOM MENU
         a.Search
     06. OVERLAY
-    07. CART
-    08. PAGE CART
-    09. PAGE CHECKOUT
-    10. MODAL
-    11. RESPONSIVE
+    07. PAGE CATEGORY
+        a. Sidebar products filter
+        b. products block
+    08. CART
+    09. PAGE CART
+    10. PAGE CHECKOUT
+    11. MODAL
+    12. RESPONSIVE
  *
  * ------------------ */
 
@@ -722,6 +725,13 @@ h4 {
     margin: 0;
     cursor: pointer;
     z-index: 1;
+}
+:where(.products .variant, .filter-block:not(.pricing)) input {
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    width: 0;
 }
 
 .products .actions {
@@ -1284,6 +1294,99 @@ form label {
 }
 
 
+
+/* ------------------
+ * 07. PAGE CATEGORY
+ * ------------------ */
+
+
+
+
+
+    /* 07. PAGE CATEGORY --------------------------
+    *  a. Sidebar products filter
+    * ------------------ */
+.filter-block {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+.filter-block:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+.filter-block h4 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+.filter-block li {
+    display: flex;
+    font-size: 0.9em;
+    position: relative;
+    line-height: 2;
+}
+.filter-block label .checked {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+    border: 2px solid var(--secundary-dark-color);
+    vertical-align: text-top;
+    margin: 0 7px 0 0;
+    cursor: pointer;
+}
+.filter-block label .checked::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--secundary-dark-color);
+    top: 2px;
+    left: 2px;
+    opacity: 0;
+}
+.filter-block input:checked + label .checked::before {
+    opacity: 1;
+}
+.filter-block li .count {
+    margin-left: auto;
+    color: var(--light-text-color);
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: var(--percent100);
+}
+input[type="range"]:focus {
+    outline: 0;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    width: var(--percent100);
+    height: 5px;
+    cursor: pointer;
+    background-color: var(--border-color);
+    box-shadow: none;
+    border: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    height: 18px;
+    width: 14px;
+    background-color: var(--primary-color);
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+.byprice .price-range {
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-text-color);
+    margin-top: 0.5em;
+}
+
+
+    /* 07. PAGE CATEGORY --------------------------
+    *  B. Products block
+    * ------------------ */
 
 
 
