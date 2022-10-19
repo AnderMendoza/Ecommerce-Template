@@ -41,12 +41,6 @@ function toggle(e) {
     }
 }
 
-// show ctg menu
-const ctgButton = document.querySelector('.ctg-cat .ctg-trigger'),
-      ctgClass = document.querySelector('.site');
-ctgButton.addEventListener('click', function() {
-    ctgClass.classList.toggle('showctg')
-})
 
 //show search
 const searchButton = document.querySelector('.t-search'),
@@ -57,4 +51,25 @@ searchButton.addEventListener('click', function() {
 })
 tClose.addEventListener('click', function() {
     showClass.classList.remove('showsearch')
+})
+
+//filter show mobile
+const FloShow = '.filter';
+const Fpopup = document.querySelector(FloShow);
+const Ftrigger = document.querySelector('.filter-trigger');
+
+Ftrigger.addEventListener('click', () => {
+    setTimeout(() => {
+        if(!Fpopup.classList.contains('show')) {
+            Fpopup.classList.add('show')
+        }
+    }, 250 )
+})
+
+//auto close by click outside .filter
+document.addEventListener('click', (e) => {
+    const isClosest = e.target.closest(FloShow);
+    if(!isClosest && Fpopup.classList.contains('show')) {
+        Fpopup.classList.remove('show')
+    }
 })
