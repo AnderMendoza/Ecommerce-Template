@@ -18,11 +18,7 @@
   <p align="center">
     Proyecto académico de un sitio web de comercio electrónico.
     <br />
-    <a href="https://github.com/AnderMendoza/Stose"><strong>Explora los documentos »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/AnderMendoza/Stose">Ver demostración</a>
-    ·
     <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=bug_report_es.md&title=">Reportar un error</a>
     ·
     <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=feature_request_es.md&title=">Solicitar fusión</a>
