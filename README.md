@@ -18,11 +18,7 @@
   <p align="center">
     Ecommerce website academic project
     <br />
-    <a href="https://github.com/AnderMendoza/Stose"><strong>Explore the documents »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/AnderMendoza/Stose">See demo</a>
-    ·
     <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=bug_report.md&title=">Report a Bug</a>
     ·
     <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=feature_request.md&title=">Request feature</a>
