@@ -376,7 +376,8 @@ h4 {
         line-height: 10px;
         color: var(--white-color);
     }
-    nav .fly-item {
+    nav .fly-item,
+    .header-nav .mini-cart .price .fly-item {
         top: 50%;
         margin-top: -24px;
         width: 30%;
@@ -884,19 +885,19 @@ h4 {
     /* 04. PRODUCT --------------------------
     *  C. MINI product
     * ------------------ */
-.products.mini .item {
+.products.mini-trending .item {
     margin-bottom: 2em;
 }
-.products.mini .media {
+.products.mini-trending .media {
     width: 130px;
     height: 160px;
     margin-right: 1.25em;
 }
-.products.mini .content {
+.products.mini-trending .content {
     margin: 0;
     gap: 0.75em;
 }
-.products:where(.mini, .main) h3 {
+.products:where(.mini-trending, .main) h3 {
     font-weight: 400;
 }
 
@@ -1086,6 +1087,100 @@ h4 {
 .showmenu .overlay {
     opacity: 1;
     visibility: inherit;
+}
+
+
+
+/* ------------------
+ * 08. CART
+ * ------------------ */
+.mini-cart {
+    position: absolute;
+    width: 400px;
+    top: 100%;
+    right: 0;
+    background-color: var(--white-color);
+    z-index: 1000;
+    box-shadow: rgb(0 0 0 / 30%) 0 10px 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+.iscart:hover .mini-cart {
+    visibility: visible;
+    opacity: 1;
+}
+.mini-cart .products img {
+    transform: none;
+}
+.mini-cart ul :where(li, .price) {
+    position: relative;
+}
+.mini-cart .content {
+    width: var(--percent100);
+    height: var(--percent100);
+    touch-action: auto;
+    padding: 1.5em;
+}
+.mini-cart .cart-head {
+    font-size: 1.5em;
+    font-weight: var(--fw5);
+    color: var(--light-text-color);
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid var(--border-color);
+}
+.mini-cart .cart-body {
+    padding: 0 1.5em;
+    margin: 0 -1.5em;
+    max-height: 450px;
+    overflow: auto;
+}
+.mini-cart .thumbnail {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-right: 1em;
+}
+.mini-cart .item {
+    padding: 0.3em;
+}
+.mini-cart .item-content p {
+    font-size: var(--font-small);
+    font-weight: var(--fw5);
+    margin-bottom: 1.5em;
+    line-height: 1.2;
+}
+.mini-cart .item-remove {
+    margin-left: 1em;
+    flex: 1;
+    justify-content: flex-end;
+}
+.mini-cart .subtotal {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    margin-bottom: 2em;
+    border-top: 1px solid var(--border-color);
+}
+.mini-cart .subtotal p:last-child {
+    font-size: 2em;
+}
+.mini-cart .actions a {
+    display: block;
+    width: var(--percent100);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.mini-cart.show {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    max-width: 400px;
+    width: 90%;
 }
 
 
