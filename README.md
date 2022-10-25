@@ -3,7 +3,6 @@
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -19,11 +18,7 @@
   <p align="center">
     Ecommerce website academic project
     <br />
-    <a href="https://github.com/AnderMendoza/Stose"><strong>Explore the documents »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/AnderMendoza/Stose">See demo</a>
-    ·
     <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=bug_report.md&title=">Report a Bug</a>
     ·
     <a href="https://github.com/AnderMendoza/Stose/issues/new?assignees=&labels=feature&template=feature_request.md&title=">Request feature</a>
@@ -139,7 +134,5 @@ We would like to add a list of resources that we found useful for the developmen
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/CONTRIBUTORS-5-green?style=for-the-badge
 [contributors-url]: https://github.com/AnderMendoza/Stose/graphs/contributors
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/anderson-mendoza-ramos-7551141b7/
 [architech-screenshot]: assets/images_readme/architech/threeLevelArchitecture.png
 [mockups-screenshot]: assets/images_readme/mockups/allMockups.png
