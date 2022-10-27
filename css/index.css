@@ -1096,7 +1096,7 @@ h4 {
  * ------------------ */
 .mini-cart {
     position: absolute;
-    width: 400px;
+    width: 350px;
     top: 100%;
     right: 0;
     background-color: var(--white-color);
