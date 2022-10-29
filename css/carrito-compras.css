@@ -1295,7 +1295,7 @@ form label {
     visibility: visible;
     opacity: 1;
 }
-.mini-cart .products img {
+:is(.mini-cart .products, .products.cart) .thumbnail img {
     transform: none;
 }
 .mini-cart ul :where(li, .price) {
@@ -1321,7 +1321,7 @@ form label {
     max-height: 450px;
     overflow: auto;
 }
-.mini-cart .thumbnail {
+:where(.mini-cart, .products.cart) .thumbnail {
     position: relative;
     width: 80px;
     height: 80px;
@@ -1369,6 +1369,136 @@ form label {
     width: 90%;
 }
 
+/* ------------------
+ * 09. PAGE CART
+ * ------------------ */
+.page-title {
+    margin-bottom: 3em;
+}
+.products.cart form {
+    width: var(--percent100);
+}
+.products.cart table thead th {
+    vertical-align: middle;
+    background-color: var(--light-bg-color);
+}
+.products.cart table :where(th, td) {
+    padding: 2em 1em;
+    text-align: center;
+}
+.products.cart table :where(th, td):first-child {
+    text-align: left;
+    padding-left: 2em;
+}
+.products.cart table tbody td:first-child {
+    padding-left: 0;
+}
+.products.cart table td :where(.content, .qty-control, p) {
+    margin: 0;
+    padding: 0;
+}
+.products.cart .qty-control :where(button, input) {
+    width: 32px;
+    height: 32px;
+    padding: 0.25em;
+    text-align: center;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+.products.cart .qty-control button {
+    cursor: pointer;
+}
+.products.cart table tbody tr {
+    border-bottom: var(--border-color);
+}
+
+
+.cart-summary {
+    width: var(--percent100);
+    margin: 2.5em 0 4em;
+}
+.cart-summary .item {
+    background-color: var(--light-bg-color);
+}
+.cart-summary .coupon {
+    position: relative;
+}
+.cart-summary .coupon input {
+    font-size: 1.1em;
+    outline: 0;
+    width: var(--percent100);
+    padding: 0 1.5em;
+    line-height: 50px;
+    background-color: var(--white-color);
+    border: 3px solid var(--dark-color);
+}
+.cart-summary .coupon button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    font-size: 1em;
+    padding: 0 2.5em;
+    line-height: 56px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+.cart-summary .shipping-rate {
+    padding: 0 2em 0 1em;
+}
+.cart-summary .shipping-rate .has-child > a {
+    font-size: 1em;
+    margin: 2em 0;
+    border: 0;
+}
+.cart-summary .content form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.styled :where(input, select, textarea) {
+    padding: 0.75em;
+    outline: 0;
+    background-color: var(--white-color);
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: var(--border-color);
+}
+
+.products.cart .cart-total table tr > * {
+    padding: 0;
+}
+.products.cart .cart-total table td {
+    text-align: right;
+}
+.cart-summary .cart-total {
+    padding: 2em;
+    background-color: var(--border-color);
+    line-height: 2em;
+}
+.cart-summary .cart-total table {
+    width: var(--percent100);
+}
+.cart-summary .cart-total table tr {
+    display: flex;
+    justify-content: space-between;
+}
+.cart-summary .grand-total td {
+    font-size: 2em;
+    font-family: "Poppins";
+    font-weight: var(--fw8);
+    line-height: 2em;
+}
+.cart-summary .cart-total > a {
+    width: var(--percent100);
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.25em;
+}
 
 
 
@@ -1526,5 +1656,15 @@ form label {
     }
     .products.one .flexwrap > .row:last-child > .item {
         padding-left: 2em;
+    }
+
+    /*page cart */
+    .products.cart .form-cart {
+        width: 66%;
+    }
+    .products.cart .cart-summary {
+        width: 34%;
+        padding-left: 2.5em;
+        margin-top: 0;
     }
 }
