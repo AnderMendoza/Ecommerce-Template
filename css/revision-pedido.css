@@ -1270,7 +1270,7 @@ form label {
     opacity: 0;
     will-change: visibility, opacity;
 }
-.showmenu .overlay {
+:where(.showmenu, .showmodal) .overlay {
     opacity: 1;
     visibility: inherit;
 }
@@ -1597,6 +1597,64 @@ form label {
 .summary-order .products.mini .item {
     margin-bottom: 1.5em;
 }
+
+
+
+/* ------------------
+ * 11. MODAL
+ * ------------------ */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 600px;
+    width: 90%;
+    height: max-content;
+    padding: 2em;
+    margin: auto;
+    text-align: center;
+    background-color: var(--light-bg-color);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform .2s, visibility .2s, opacity .2s;
+}
+.showmodal .modal{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1s, visibility 1s, opacity 1s;
+}
+.modal .image {
+    position: relative;
+    height: calc(150px + 10vw);
+    overflow: hidden;
+    max-height: 400px;
+    margin: -2em -2em 0 -2em;
+}
+.modal h2 {
+    font-size: 1.75em;
+    text-transform: uppercase;
+    max-width: 300px;
+    margin: 0.5em auto;
+    line-height: 1;
+}
+.modal p {
+    margin-bottom: 1em;
+    color: var(--light-text-color);
+}
+.modal .t-close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+
+
+
 
 
 /* ------------------
