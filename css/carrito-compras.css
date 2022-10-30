@@ -1410,7 +1410,7 @@ form label {
     cursor: pointer;
 }
 .products.cart table tbody tr {
-    border-bottom: var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 
