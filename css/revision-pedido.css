@@ -1502,6 +1502,66 @@ form label {
 
 
 
+/* ------------------
+ * 10. PAGE CHECKOUT 
+ * ------------------ */
+.checkout {
+    margin: 5em 0;
+}
+.checkout .left {
+    padding: 4em;
+    background-color: var(--light-bg-color);
+    box-shadow: 0 15px 70px -8px rgb(0 0 0 / 20%);
+}
+.checkout .item {
+    width: var(--percent100);
+}
+.checkout .left h1 {
+    font-weight: var(--fw3);
+    margin-bottom: 1.5em;
+}
+.checkout .left label {
+    font-size: var(--font-small);
+    text-transform: capitalize;
+    position: relative;
+    width: fit-content;
+}
+.checkout .left label span {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    border-radius: var(--percent50);
+}
+.checkout p :where(input, textarea) {
+    background-color: rgb(255 255 255 / 50%);
+    font-family: inherit;
+}
+.checkout p input:focus {
+    background-color: var(--white-color);
+}
+.checkout p.checkset {
+    flex-direction: row;
+}
+.checkout p.checkset label {
+    margin: 0 0 0 1em;
+    cursor: pointer;
+}
+.primary-checkout button {
+    display: block;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    width: var(--percent100);
+    max-width: 280px;
+    font-size: 1.2em;
+    margin: 3em auto 0;
+
+}
+
+
 
 /* ------------------
  * 15. RESPONSIVE
@@ -1564,7 +1624,8 @@ form label {
     .products.main .item {
         flex: 0 0 33.3333%;
     }
-    .products.one .row {
+    .products.one .row,
+    .checkout .item {
         flex: 0 0 50%;
         width: 50%;
     }
