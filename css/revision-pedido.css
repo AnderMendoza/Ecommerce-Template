@@ -1295,7 +1295,7 @@ form label {
     visibility: visible;
     opacity: 1;
 }
-:is(.mini-cart .products, .products.cart) .thumbnail img {
+:is(.mini-cart .products, .products.cart, .checkout .products) .thumbnail img {
     transform: none;
 }
 .mini-cart ul :where(li, .price) {
@@ -1321,7 +1321,7 @@ form label {
     max-height: 450px;
     overflow: auto;
 }
-:where(.mini-cart, .products.cart) .thumbnail {
+:where(.mini-cart, .products.cart, .checkout) .thumbnail {
     position: relative;
     width: 80px;
     height: 80px;
@@ -1561,6 +1561,42 @@ form label {
 
 }
 
+.checkout .item.right {
+    padding: 5em 0 0;
+}
+.summary-totals ul {
+    max-width: 335px;
+    line-height: 2;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--secundary-dark-color);
+}
+.summary-totals li {
+    display: flex;
+    justify-content: space-between;
+    font-weight: var(--fw5);
+}
+.summary-totals li strong {
+    font-size: 2.5em;
+    line-height: 1;
+}
+.summary-totals li:last-child {
+    margin-top: 2em;
+}
+.summary-totals li:not(:last-child) span:first-child {
+    color: var(--light-text-color);
+}
+
+.summary-order .price {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-text-color);
+    font-size: 0.85em;
+    margin-top: 0.5em;
+}
+.summary-order .products.mini .item {
+    margin-bottom: 1.5em;
+}
 
 
 /* ------------------
@@ -1618,16 +1654,19 @@ form label {
         font-size: 1.25em; 
     }
     .products.mini,
-    .widgets .row  {
+    .widgets .row,
+    .checkout .item  {
         flex: 0 0 50%;
     }
     .products.main .item {
         flex: 0 0 33.3333%;
     }
-    .products.one .row,
-    .checkout .item {
+    .products.one .row {
         flex: 0 0 50%;
         width: 50%;
+    }
+    .checkout .item.right {
+        padding: 5em 0 0 5em;
     }
 }
 
