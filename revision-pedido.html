@@ -369,6 +369,51 @@
                         <div class="checkout flexwrap">
                             <div class="item left styled">
                                 <h1>Dirección de Envío</h1>
+                                <form action="">
+                                    <p>
+                                        <label for="email">Correo Electrónico</label>
+                                        <input type="email" name="email" id="email" autocomplete="off" required>
+                                    </p>
+                                    <p>
+                                        <label for="fname">Primer Nombre</label>
+                                        <input type="text" id="fname" required>
+                                    </p>
+                                    <p>
+                                        <label for="lname">Apellidos</label>
+                                        <input type="text" id="lname" required>
+                                    </p>
+                                    <p>
+                                        <label for="address">Dirección</label>
+                                        <input type="text" id="address" required>
+                                    </p>
+                                    <p>
+                                        <label for="district">Distrito</label>
+                                        <select name="district" id="district">
+                                            <option value=""></option>
+                                            <option value="1">Santa Anita</option>
+                                            <option value="2">Ate</option>
+                                            <option value="3">El Agustino</option>
+                                            <option value="4" selected="selected">La Victoria</option>
+                                            <option value="5">Otro</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <label for="postal">Zip/Código Postal</label>
+                                        <input type="number" id="postal" required>
+                                    </p>
+                                    <p>
+                                        <label for="phone">Número de teléfono</label>
+                                        <input type="number" id="phone" required>
+                                    </p>
+                                    <p>
+                                        <label>Notas del Pedido (Opcional)</label>
+                                        <textarea cols="30" rows="10"></textarea>
+                                    </p>
+                                    <p class="checkset">
+                                        <input type="checkbox" id="anaccount">
+                                        <label for="anaccount">Crear una cuenta?</label>
+                                    </p>
+                                </form>
                             </div>
                         </div>
                     </div>
