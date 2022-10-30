@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.Stose | Libro en Oferta</title>
+    <title>.Stose | Carrito de Compras</title>
     <link rel="shortcut icon" href="./assets/images_readme/logo/logoWhite.png">
-    <link rel="stylesheet" href="../css/libro-oferta.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/revision-pedido.css">
 </head>
 <body>
     <div id="page" class="site">
@@ -15,7 +16,7 @@
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
                 <div class="canvas-head flexitem">
-                    <div class="logo"><a href="../index.html"><span class="circle"></span>.Stose</a></div>
+                    <div class="logo"><a href="./index.html"><span class="circle"></span>.Stose</a></div>
                     <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
                 </div>
                 <div class="categories"></div>
@@ -32,9 +33,9 @@
                         <div class="left">
                             <ul class="flexitem main-links">
                                 <li class="links">
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Productos Destacados</a></li>
-                                    <li><a href="#">Lista de deseos</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Productos Destacados</a></li>
+                                <li><a href="#">Lista de deseos</a></li>
                                 </li>
                             </ul>
                         </div>
@@ -357,186 +358,135 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>      
         </header>
 
         <main>
-            
-            <!-- breadcrumb -->
-            <div class="single-product">
+
+            <div class="single-checkout">
                 <div class="container">
                     <div class="wrapper">
-                        <div class="breadcrumb">
-                            <ul class="flexitem">
-                                <li><a href="./index.html">Inicio</a></li>
-                                <li><a href="./tienda.html">Tienda</a></li>
-                                <li>**Nombre del libro**</li>
-                            </ul>
-                        </div>
-                        
-                        <!-- books images -->
-                        <div class="column">
-                            <div class="products one">
-                                <div class="flexwrap">
-                                    <div class="row">
-                                        <div class="item is_sticky">
-                                            <div class="price">
-                                                <span class="discount">20%<br>OFF</span>
-                                            </div>
-                                            <div class="big-image">
-                                                <div class="big-image-wrapper">
-                                                    <div class="image-show">
-                                                        <a href="#"><img src="./assets/products/apparel4.jpg" alt=""></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                        <div class="checkout flexwrap">
+                            <div class="item left styled">
+                                <h1>Dirección de Envío</h1>
+                                <form action="">
+                                    <p>
+                                        <label for="email">Correo Electrónico <span></span></label>
+                                        <input type="email" name="email" id="email" autocomplete="off" required>
+                                    </p>
+                                    <p>
+                                        <label for="fname">Primer Nombre <span></span></label>
+                                        <input type="text" id="fname" required>
+                                    </p>
+                                    <p>
+                                        <label for="lname">Apellidos <span></span></label>
+                                        <input type="text" id="lname" required>
+                                    </p>
+                                    <p>
+                                        <label for="address">Dirección <span></span></label>
+                                        <input type="text" id="address" required>
+                                    </p>
+                                    <p>
+                                        <label for="district">Distrito <span></span></label>
+                                        <select name="district" id="district">
+                                            <option value=""></option>
+                                            <option value="1">Santa Anita</option>
+                                            <option value="2">Ate</option>
+                                            <option value="3">El Agustino</option>
+                                            <option value="4" selected="selected">La Victoria</option>
+                                            <option value="5">Otro</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <label for="postal">Zip/Código Postal <span></span></label>
+                                        <input type="number" id="postal" required>
+                                    </p>
+                                    <p>
+                                        <label for="phone">Número de teléfono <span></span></label>
+                                        <input type="number" id="phone" required>
+                                    </p>
+                                    <p>
+                                        <label>Notas del Pedido (Opcional)</label>
+                                        <textarea cols="30" rows="10"></textarea>
+                                    </p>
+                                    <p class="checkset">
+                                        <input type="checkbox" id="anaccount">
+                                        <label for="anaccount">Crear una cuenta?</label>
+                                    </p>
+                                </form>
+                                <div class="primary-checkout">
+                                    <button class="primary-button">Realizar Pedido</button>
+                                </div>
+                            </div>
+                            <div class="item right">
+                                <h2>Resumen del Pedido</h2>
+                                <div class="summary-order is_sticky">
+                                    <div class="summary-totals">
+                                        <ul>
+                                            <li>
+                                                <span>Subtotal</span>
+                                                <span>$186.00</span>
+                                            </li>
+                                            <li>
+                                                <span>Descuento</span>
+                                                <span>-$0.00</span>
+                                            </li>
+                                            <li>
+                                                <span>Total</span>
+                                                <strong>$186.00<strong>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="row">
-                                        <div class="item">
-                                            <h1>La Divina Comedia</h1><br>
-                                            <h3>Dante Alighieri - Akal</h3>
-                                            <div class="content">
-                                                <div class="rating">
-                                                    <div class="stars"></div>
-                                                    <a href="#" class="mini-text">10 reseñas</a>
-                                                    <a href="" class="add-review mini-text">Agrega tu reseña</a>
-                                                </div>
-                                                <div class="stock-sku">
-                                                    <span class="available">En Stock</span>
-                                                    <span class="sku mini-text">SKU-654</span>
-                                                </div>
-                                                <div class="offer">
-                                                    <p>Oferta por Tiempo Limitado</p>
-                                                </div>
-                                                <div class="price">
-                                                    <span class="current">$42.40</span>
-                                                    <span class="normal">$52.99</span>
-                                                </div>
-                                                <div class="actions">
-                                                    <div class="qty-control flexitem">
-                                                        <button class="minus circle">-</button>
-                                                        <input type="text" value="1">
-                                                        <button class="plus circle">+</button>
-                                                    </div>
-                                                    <div class="button-cart"><button class="primary-button">Agregar al carrito</button></div>
-                                                    <div class="wish-share">
-                                                        <ul class="flexitem second-links">
-                                                            <li><a href="#">
-                                                                <span class="icon-large"><i class="ri-heart-line"></i></span>
-                                                                <span>Favoritos</span>
-                                                            </a></li>
-                                                            <li><a href="#">
-                                                                <span class="icon-large"><i class="ri-share-line"></i></span>
-                                                                <span>Compartir</span>
-                                                            </a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="description collapse">
-                                                    <ul>
-                                                        <li class="has-child">
-                                                            <a href="#0" class="icon-small">Descripción</a>
-                                                            <div class="content">
-                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, iure quas optio necessitatibus aperiam sed tempora amet assumenda ducimus excepturi nobis omnis ad expedita saepe odit delectus placeat maxime corporis.</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="has-child">
-                                                            <a href="#0" class="icon-small">Información</a>
-                                                            <ul class="content">
-                                                                <li><span>Autor</span> <span>Dante Alighieri</span></li>
-                                                                <li><span>Categoría</span> <span>Poesía, Ficción Clásica</span></span></li>
-                                                                <li><span>Año de<br> publicación</span> <span>2021</span></li>
-                                                                <li><span>Editorial</span> <span>Akal</span></li>
-                                                                <li><span>Número de<br> páginas</span> <span>832</span></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="has-child">
-                                                            <a href="#" class="icon-small">Reseñas<span class="mini-text">10</span></a>
-                                                            <div class="content">
-                                                                <div class="reviews">
-                                                                    <h4>Reseñas de los Clientes</h4>
-                                                                    <div class="review-block">
-                                                                        <div class="review-block-head">
-                                                                            <a href="#review-form" class="secondary-button">Escribe tu reseña</a>
-                                                                        </div>
-                                                                        <div class="review-block-body">
-                                                                            <ul>
-                                                                                <li class="item">
-                                                                                    <div class="review-form">
-                                                                                        <p class="person">Reseña por Anderson</p>
-                                                                                        <p class="mini-text">El 14/10/2022</p>
-                                                                                    </div>
-                                                                                    <div class="review-title">
-                                                                                        <p>Increíble libro!</p>
-                                                                                    </div>
-                                                                                    <div class="review-text">
-                                                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores deserunt, ab fuga est molestiae consequuntur quidem quisquam maiores cum sed quis itaque ad numquam repellendus voluptatum iure, perferendis eius.</p>
-                                                                                    </div>
-                                                                                </li>
-                                                                                <li class="item">
-                                                                                    <div class="review-form">
-                                                                                        <p class="person">Reseña por Anderson</p>
-                                                                                        <p class="mini-text">El 14/10/2022</p>
-                                                                                    </div>
-                                                                                    <div class="review-title">
-                                                                                        <p>Increíble libro!</p>
-                                                                                    </div>
-                                                                                    <div class="review-text">
-                                                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores deserunt, ab fuga est molestiae consequuntur quidem quisquam maiores cum sed quis itaque ad numquam repellendus voluptatum iure, perferendis eius.</p>
-                                                                                    </div>
-                                                                                </li>
-                                                                            </ul>
-                                                                            <div class="second-links">
-                                                                                <a href="#" class="view-all">Mirar todas las reseñas <i class="ri-arrow-right-line"></i></a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div id="review-rorm" class="review-form">
-                                                                            <h4>Escribe tu reseña</h4>
-                                                                            <div class="rating">
-                                                                                <p>Ingresa tu puntuación</p>
-                                                                                <div class="rate-this">
-                                                                                    <input type="radio" name='rating' id="star5">
-                                                                                    <label for="star5"><i class="ri-star-fill"></i></label>
-
-                                                                                    <input type="radio" name='rating' id="star4">
-                                                                                    <label for="star4"><i class="ri-star-fill"></i></label>
-
-                                                                                    <input type="radio" name='rating' id="star3">
-                                                                                    <label for="star3"><i class="ri-star-fill"></i></label>
-
-                                                                                    <input type="radio" name='rating' id="star2">
-                                                                                    <label for="star2"><i class="ri-star-fill"></i></label>
-
-                                                                                    <input type="radio" name='rating' id="star1">
-                                                                                    <label for="star1"><i class="ri-star-fill"></i></label>
-                                                                                </div>
-                                                                            </div>
-                                                                            <form action="">
-                                                                                <p>
-                                                                                    <label>Nombre</label>
-                                                                                    <input type="text">
-                                                                                </p>
-                                                                                <p>
-                                                                                    <label>Resumen</label>
-                                                                                    <input type="text">
-                                                                                </p>
-                                                                                <p>
-                                                                                    <label>Reseña</label>
-                                                                                    <textarea cols="30" rows="10"></textarea>
-                                                                                </p>
-                                                                                <p><a href="#" class="primary-button">Enviar reseña</a></p>
-                                                                            </form>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                    <ul class="products mini">
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="./assets/products/apparel4.jpg" alt="">
                                             </div>
-                                        </div>
-                                    </div>
+                                            <div class="item-content">
+                                                <p>/*Nombre del Libro*/</p>
+                                                <span class="price">
+                                                    <span>$46.50</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="./assets/products/apparel4.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>/*Nombre del Libro*/</p>
+                                                <span class="price">
+                                                    <span>$46.50</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="./assets/products/apparel4.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>/*Nombre del Libro*/</p>
+                                                <span class="price">
+                                                    <span>$46.50</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="./assets/products/apparel4.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>/*Nombre del Libro*/</p>
+                                                <span class="price">
+                                                    <span>$46.50</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -544,233 +494,8 @@
                 </div>
             </div>
 
-            <!-- related books -->
-            <div class="features">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="sectop flexitem">
-                            <h2><span class="circle"></span><span>Libros Relacionados</span></h2>
-                            <div class="second-links">
-                                <a href="#" class="view-all">Ver más<i class="ri-arrow-right-line"></i></a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="products main flexwrap">
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/products/apparel1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>15%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(156)</span>
-                                        </div>
-                                        <h3><a href="#">*Nombre de libro*</a></h3>
-                                        <div class="price">
-                                            <div class="current">$46.50</div>
-                                            <div class="normal mini-text">$65.50</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/products/apparel1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>15%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(156)</span>
-                                        </div>
-                                        <h3><a href="#">*Nombre de libro*</a></h3>
-                                        <div class="price">
-                                            <div class="current">$46.50</div>
-                                            <div class="normal mini-text">$65.50</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/products/apparel1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>15%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(156)</span>
-                                        </div>
-                                        <h3><a href="#">*Nombre de libro*</a></h3>
-                                        <div class="price">
-                                            <div class="current">$46.50</div>
-                                            <div class="normal mini-text">$65.50</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/products/apparel1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>15%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(156)</span>
-                                        </div>
-                                        <h3><a href="#">*Nombre de libro*</a></h3>
-                                        <div class="price">
-                                            <div class="current">$46.50</div>
-                                            <div class="normal mini-text">$65.50</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/products/apparel1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>15%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(156)</span>
-                                        </div>
-                                        <h3><a href="#">*Nombre de libro*</a></h3>
-                                        <div class="price">
-                                            <div class="current">$46.50</div>
-                                            <div class="normal mini-text">$65.50</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/products/apparel1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>15%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(156)</span>
-                                        </div>
-                                        <h3><a href="#">*Nombre de libro*</a></h3>
-                                        <div class="price">
-                                            <div class="current">$46.50</div>
-                                            <div class="normal mini-text">$65.50</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/products/apparel1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>15%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(156)</span>
-                                        </div>
-                                        <h3><a href="#">*Nombre de libro*</a></h3>
-                                        <div class="price">
-                                            <div class="current">$46.50</div>
-                                            <div class="normal mini-text">$65.50</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/products/apparel1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>15%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(156)</span>
-                                        </div>
-                                        <h3><a href="#">*Nombre de libro*</a></h3>
-                                        <div class="price">
-                                            <div class="current">$46.50</div>
-                                            <div class="normal mini-text">$65.50</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>    
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
-
+        
         <footer>
             <!-- newsletter -->
             <div class="newsletter">
@@ -792,7 +517,7 @@
             </div>
 
             <!-- widgets -->
-            <div class="widgets">
+            <div class="widgets categoria">
                 <div class="container">
                     <div class="wrapper">
                         <div class="flexwrap">
@@ -858,7 +583,7 @@
                     <div class="wrapper">
                         <div class="flexcol">
                             <div class="logo">
-                                <a href="./index.html"><span class="circle"></span>.Stose</a>
+                                <a href="#"><span class="circle"></span>.Stose</a>
                             </div>
                             <div class="socials">
                                 <ul class="flexitem">
@@ -939,6 +664,7 @@
 
         </footer>
     </div>
-    <script src="../js/libro-oferta.js"></script>
+    <script src="./js/revision-pedido.js"></script>
 </body>
+
 </html>
