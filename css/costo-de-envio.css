@@ -1,13 +1,13 @@
 .texto1{
     position:absolute;
-    top: 250px;
+    top: 370px;
     right: 750px;
 
 }
 
 .texto2{
     position:relative;
-    top: 200px;
+    top: 100px;
     width: 50%;
     left: 10%;
 }
@@ -16,3 +16,7 @@
     position: relative;
     top: 100px;
 }
+
+
+
+
