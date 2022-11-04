@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costo de envio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/images_readme/logo/logoWhite.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/costo-de-envio.css">
+    <link rel="stylesheet" href="./css/detalle-libro.css">
+</head>
+
+<body>
+    <aside class="site-off desktop-hide">
+        <div class="off-canvas">
+            <div class="canvas-head flexitem">
+                <div class="logo"><a href="./index.html"><span class="circle"></span>.Stose</a></div>
+                <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+            </div>
+            <div class="categories"></div>
+            <nav></nav>
+            <div class="thetop-nav"></div>
+        </div>
+    </aside>
+
+    <header>
+        <!-- header top -->
+        <div class="header-top mobile-hide">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    <div class="left">
+                        <ul class="flexitem main-links">
+                            <li class="links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Productos Destacados</a></li>
+                            <li><a href="#">Lista de deseos</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul class="flexitem main-links">
+                            <li><a href="#">Registrate</a></li>
+                            <li><a href="#">Mi Cuenta</a></li>
+                            <li><a href="#">Revision de Pedidos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header-nav -->
+        <div class="header-nav">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                    <div class="left flexitem">
+                        <div class="logo"><a href="./index.html"><span class="circle"></span>.Stose</a></div>
+                        <nav class="mobile-hide">
+                            <ul class="flexitem second-links">
+                                <li><a href="./index.html">Inicio</a></li>
+                                <li><a href="./tienda.html">Tienda</a></li>
+                                <li><a href="#">Costos de envío</a></li>
+                                <li><a href="#">Nosotros</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right">
+                        <ul class="flexitem second-links">
+                            <li class="mobile-hide"><a href="#">
+                                    <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                    <div class="fly-item"><span class="item-number">0</span></div>
+                                </a></li>
+                            <li class="iscart"><a href="#">
+                                    <div class="icon-large">
+                                        <i class="ri-shopping-cart-line"></i>
+                                        <div class="fly-item"><span class="item-number">4</span></div>
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="mini-text">Total</div>
+                                        <div class="cart-total">$186.00</div>
+                                    </div>
+                                </a>
+
+                                <div class="mini-cart">
+                                    <div class="content">
+                                        <div class="cart-head">
+                                            4 libros en el carrito
+                                        </div>
+                                        <div class="cart-body">
+                                            <ul class="products mini">
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel1.jpg"
+                                                                alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">/*Nombre del libro*/</a></p>
+                                                        <span class="price">
+                                                            <span>$46.50</span>
+                                                            <span class="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel1.jpg"
+                                                                alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">/*Nombre del libro*/</a></p>
+                                                        <span class="price">
+                                                            <span>$46.50</span>
+                                                            <span class="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel1.jpg"
+                                                                alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">/*Nombre del libro*/</a></p>
+                                                        <span class="price">
+                                                            <span>$46.50</span>
+                                                            <span class="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel1.jpg"
+                                                                alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">/*Nombre del libro*/</a></p>
+                                                        <span class="price">
+                                                            <span>$46.50</span>
+                                                            <span class="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cart-footer">
+                                            <div class="subtotal">
+                                                <p>Subtotal</p>
+                                                <p><strong>$186.00</strong></p>
+                                            </div>
+                                            <div class="actions">
+                                                <a href="./revision-pedido.html" class="primary-button">Verificar</a>
+                                                <a href="./carrito-compras.html" class="secondary-button">Ver
+                                                    Carrito</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- header main -->
+          <div class="header-main mobile-hide">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    <div class="left">
+                        <div class="ctg-cat">
+                            <div class="ctg-head">
+                                <div class="main-text">Categorías</div>
+                                <div class="mini-text mobile-hide">Total 135 libros</div>
+                                <a href="#" class="ctg-trigger mobile-hide">
+                                    <i class="ri-menu-3-line ri-xl"></i>
+                                    <i class="ri-close-line ri-xl"></i>
+                                </a>
+                            </div>
+                            <div class="ctg-menu">
+                                <ul class="second-links">
+                                    <li class="has-child arte">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Arte
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Arquitectura</a></li>
+                                            <li><a href="#">Artes Escénicas</a></li>
+                                            <li><a href="#">Aspectos Generales del Arte</a></li>
+                                            <li><a href="#">Diseño Industrial y Comercial</a></li>
+                                            <li><a href="#">Enfoques del Arte</a></li>
+                                            <li><a href="#">Expresiones Artísticas del Arte</a></li>
+                                            <li><a href="#">Fotografía</a></li>
+                                            <li><a href="#">Música</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child biografia">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Biografías
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Biografías</a></li>
+                                            <li><a href="#">Historia y Crítica Literaria</a></li>
+                                            <li><a href="#">Obras de Teatro</a></li>
+                                            <li><a href="#">Textos Antiguos, Clásicos y Mediavales</a></li>
+                                            <li><a href="#">Poesía</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child ciencia">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Ciencias
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Ciencias de la Tierra/Geociencias</a></li>
+                                            <li><a href="#">El Medioambiente</a></li>
+                                            <li><a href="#">Geografía</a></li>
+                                            <li><a href="#">Planificación Regional y Zonal</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child computacion">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Computación
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Aplicaciones Empresariales y de Negocios</a></li>
+                                            <li><a href="#">Aplicaciones Gráficas y multimedia</a></li>
+                                            <li><a href="#">Aplicaciones Prácticas de Tecnología de la Información</a></li>
+                                            <li><a href="#">Bases de Datos</a></li>
+                                            <li><a href="#">Certificación Informática</a></li>
+                                            <li><a href="#">Ciencias de la Computación</a></li>
+                                            <li><a href="#">Redes y Comunicaciones</a></li>
+                                            <li><a href="#">Seguridad Informática</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child deporte">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Deportes
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Actividades Recreativas al Aire Libre</a></li>
+                                            <li><a href="#">Atletismo, Gimnasia y Deportes Relacionados</a></li>
+                                            <li><a href="#">Deporte: General</a></li>
+                                            <li><a href="#">Deportes con Vehículos</a></li>
+                                            <li><a href="#">Deportes de Combate y Defensa Personal</a></li>
+                                            <li><a href="#">Deportes de Invierno</a></li>
+                                            <li><a href="#">Deportes y Juegos Acuáticos</a></li>
+                                            <li><a href="#">Deportes y Juegos de Pelota</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child derecho">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Derecho
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Derecho de Países o Territorios Concretos y Áreas Específicas del Derecho</a></li>
+                                            <li><a href="#">Derecho Internacional</a></li>
+                                            <li><a href="#">Derecho: Guías de Estudio y Revisión</a></li>
+                                            <li><a href="#">Teoría General del Derecho</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child economia">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Economía
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Economía</a></li>
+                                            <li><a href="#">Empresa y Gestión</a></li>
+                                            <li><a href="#">Finanzas y Contabilidad</a></li>
+                                            <li><a href="#">Industria y Estudios Industriales</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child estilo-de-vida">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Estilos de Vida
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Antigüedades, Objetos De Época («Vintage») Y Coleccionables</a></li>
+                                            <li><a href="#">Artesanías, Artes Decorativas Y Manualidades</a></li>
+                                            <li><a href="#">Artículos De Papelería Y Miscelánea</a></li>
+                                            <li><a href="#">Cocina / Comidas Y Bebidas, Etc</a></li>
+                                            <li><a href="#">Guías De Estilos Personales Y Estilos De Vida</a></li>
+                                            <li><a href="#">Humor</a></li>
+                                            <li><a href="#">Interés Local, Historia Familiar Y Nostalgia</a></li>
+                                            <li><a href="#">Jardinería</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child ficcion">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Ficción
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Aventuras De Ficción</a></li>
+                                            <li><a href="#">Ciencia Ficción</a></li>
+                                            <li><a href="#">Fantasía</a></li>
+                                            <li><a href="#">Ficción Biográfica</a></li>
+                                            <li><a href="#">Ficción Deportiva</a></li>
+                                            <li><a href="#">Ficción Histórica</a></li>
+                                            <li><a href="#">Ficción Humorística</a></li>
+                                            <li><a href="#">Ficción Literaria</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child filosofia-religion">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Filosofía y Religión
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Filosfía</a></li>
+                                            <li><a href="#">Religión y Creencias</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child infantil-juvenil">
+                                        <a href="#">
+                                            <div class="icon-large"><i class="ri-book-2-line"></i></div>
+                                            Infantiles y Juveniles
+                                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Ficción Infantil / Ficción Juvenil e Historias Reales</a></li>
+                                            <li><a href="#">Infantil / Juvenil: Artículos De Escritorio Y Papelería Y Objetos Diversos</a></li>
+                                            <li><a href="#">Infantil / Juvenil: Cuestiones Personales Y Sociales</a></li>
+                                            <li><a href="#">Infantil/Juvenil: Anuarios, Antologías Y Poesía</a></li>
+                                            <li><a href="#">Infantil/Juvenil: Interés General</a></li>
+                                            <li><a href="#">Libros para niños: ilustrados, de actividades y de primeros conceptos de aprendizaje</a></li>
+                                            <li><a href="#">Material Educativo</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="search-box">
+                            <form action="" class="search">
+                                <span class="icon-large"><i class="ri-search-line"></i></span>
+                                <input type="search" placeholder="Buscar un libro">
+                                <button type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </header>
+
+    <div class="d-flex justify-content-around">
+        <h2 class="fw-bolder center">Cobro de envio</h2>
+        <img src="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blt7d44bbf3d1a5e0f3/62f40e08504b12685eded681/030-Servicios-v02.png?auto=webp&disable=upscale&quality=70&width=1280"
+            width="30%">
+    </div>
+
+    <div class="texto1">
+        <h4>Cada vez que compres en Stose o a travez de venta <br>
+            telefonica al xxxxxxxxx, tendras que eligir un destino.
+        </h4>
+        <br>
+        <br>
+        <h4>
+            Y siempre se te informara que habra un pequeño aumento de precio <br>
+            por el costo que cuesta enviar el producto a su domicilio.
+        </h4>
+        <br>
+        <br>
+        <hr style="width: 100%;">
+        <h4>
+            Este cobro depende del lugar de destino, el tipo de envío que elijas, <br>
+            el origen del producto y su tamaño. Ten en cuenta que en Stose.com <br>
+            vendemos miles de productos que almacenamos en diversos lugares, entre ellos <br>
+            nuestro centro de distribución, tiendas y bodegas de los vendedores.
+        </h4>
+        <br>
+        <h4>
+            Cuando realizas una compra con varios productos es posible que te cobremos <br>
+            más de un envío, ya que podrían ser enviados desde distintos lugares. De <br>
+            todas formas, esto te lo informaremos antes de pagar. Recuerda que tienes <br>
+            la opción de retiro gratis o de envío gratis por compras desde S/79 en miles <br>
+            de productos. Considera que algunos productos deben cumplir con ciertas <br>
+            condiciones y el envío aplica para ciertas zonas.
+        </h4>
+    </div>
+
+    <div class="texto2">
+        <hr style="width: 100%;">
+        <h2>Para envíos a domicilio ten en cuenta lo siguiente</h2>
+        <br>
+        <br>
+        <ul>
+
+            <li type="square">El producto será entregado en la puerta de tu domicilio, de acuerdo a nuestros términos y condiciones.</li>
+
+            <li type="square">Te recomendamos que el día de la entrega cuentes con personas que te puedan ayudar. Si tienes dudas, comunícate con el servicio al cliente (xx) xxx xxxx.</li>
+
+            <li type="square">El personal de paquetería asignado para la entrega de tu producto, no está capacitado ni en facultad para realizar instalaciones de los mismos. De realizar alguna, la misma no estará bajo la responsabilidad de falabella.com de acuerdo a nuestros términos y condiciones.</li>
+
+            <li type="square">La paquetería no está facultada a desarmar puertas o ventanas para el ingreso del producto al domicilio.</li>
+
+        </ul>
+    </div><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="pie-web">
+        <!-- newsletter -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="content">
+                            <h3>Suscríbete a nuestro boletín</h3>
+                            <p>Recibe actualizaciones por correo electrónico sobre nuestros libros más recientes y
+                                <strong> ofertas especiales</strong></p>
+                        </div>
+                        <form action="" class="search">
+                            <span class="icon-large"><i class="ri-mail-line"></i></span>
+                            <input type="mail" placeholder="Correo electrónico" required>
+                            <button type="submit">Registrarse</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- widgets -->
+        <div class="widgets">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="flexwrap">
+                        <div class="row">
+                            <div class="item mini-links">
+                                <h4>Ayuda y Contacto</h4>
+                                <ul class="flexcol">
+                                    <li><a href="#">Tu Cuenta</a></li>
+                                    <li><a href="#">Tus pedidos</a></li>
+                                    <li><a href="#">Tarifas de Envio</a></li>
+                                    <li><a href="#">Devoluciones</a></li>
+                                    <li><a href="#">Contáctanos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item mini-links">
+                                <h4>Libros Categorías</h4>
+                                <ul class="flexcol">
+                                    <li><a href="#">Arte</a></li>
+                                    <li><a href="#">Biografías</a></li>
+                                    <li><a href="#">Ciencias</a></li>
+                                    <li><a href="#">Computación</a></li>
+                                    <li><a href="#">Deportes</a></li>
+                                    <li><a href="#">Derecho</a></li>
+                                    <li><a href="#">Economía</a></li>
+                                    <li><a href="#">Estilos de Vida</a></li>
+                                    <li><a href="#">Ficción</a></li>
+                                    <li><a href="#">Filosofía y Religión</a></li>
+                                    <li><a href="#">Infantiles y Juveniles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item mini-links">
+                                <h4>Métodos de Pago</h4>
+                                <ul class="flexcol">
+                                    <li><a href="#">Tarjetas de Créditos</a></li>
+                                    <li><a href="#">Paypal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item mini-links">
+                                <h4>Sobre Nosotros</h4>
+                                <ul class="flexcol">
+                                    <li><a href="#">Información de la Compañía</a></li>
+                                    <li><a href="#">Noticias</a></li>
+                                    <li><a href="#">Inversores</a></li>
+                                    <li><a href="#">Políticas</a></li>
+                                    <li><a href="#">Valoración de los Clientes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- socials -->
+        <div class="footer-info">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="flexcol">
+                        <div class="logo">
+                            <a href="./index.html"><span class="circle"></span>.Stose</a>
+                        </div>
+                        <div class="socials">
+                            <ul class="flexitem">
+                                <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                <li><a href="#"><i class="ri-facebook-line"></i></a></li>
+                                <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                                <li><a href="#"><i class="ri-linkedin-line"></i></a></li>
+                                <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="mini-text">Copyright 2022 © .Stose. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottoms navigation -->
+        <div class="menu-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <nav>
+                        <ul class="flexitem">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-bar-chart-line"></i>
+                                    <span>Tendencias</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-user-6-line"></i>
+                                    <span>Cuenta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-heart-line"></i>
+                                    <span>Deseados</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="t-search">
+                                    <i class="ri-search-line"></i>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="cart-trigger">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span>Carrito</span>
+                                    <div class="fly-item">
+                                        <span class="item-number">4</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom search desktop-->
+        <div class="search-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <form action="" class="search">
+                        <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
+                        <span class="icon-large"><i class="ri-search-line"></i></span>
+                        <input type="search" placeholder="Buscar en toda la tienda..." required>
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- overlay -->
+        <div class="overlay"></div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
