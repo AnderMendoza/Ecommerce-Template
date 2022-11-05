@@ -1379,6 +1379,86 @@ form label {
 }
 
 
+/* -- drow para registro */
+
+.sub-menu-wrap{
+    float: none;
+    float: left;
+    content: '';
+    z-index: 999;
+    position: absolute; 
+    margin-top: 450px;
+    right: 10%;
+    width: 330px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height  1s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 450px;
+    transition: max-height  1s;
+}
+.sub-menu{
+background: #453c5c;
+padding: 20px;
+margin: 10px;
+border-radius: 5px;
+}
+.register-info{
+display: flex;
+align-items: center;
+}
+.register-info h4{
+font-weight: 500px;
+color: #ffffff;
+font-size: large;
+margin-left: 18px;
+}
+.register-info h5{
+font-weight: 500;
+}
+.register-info img{
+width: 60px;
+border-radius: 50%;
+margin-right: 15px;
+}
+.sub-menu hr{
+ border: 0;
+ height: 2px;
+ width: 100%;
+ background:#ffffff;
+ margin: 15px 0 10px;
+}
+
+.input-link{
+width: 265px;
+border:none;
+height: 20px;
+outline: 0px;
+background: none;
+color:#ffffff;
+text-align: center;
+}::placeholder { color: rgb(255, 255, 255); 
+text-align: center;
+background: none;
+opacity: 50%;}
+.input-link:focus{
+    border: 1px #ff6b6b;
+} 
+.boton-registrar{
+margin-top: 30px;
+padding: 4%;
+margin-left: 110px;
+cursor: pointer;
+}
+.material-symbols-outlined{
+color: white;
+}
+.icon1{
+margin-top: 30px;
+display: flex;
+}
+
 
 
 

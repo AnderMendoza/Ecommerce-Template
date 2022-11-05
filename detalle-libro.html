@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./assets/images_readme/logo/logoWhite.png">
     <link rel="stylesheet" href="../css/detalle-libro.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <div id="page" class="site">
@@ -39,7 +40,28 @@
                         </div>
                         <div class="right">
                             <ul class="flexitem main-links">
-                                <li><a href="#">Registrate</a></li>
+                                <!-- ----------------------------- -->
+                                <!-- ----------------------------- -->
+                                <!-- ----------------------------- -->
+                                <li><a href="#" class="user-pic" onclick="toggleMenu()">Registrate</a></li>
+
+                                <div class="sub-menu-wrap" id="subMenu">
+                                <div class="sub-menu">
+                                    <div class="register-info">
+                                        <img src="assets/images/registro.png" alt="">
+                                        <h4>Registrate</h4>
+                                    </div>
+                                   <hr>
+                                 
+                                   <div class="icon1"> <span class="material-symbols-outlined">alternate_email</span>   <input type="text" class="input-link" placeholder="EMAIL" maxlength="50"> </div>
+                                   <div class="icon1"> <span class="material-symbols-outlined">person_filled</span>   <input type="text" class="input-link" placeholder="NAME" maxlength="50"> </div>
+                                   <div class="icon1"> <span class="material-symbols-outlined">Password</span>   <input type="password" class="input-link" placeholder="PASSWORD" maxlength="12"> </div>
+                                   <div class="icon1"> <span class="material-symbols-outlined">password</span>   <input type="password" class="input-link" placeholder="REPEAT PASSWORD" maxlength="12"> </div>
+                                       <button type="button" class="boton-registrar">Registrar</button>
+                                </div>
+                                 
+                                </div>
+
                                 <li><a href="#">Mi Cuenta</a></li>
                                 <li><a href="#">Revision de Pedidos</a></li>
                             </ul>
@@ -929,6 +951,7 @@
 
         </footer>
     </div>
+    <Script src="js/dropdown-register.js"></Script>
     <script src="../js/detalle-libro.js"></script>
 </body>
 </html>
