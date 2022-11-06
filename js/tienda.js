@@ -19,12 +19,12 @@ copyMenu();
 
 //show mobile menu
 const menuButton = document.querySelector('.trigger'),
-      closeButton = document.querySelector('.t-close'),
-      addclass = document.querySelector('.site')
-menuButton.addEventListener('click', function() {
+    closeButton = document.querySelector('.t-close'),
+    addclass = document.querySelector('.site')
+menuButton.addEventListener('click', function () {
     addclass.classList.toggle('showmenu')
 })
-closeButton.addEventListener('click', function() {
+closeButton.addEventListener('click', function () {
     addclass.classList.remove('showmenu')
 })
 
@@ -44,12 +44,12 @@ function toggle(e) {
 
 //show search
 const searchButton = document.querySelector('.t-search'),
-      tClose = document.querySelector('.search-close'),
-      showClass = document.querySelector('.site');
-searchButton.addEventListener('click', function() {
+    tClose = document.querySelector('.search-close'),
+    showClass = document.querySelector('.site');
+searchButton.addEventListener('click', function () {
     showClass.classList.toggle('showsearch');
 })
-tClose.addEventListener('click', function() {
+tClose.addEventListener('click', function () {
     showClass.classList.remove('showsearch')
 })
 
@@ -60,16 +60,16 @@ const Ftrigger = document.querySelector('.filter-trigger');
 
 Ftrigger.addEventListener('click', () => {
     setTimeout(() => {
-        if(!Fpopup.classList.contains('show')) {
+        if (!Fpopup.classList.contains('show')) {
             Fpopup.classList.add('show')
         }
-    }, 250 )
+    }, 250)
 })
 
 //auto close by click outside .filter
 document.addEventListener('click', (e) => {
     const isClosest = e.target.closest(FloShow);
-    if(!isClosest && Fpopup.classList.contains('show')) {
+    if (!isClosest && Fpopup.classList.contains('show')) {
         Fpopup.classList.remove('show')
     }
 })
@@ -81,16 +81,16 @@ const divTrigger = document.querySelector('.cart-trigger');
 
 divTrigger.addEventListener('click', () => {
     setTimeout(() => {
-        if(!divPopup.classList.contains('show')) {
+        if (!divPopup.classList.contains('show')) {
             divPopup.classList.add('show');
         }
-    }, 250 )
+    }, 250)
 })
 
 //close by click outside
 document.addEventListener('click', (e) => {
     const isClosest = e.target.closest(divtoShow);
-    if(!isClosest && divPopup.classList.contains('show')) {
+    if (!isClosest && divPopup.classList.contains('show')) {
         divPopup.classList.remove('show')
     }
 })
