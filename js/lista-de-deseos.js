@@ -59,6 +59,27 @@ tClose.addEventListener('click', function () {
     showClass.classList.remove('showsearch')
 })
 
+//show wish on click
+const divtoShowD = '.wish-list';
+const divPopupD = document.querySelector(divtoShowD);
+const divTriggerD = document.querySelector('.wish-trigger');
+
+divTriggerD.addEventListener('click', () => {
+    setTimeout(() => {
+        if (!divPopupD.classList.contains('show')) {
+            divPopupD.classList.add('show');
+        }
+    }, 250)
+})
+
+//wish list close by click outside
+document.addEventListener('click', (e) => {
+    const isClosestD = e.target.closest(divtoShowD);
+    if (!isClosestD && divPopupD.classList.contains('show')) {
+        divPopupD.classList.remove('show')
+    }
+})
+
 //show cart on click
 const divtoShow = '.mini-cart';
 const divPopup = document.querySelector(divtoShow);
