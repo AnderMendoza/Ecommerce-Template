@@ -1242,12 +1242,12 @@ form.search button:hover {
     opacity: 0;
 }
 
-.mobile-hide:hover .wish-list {
+.iscart:hover .wish-list {
     visibility: visible;
     opacity: 1;
 }
 
-.wish-list .products img {
+:is(.wish-list .products, .products.wish) .thumbnail img {
     transform: none;
 }
 
@@ -1278,7 +1278,7 @@ form.search button:hover {
     overflow: auto;
 }
 
-.wish-list .thumbnail {
+:where(.wish-list, .products.cart) .thumbnail {
     position: relative;
     width: 80px;
     height: 80px;
