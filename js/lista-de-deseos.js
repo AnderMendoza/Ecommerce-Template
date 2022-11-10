@@ -59,31 +59,13 @@ tClose.addEventListener('click', function () {
     showClass.classList.remove('showsearch')
 })
 
-//show wish on click
-const divtoShowD = '.wish-list';
-const divPopupD = document.querySelector(divtoShowD);
-const divTriggerD = document.querySelector('.wish-trigger');
-
-divTriggerD.addEventListener('click', () => {
-    setTimeout(() => {
-        if (!divPopupD.classList.contains('show')) {
-            divPopupD.classList.add('show');
-        }
-    }, 250)
-})
-
-//wish list close by click outside
-document.addEventListener('click', (e) => {
-    const isClosestD = e.target.closest(divtoShowD);
-    if (!isClosestD && divPopupD.classList.contains('show')) {
-        divPopupD.classList.remove('show')
-    }
-})
-
 //show cart on click
 const divtoShow = '.mini-cart';
 const divPopup = document.querySelector(divtoShow);
 const divTrigger = document.querySelector('.cart-trigger');
+const divtoShowD = '.wish-list';
+const divPopupD = document.querySelector(divtoShowD);
+const divTriggerD = document.querySelector('.wish-trigger');
 
 divTrigger.addEventListener('click', () => {
     setTimeout(() => {
@@ -92,11 +74,22 @@ divTrigger.addEventListener('click', () => {
         }
     }, 250)
 })
+divTriggerD.addEventListener('click', () => {
+    setTimeout(() => {
+        if (!divPopupD.classList.contains('show')) {
+            divPopupD.classList.add('show');
+        }
+    }, 250)
+})
 
 //close by click outside
 document.addEventListener('click', (e) => {
     const isClosest = e.target.closest(divtoShow);
+    const isClosestD = e.target.closest(divtoShowD);
     if (!isClosest && divPopup.classList.contains('show')) {
         divPopup.classList.remove('show')
+    }
+    if (!isClosestD && divPopupD.classList.contains('show')) {
+        divPopupD.classList.remove('show')
     }
 })

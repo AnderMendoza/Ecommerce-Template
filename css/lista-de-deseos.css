@@ -419,7 +419,8 @@ h4 {
 }
 
 nav .fly-item,
-.header-nav .mini-cart .price .fly-item {
+.header-nav .mini-cart .price .fly-item,
+.header-nav .wish-list .fly-item {
     top: 50%;
     margin-top: -24px;
     width: 30%;
@@ -828,12 +829,12 @@ form.search button:hover {
     background-color: transparent;
 }
 
-.products .actions .button-cart {
+.products .actions .button-cart .button-wish-list {
     flex: 1;
     min-width: 200px;
 }
 
-.products .actions .button-cart button {
+.products .actions .button-cart .button-wish-list button {
     width: var(--percent100);
     cursor: pointer;
 }
@@ -1455,7 +1456,7 @@ form label {
     opacity: 0;
 }
 
-.mobile-hide:hover .wish-list {
+.iscart:hover .wish-list {
     visibility: visible;
     opacity: 1;
 }
