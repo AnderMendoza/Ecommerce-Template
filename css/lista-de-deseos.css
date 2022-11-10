@@ -279,15 +279,6 @@ h4 {
         c. Header Main, Category
         d. Search form
         e. Responsive MENU - Off Canvas    
-    02. PAGE SINGLE
-        a. Breadcrumb
-        b. Product details
-        c. Product description
-        d. Product Review
-        e. Product Review Form
-    03. PRODUCT
-        a. Global product
-        b. MAIN product
     04. FOOTER
         a. News letter
         b. Widgets
@@ -296,7 +287,7 @@ h4 {
         a.Search
     06. OVERLAY
     07. CART
-    08. PAGE CART
+    08. PAGE WISH LIST
     09. PAGE CHECKOUT
     10. MODAL
     11. RESPONSIVE
@@ -428,7 +419,8 @@ h4 {
 }
 
 nav .fly-item,
-.header-nav .mini-cart .price .fly-item {
+.header-nav .mini-cart .price .fly-item,
+.header-nav .wish-list .fly-item {
     top: 50%;
     margin-top: -24px;
     width: 30%;
@@ -837,12 +829,12 @@ form.search button:hover {
     background-color: transparent;
 }
 
-.products .actions .button-cart {
+.products .actions .button-cart .button-wish-list {
     flex: 1;
     min-width: 200px;
 }
 
-.products .actions .button-cart button {
+.products .actions .button-cart .button-wish-list button {
     width: var(--percent100);
     cursor: pointer;
 }
@@ -1546,7 +1538,6 @@ form label {
     width: 90%;
 }
 
-
 /* ------------------
  * 08. CART
  * ------------------ */
@@ -1567,7 +1558,7 @@ form label {
     opacity: 1;
 }
 
-.mini-cart .products img {
+:is(.mini-cart .products, .products.wish) .thumbnail img {
     transform: none;
 }
 
@@ -1598,7 +1589,7 @@ form label {
     overflow: auto;
 }
 
-.mini-cart .thumbnail {
+:where(.mini-cart, .products.wish) .thumbnail {
     position: relative;
     width: 80px;
     height: 80px;
@@ -1652,8 +1643,58 @@ form label {
     width: 90%;
 }
 
+/* ------------------
+ * 09. PAGE WISH LIST
+ * ------------------ */
+.page-title {
+    margin-bottom: 3em;
+}
 
+.products.wish form {
+    width: var(--percent100);
+}
 
+.products.wish table thead th {
+    vertical-align: middle;
+    background-color: var(--light-bg-color);
+}
+
+.products.wish table :where(th, td) {
+    padding: 2em 3.1em;
+    text-align: center;
+}
+
+.products.wish table :where(th, td):first-child {
+    text-align: left;
+    padding-left: 2em;
+}
+
+.products.wish table tbody td:first-child {
+    padding-left: 0;
+}
+
+.products.wish table td :where(.content, .qty-control, p) {
+    margin: 0;
+    padding: 0;
+}
+
+.products.wish .qty-control :where(button, input) {
+    width: 32px;
+    height: 32px;
+    padding: 0.25em;
+    text-align: center;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.products.wish .qty-control button {
+    cursor: pointer;
+}
+
+.products.wish table tbody tr {
+    border-bottom: 1px solid var(--border-color);
+}
 
 
 /* ------------------
@@ -1680,10 +1721,46 @@ form label {
     }
 }
 
+@media screen and (max-width: 1280px) {
+    #wish-table thead {
+        display: none;
+    }
+
+    #wish-table tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+    }
+
+    #wish-table tbody tr td:first-child {
+        width: var(--percent100);
+        min-width: var(--percent100);
+        position: relative;
+    }
+
+    #wish-table tbody tr td:not(:first-child) {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: var(--percent100);
+    }
+
+    #wish-table tbody tr td:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .products .price .current {
         font-size: 1.25em;
+    }
+
+    .products.wish,
+    .widgets .row {
+        flex: 0 0 50%;
     }
 
     .products.mini,
@@ -1828,4 +1905,10 @@ form label {
     .products.one .flexwrap>.row:last-child>.item {
         padding-left: 2em;
     }
+
+    /*page wish */
+    .products.wish .form-wish {
+        width: 100%;
+    }
+
 }
