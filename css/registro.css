@@ -1346,6 +1346,14 @@ cursor: pointer;
 .material-symbols-outlined{
     color: #9089cc;
 }
+#fecha-de-salida1{
+    color: white;
+    padding-top: 10px;
+    background: #0a021c;
+    margin-bottom: 48rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
  /* ----------------RESPONSIVE DE FORM DE REGISTRO----------------- */
 
 /* RESPONSIVE */

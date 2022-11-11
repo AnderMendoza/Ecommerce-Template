@@ -1342,6 +1342,14 @@ color: white;
 .material-symbols-outlined{
     color: white;
 }
+#fecha-de-salida3{
+    color: white;
+    padding-top: 10px;
+    background: #0a021c;
+    margin-bottom: 41.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
  /* ----------------RESPONSIVE DE FORM DE LOGIN----------------- */
 
 /* RESPONSIVE */

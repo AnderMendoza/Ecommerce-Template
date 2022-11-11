@@ -1202,7 +1202,7 @@ main{
  left: 100rem;
 }
 .login-container{
-    height: 44.75em;
+    height: 43.75em;
     width: 60em;
     margin: 6eb auto;
     display: flex;
@@ -1375,6 +1375,14 @@ cursor: pointer;}
     color: #9089cc;
 }
 
+#fecha-de-salida2{
+    color: white;
+    padding-top: 10px;
+    background: #0a021c;
+    margin-bottom: 41rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .inputs-container.error{
     color: red;
 }
