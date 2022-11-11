@@ -1353,6 +1353,15 @@ color: white;
  /* ----------------RESPONSIVE DE FORM DE LOGIN----------------- */
 
 /* RESPONSIVE */
+@media screen and (max-width:1024px ) {
+ .login-container{
+    height: 45rem;
+ }
+ #fecha-de-salida3{
+    margin-bottom: 30rem;
+ }
+
+}
 @media screen and (max-width:1000px ) {
     .imagen-contenedor{
         display: none;
@@ -1391,6 +1400,10 @@ color: white;
 
     .login-info-container > p{
      margin-top: 10rem;
+    }
+
+    #fecha-de-salida3{
+        margin-bottom: 32rem;
     }
 }
 
@@ -1438,6 +1451,7 @@ color: white;
     .title1{
         font-size:1.5rem;
     }
+
 }
 
 @media screen and (max-width:281px ) {
@@ -1462,6 +1476,7 @@ color: white;
 }
 
 @media screen and (max-width:500px ) {
+
     .input{
       width: 15rem; 
     }
@@ -1478,19 +1493,34 @@ color: white;
 
 @media screen and (min-width: 414px) {
     .login-container{
-     width: 70%;
+     width: 85%;
      padding-bottom: 150px;
     }
     .input{
      width: 150%;
     }
     .title{
-        font-size: 2.2rem;
+        font-size:1.8rem;
     }
     .title1{
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
+
  }
+
+ @media screen and (min-width: 36px) {
+
+    .title{
+        font-size:1.8rem;
+    }
+    .title1{
+        font-size: 1.8rem;
+    }
+
+ }
+
+
+
 /* ------------------
  * 08. RESPONSIVE
  * ------------------ */
@@ -1504,6 +1534,7 @@ color: white;
        .input{
         width: 150%;
        }
+
 }
 
 @media screen and (min-width: 602px) {

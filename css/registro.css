@@ -1357,6 +1357,18 @@ cursor: pointer;
  /* ----------------RESPONSIVE DE FORM DE REGISTRO----------------- */
 
 /* RESPONSIVE */
+@media screen and (max-width:1024px ) {
+    .login-container{
+       height: 55rem;
+    }
+    #fecha-de-salida3{
+       margin-bottom: 40rem;
+    }
+    .widgets{
+        margin-top: 10rem;
+    }
+   
+   }
 @media screen and (max-width:1000px ) {
     .imagen-contenedor{
         display: none;
@@ -1416,6 +1428,25 @@ cursor: pointer;
     }
     .btn-login{
         width: 12rem;
+    }
+    #fecha-de-salida1{
+        margin-bottom: 41rem;
+    }
+}
+
+@media screen and (max-width:360px ) {
+    #fecha-de-salida1{
+        margin-bottom: 35rem;
+    }
+    .social-login-element{
+        margin-top: 2rem;
+
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .inputs-container{
+        margin-top: 1.5rem;
     }
 }
 /* ------------------
