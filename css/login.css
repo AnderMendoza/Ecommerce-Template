@@ -1202,7 +1202,7 @@ main{
  left: 100rem;
 }
 .login-container{
-    height: 43.75em;
+    height: 44.75em;
     width: 60em;
     margin: 6eb auto;
     display: flex;
@@ -1210,6 +1210,7 @@ main{
     margin: 0 auto;/* para centrar login */
     overflow: hidden;      /* visible por mientras */
     border-radius: 20px;
+    margin-top: -15px;
 
 }
 
@@ -1234,8 +1235,8 @@ main{
 .title{
     text-transform: capitalize;
     font-size: 2.25rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -1273,10 +1274,44 @@ color: #f6efff;
 cursor: pointer;
 }
 
+.social-login-element-admin{
+    width: 12.5rem;
+    height: 3.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: block;
+    justify-content: center;
+    align-items:center;
+    border-radius: 5px;
+    border: 1px solid ;
+    margin-top: 1rem;
+}
+.social-login-element-admin img{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    top: 0.7rem;
+    left: 0;
+    border-radius: 10px;
+}
+
+.social-login-element-admin span{
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: 0.75rem;
+    left: 0.1.5rem;
+}
+
+.social-login-element-admin:hover{
+background: #0a021c;
+color: white;
+cursor: pointer;}
 .login-info-container > p{
     font-size: 1.25em;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
 }
 
 .inputs-container{
@@ -1305,10 +1340,13 @@ cursor: pointer;
     box-sizing: border-box;
     width: 25rem;
     border: none;
+}::placeholder{
+    color: #8f68f8;
+    text-align: center;
 }
 
 .input:hover{
-    border: 2px solid #3e1c96;
+    border: 2px solid #ccbaf8;
 }
 
 .btn-login{

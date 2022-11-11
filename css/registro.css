@@ -1210,6 +1210,7 @@ main{
     border-radius: 20px;
     margin-bottom: 100px;
 
+
 }
 
 .login-info-container{
@@ -1219,7 +1220,7 @@ main{
     align-items: center;
     text-align: center;
     padding-top: 0.5rem;
-    background-color: var(--login-bg);
+    background-color: #F2F3F5;;
 }
 
 .imagen-contenedor{ 
@@ -1309,6 +1310,9 @@ cursor: pointer;
     letter-spacing: 1px;
     box-sizing: border-box;
     width: 25rem;
+}::placeholder{
+    color: #8f68f8;
+    text-align: center;
 }
 
 .input:hover{

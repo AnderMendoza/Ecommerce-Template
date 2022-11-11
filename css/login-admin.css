@@ -1307,7 +1307,8 @@ color: white;
     box-sizing: border-box;
     width: 25rem;
 }::placeholder{
-    color: #0a021c;
+        color: #8f68f8;
+        text-align: center;
 }
 
 .input:hover{

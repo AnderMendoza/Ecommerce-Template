@@ -190,14 +190,19 @@
                     <span>Facebook</span>
                 </div>
              </div>
+             <div class="social-login-element-admin" onclick="loginAdmin()">
+                <a href="login-admin.html"></a><img src="assets/images/logo-admin2.png" alt="google-img"></a>
+                <a href="login-admin.html"><span>MODO ADMIN</span></a>
+            </div>
                 <p>or</p>
                 
                 <form class="inputs-container" id="formulario">
                     <span id="iconform" class="material-symbols-outlined">alternate_email</span>   <input class="input" placeholder="E-mail" type="text" name="email" id="validarEmail">
                     <span id="iconform" class="material-symbols-outlined">Password</span>          <input class="input" placeholder="Password" type="password" name="password" >
-                    <p>Olvidaste tu contraseña? <span class="span">Clic aquí</span></p>
+                    <p>Olvidaste tu contraseña? <span class="span">Clic aquí</span></p>              
                     <button class="btn-login" type="submit">Login</button>
-                    <p>No tienes una cuenta? <span class="span">Registrate</span></p>
+                    <p>No tienes una cuenta? <a href="Registrar.html" class="span">Registrate</a></p>
+                    
                     <span></span>
                 </form>
             </div>
@@ -357,7 +362,7 @@
 
         </footer>
     </div>
-    <script src="js/dropdown-register.js"></script>
+    <script src="js/login-admin.js"></script>
     <script src="js/validacion-login.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
