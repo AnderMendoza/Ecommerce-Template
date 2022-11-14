@@ -182,12 +182,18 @@
              <div class="login-info-container">
                 <h1 class="title">Login </h1>
                 <h1 class="title1"> Administrador</h1>
-                <form class="inputs-container">
-                    <span class="material-symbols-outlined">alternate_email</span>   <input class="input" placeholder="E-mail Administrador" type="text" >
-                    <span class="material-symbols-outlined">Password</span>          <input class="input" placeholder="Contraseña Master" type="password" >
+                <form class="inputs-container" id="form3">
+                    <span id="icon-form-7" class="material-symbols-outlined">alternate_email</span>   <input class="input" placeholder="E-mail Administrador" type="text" id="email3">
+                    <span id="icon-form-8" class="material-symbols-outlined">Password</span>          <input class="input" placeholder="Contraseña Master" type="password" id="pass4" >
                     <p>Olvidaste tu contraseña? <span class="span">Click quí</span></p>
-                    <button class="btn-login">Login</button>
+                    <button class="btn-login" type="submit">Login</button>
                 </form>
+                <div class="espacio"></div>
+                <div class="container-warnings">
+                     <p id="error8"></p>
+                     <p id="error9"></p>
+
+                   </div>
             </div>
             <img class="imagen-contenedor" src="assets/images/login-admin.svg" alt="login">
         </div>
@@ -342,6 +348,7 @@
 
         </footer>
     </div>
+    <script src="js/validacion-login-admin.js"></script>
     <script src="js/navegacion.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>

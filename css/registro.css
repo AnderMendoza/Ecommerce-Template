@@ -1310,8 +1310,9 @@ cursor: pointer;
     letter-spacing: 1px;
     box-sizing: border-box;
     width: 25rem;
+    color: #ffffff;
 }::placeholder{
-    color: #8f68f8;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -1353,6 +1354,32 @@ cursor: pointer;
     margin-bottom: 48rem;
     border-radius: 5px;
     cursor: pointer;
+}
+/* .warnings{
+
+    width: 400px;
+    color: rgb(232, 39, 39);
+    text-align: center;
+    margin: auto;
+    font-size: 1rem; */
+/* } */
+#error1 ,#error2, #error3,#error4,#error5 {
+
+    width: 400px;
+    color: rgb(232, 39, 39);
+    text-align: center;
+    margin: auto;
+    font-size: 0.7rem;
+}
+
+.container-warnings {
+
+margin-top:-1.5rem;
+font-size: 0.8rem;
+}
+
+#check-cruz{
+    margin-left: 28rem;
 }
  /* ----------------RESPONSIVE DE FORM DE REGISTRO----------------- */
 

@@ -1298,7 +1298,7 @@ color: white;
 }
 
 .input{
-    background-color: white;
+    background-color:#8881c8 ;
     padding-left: 20px;
     border: none;
     border-radius: 5px;
@@ -1306,9 +1306,11 @@ color: white;
     letter-spacing: 1px;
     box-sizing: border-box;
     width: 25rem;
+    color: white;
 }::placeholder{
         color: #8f68f8;
         text-align: center;
+        color: white;
 }
 
 .input:hover{
@@ -1349,6 +1351,25 @@ color: white;
     margin-bottom: 41.5rem;
     border-radius: 5px;
     cursor: pointer;
+}
+#error8 ,#error9 {
+    width: 300px;
+    color: rgb(220, 44, 44);
+    text-align: center;
+    margin: auto;
+    font-size: 0.7rem;
+    
+}
+.container-warnings {
+margin-top:-0.4rem;
+font-size: 0.8rem;
+padding: 10px;
+border-radius: 10px;
+
+}
+
+.espacio{
+    height: 1.5rem;
 }
  /* ----------------RESPONSIVE DE FORM DE LOGIN----------------- */
 

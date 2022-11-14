@@ -1,38 +1,36 @@
-const formulario = document.getElementById("formulario")
-const inputs = document.querySelectorAll("#formulario input")
+// --------------------- LOGIN ------------------
 
-const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	password: /^.{4,12}$/, // 4 a 12 digitos.
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+const email2=document.getElementById("email2")
+const password3=document.getElementById("pass3")
+form2.addEventListener("submit", i=>{
+  i.preventDefault()
+  let entrar = false
+  let regexEmail2= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
+  let regpassword2=/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/
+
+if(!regexEmail2.test(email2.value)){
+  error6.innerHTML= "X Correo no válido <br>"
+  email2.style.background="rgb(232, 39, 39)";
+  document.getElementById("icon-form-5").innerHTML="close";
+  document.getElementById("icon-form-5").style.color="rgb(232, 39, 39)";
+  email2.style.color="white";
+  entrar= true 
+}else{
+  document.getElementById("icon-form-5").innerHTML="check";
+  document.getElementById("icon-form-5").style.color="rgb(0, 184, 0)";
+  email2.style.background="#bbb5ef";
+  error6.innerHTML= ""
 }
-
-const validarFormulario = (e)=> {
-    
-      switch(e.target.name){
-        case "email":
-        if(expresiones.correo.test(e.target.value)){
-
-        }else{
-            document.getElementById("inputs-container").classList.add(".error")
-        }
-        break;
-        case "password":
-            console.log("funciona");
-            break;
-    
-
-      }
-   }
-
-inputs.forEach((input)=> {
-  input.addEventListener("keyup",validarFormulario );
-  input.addEventListener("blur",validarFormulario );
-});
-
-formulario.addEventListener("submit" , (e)=> {
- e.preventDefault();
-});
-
+if(!regpassword2.test(password3.value)){
+  password3.style.background="rgb(232, 39, 39)";
+  document.getElementById("icon-form-6").innerHTML="close";
+  document.getElementById("icon-form-6").style.color="rgb(232, 39, 39)";
+  password3.style.color="white";
+  error7.innerHTML= "X Contraseña (pruebe 8-16 cifras al menos 1número/1Mayuscula/1minuscula)<br>"
+}else{
+  document.getElementById("icon-form-6").innerHTML="check";
+  document.getElementById("icon-form-6").style.color="rgb(0, 184, 0)";
+  password3.style.background="#bbb5ef";
+  error7.innerHTML= ""
+}
+})

@@ -191,15 +191,23 @@
                 </div>
              </div>
              <br>
-                <form class="inputs-container">
-                    <span class="material-symbols-outlined">alternate_email</span>   <input class="input" placeholder="E-mail" type="text">
-                    <span class="material-symbols-outlined">person_filled</span>     <input class="input"input type="text" class="input-link" placeholder="NAME">
-                    <span class="material-symbols-outlined">Password</span>          <input class="input" placeholder="Password" type="password">
-                    <span class="material-symbols-outlined">Password</span>           <input class="input" placeholder="Repita password" type="password">
+                <form class="inputs-container" id="form">
+                    <span id="icon-form-1" class="material-symbols-outlined">alternate_email</span>   <input class="input" placeholder="E-mail" type="text" id="email"> 
+                    <span id="icon-form-2" class="material-symbols-outlined">person_filled</span>     <input class="input"input type="text" class="input-link" placeholder="NAME" id="nombre">
+                    <span id="icon-form-3" class="material-symbols-outlined">Password</span>          <input class="input" placeholder="Password" type="password" id="pass1">
+                    <span id="icon-form-4" class="material-symbols-outlined">Password</span>           <input class="input" placeholder="Repita password" type="password" id="pass2">
                     <br>
                     <p>Ya tienes una cuenta? <a href="login.html" class="span">Clic aquí</a></p>
-                    <button class="btn-login">Registrar</button>
+                    <button class="btn-login" type="submit">Registrar</button>
                 </form>
+                <!-- <div class="container-warnings"><p class="warnings" id="warnings"></p></div> -->
+               <div class="container-warnings">
+                <p id="error1"></p>
+                <p id="error2"></p>
+                <p id="error3"></p>
+                <p id="error4"></p>
+                <p id="error5"></p>
+               </div>
             </div>
             <img class="imagen-contenedor" src="assets/images/imagen-registro.svg" alt="login">
         </div>
@@ -353,6 +361,7 @@
 
         </footer>
     </div>
+    <script src="js/validacion-registrar.js"></script>
     <script src="js/navegacion.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>

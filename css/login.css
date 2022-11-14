@@ -1235,8 +1235,8 @@ main{
 .title{
     text-transform: capitalize;
     font-size: 2.25rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -1340,8 +1340,9 @@ cursor: pointer;}
     box-sizing: border-box;
     width: 25rem;
     border: none;
+    color: white;
 }::placeholder{
-    color: #8f68f8;
+    color: white;
     text-align: center;
 }
 
@@ -1383,8 +1384,18 @@ cursor: pointer;}
     border-radius: 5px;
     cursor: pointer;
 }
-.inputs-container.error{
-    color: red;
+#error6 ,#error7 {
+
+    width: 400px;
+    color: rgb(232, 39, 39);
+    text-align: center;
+    margin: auto;
+    font-size: 0.7rem;
+}
+
+.container-warnings {
+margin-top:rem;
+font-size: 0.8rem;
 }
  /* ----------------RESPONSIVE DE FORM DE LOGIN----------------- */
 
