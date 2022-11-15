@@ -198,8 +198,9 @@
                     <span id="icon-form-4" class="material-symbols-outlined">Password</span>           <input class="input" placeholder="Repita password" type="password" id="pass2">
                     <br>
                     <p>Ya tienes una cuenta? <a href="login.html" class="span">Clic aquí</a></p>
-                    <button class="btn-login" type="submit">Registrar</button>
+                    <button class="btn-login" type="submit" id="registrar" onclick="guardar()">Registrar</button>
                 </form>
+                
                 <!-- <div class="container-warnings"><p class="warnings" id="warnings"></p></div> -->
                <div class="container-warnings">
                 <p id="error1"></p>
@@ -365,5 +366,10 @@
     <script src="js/navegacion.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="js/configuracion.js" ></script>
 </html>
