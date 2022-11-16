@@ -89,8 +89,9 @@ if(!regpassword.test(password2.value)){
 //   password2.style.color="white";
 // }
 
+// 
 
-if(password1.value==password2.value & password1.value1!="" & password2.value!=""){
+if(regpassword.test(password1.value) & password1.value==password2.value & password1.value1!="" & password2.value!=""){
   password1.style.background="#bbb5ef";
   document.getElementById("icon-form-3").innerHTML="check";
   document.getElementById("icon-form-3").style.color="rgb(0, 184, 0)";
