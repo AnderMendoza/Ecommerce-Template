@@ -257,17 +257,6 @@ h4 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------
  * Structure Styling
 
@@ -293,9 +282,13 @@ h4 {
     06. BOTTOM MENU
         a.Search
     07. OVERLAY
-    08. RESPONSIVE
+    08. WHIST LIST
+    09. CART
+    10. BACK TO TOP
+    11. RESPONSIVE
  *
  * ------------------ */
+
 
 
 /* ------------------
@@ -307,7 +300,6 @@ h4 {
     line-height: inherit;
     transition: var(--trans-color);
 }
-
 
 
 
@@ -501,6 +493,8 @@ nav .fly-item,
     text-decoration: underline;
 }
 
+
+
 /* 01. HEADER --------------------------
     *  d. Search Form
     * ------------------ */
@@ -548,6 +542,7 @@ form.search button {
 form.search button:hover {
     background-color: var(--dark-color);
 }
+
 
 
 /* 01. HEADER --------------------------
@@ -679,6 +674,7 @@ form.search button:hover {
 }
 
 
+
 /* ------------------
  * 02. SLIDER
  * ------------------ */
@@ -735,7 +731,6 @@ form.search button:hover {
 
 
 
-
 /* ------------------
  * 03. BRANDS
  * ------------------ */
@@ -754,6 +749,7 @@ form.search button:hover {
 .brands .item a:hover img {
     opacity: 1;
 }
+
 
 
 /* ------------------
@@ -982,6 +978,7 @@ form.search button:hover {
 }
 
 
+
 /* 04. PRODUCT --------------------------
     *  b. BIG product
     * ------------------ */
@@ -1020,7 +1017,6 @@ form.search button:hover {
 
 
 
-
 /* 04. PRODUCT --------------------------
     *  d. MAIN product
     * ------------------ */
@@ -1037,10 +1033,10 @@ form.search button:hover {
 
 
 
-
 /* ------------------
  * 05. FOOTER
  * ------------------ */
+
 
 
 /* 05. FOOTER --------------------------
@@ -1070,6 +1066,7 @@ form.search button:hover {
     max-width: 500px;
     width: var(--percent100);
 }
+
 
 
 /* 05. FOOTER --------------------------
@@ -1204,7 +1201,6 @@ form.search button:hover {
 
 
 
-
 /* ------------------
  * 07. OVERLAY
  * ------------------ */
@@ -1225,6 +1221,8 @@ form.search button:hover {
     opacity: 1;
     visibility: inherit;
 }
+
+
 
 /* ------------------
  * 08. WISH LIST
@@ -1325,8 +1323,9 @@ form.search button:hover {
 }
 
 
+
 /* ------------------
- * 08. CART
+ * 09. CART
  * ------------------ */
 .mini-cart {
     position: absolute;
@@ -1431,6 +1430,10 @@ form.search button:hover {
 }
 
 
+
+/* ------------------
+ * 10. BACK TO TOP
+ * ------------------ */
 .backtotop {
     position: fixed;
     bottom: 6em;
@@ -1452,7 +1455,7 @@ form.search button:hover {
 
 
 /* ------------------
- * 08. RESPONSIVE
+ * 11. RESPONSIVE
  * ------------------ */
 @media screen and (min-width: 481px) {
     .products.main .item {
