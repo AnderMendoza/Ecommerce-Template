@@ -1639,6 +1639,27 @@ form label {
 
 
 
+/* ------------------
+ * 09. BACK TO TOP
+ * ------------------ */
+ .backtotop {
+    position: fixed;
+    bottom: 6em;
+    right: 2em;
+    text-align: center;
+    gap: 0;
+    font-size: var(--font-small);
+    padding: 3px;
+    z-index: 999;
+    background-color: var(--light-bg-color);
+    transition: var(--trans-background-color);
+}
+
+.backtotop a:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
 
 
 /* ------------------
