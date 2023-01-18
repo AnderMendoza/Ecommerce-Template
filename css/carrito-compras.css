@@ -257,17 +257,6 @@ h4 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------
  * Structure Styling
 
@@ -279,6 +268,16 @@ h4 {
         c. Header Main, Category
         d. Search form
         e. Responsive MENU - Off Canvas    
+    02. PAGE SINGLE
+        a. Category
+        b. Breadcrumb
+        c. Product details
+        d. Product description
+        e. Product Review
+        f. Product Review Form
+    03. PRODUCT
+        a. Global product
+        b. MAIN product
     04. FOOTER
         a. News letter
         b. Widgets
@@ -286,13 +285,14 @@ h4 {
     05. BOTTOM MENU
         a.Search
     06. OVERLAY
-    07. CART
-    08. PAGE CART
-    09. PAGE CHECKOUT
-    10. MODAL
+    07. WISH LIST
+    08. CART
+    09. PAGE CART
+    10. BACK TO TOP
     11. RESPONSIVE
  *
  * ------------------ */
+
 
 
 /* ------------------
@@ -304,7 +304,6 @@ h4 {
     line-height: inherit;
     transition: var(--trans-color);
 }
-
 
 
 
@@ -498,6 +497,8 @@ nav .fly-item,
     text-decoration: underline;
 }
 
+
+
 /* 01. HEADER --------------------------
     *  d. Search Form
     * ------------------ */
@@ -545,6 +546,7 @@ form.search button {
 form.search button:hover {
     background-color: var(--dark-color);
 }
+
 
 
 /* 01. HEADER --------------------------
@@ -677,12 +679,9 @@ form.search button:hover {
 
 
 
-
 /* ------------------
  * 02. PAGE SINGLE
  * ------------------ */
-
-
 
 
 
@@ -697,7 +696,6 @@ form.search button:hover {
 .showctg .ctg-trigger .ri-close-line {
     display: block;
 }
-
 
 
 
@@ -721,7 +719,6 @@ form.search button:hover {
     text-overflow: ellipsis;
     color: var(--light-text-color);
 }
-
 
 
 
@@ -759,7 +756,6 @@ form.search button:hover {
     height: var(--percent100);
     display: block;
 }
-
 
 
 
@@ -849,8 +845,6 @@ form.search button:hover {
 
 
 
-
-
 /* 02. PAGE SINGLE --------------------------
     *  e. Product Review
     * ------------------ */
@@ -895,10 +889,6 @@ form.search button:hover {
 }
 
 
-
-/* 02. PAGE SINGLE --------------------------
-    *  f. Product Review
-    * ------------------ */
 .products .reviews h4 {
     font-size: 2em;
     color: var(--light-text-color);
@@ -947,7 +937,7 @@ form.search button:hover {
 
 
 /* 02. PAGE SINGLE --------------------------
-    *  g. Product Review Form
+    *  f. Product Review Form
     * ------------------ */
 .review-form .rating {
     flex-wrap: wrap;
@@ -1003,7 +993,6 @@ form label {
     margin-bottom: 0.5em;
     text-transform: uppercase;
 }
-
 
 
 
@@ -1250,10 +1239,10 @@ form label {
 
 
 
-
 /* ------------------
  * 04. FOOTER
  * ------------------ */
+
 
 
 /* 04. FOOTER --------------------------
@@ -1283,6 +1272,7 @@ form label {
     max-width: 500px;
     width: var(--percent100);
 }
+
 
 
 /* 04. FOOTER --------------------------
@@ -1417,7 +1407,6 @@ form label {
 
 
 
-
 /* ------------------
  * 06. OVERLAY
  * ------------------ */
@@ -1439,8 +1428,10 @@ form label {
     visibility: inherit;
 }
 
+
+
 /* ------------------
- * 08. WISH LIST
+ * 07. WISH LIST
  * ------------------ */
 .wish-list {
     position: absolute;
@@ -1535,6 +1526,8 @@ form label {
     max-width: 300px;
     width: 90%;
 }
+
+
 
 /* ------------------
  * 08. CART
@@ -1640,6 +1633,8 @@ form label {
     max-width: 300px;
     width: 90%;
 }
+
+
 
 /* ------------------
  * 09. PAGE CART
@@ -1799,7 +1794,7 @@ form label {
 
 
 /* ------------------
- * 15. RESPONSIVE
+ * 11. RESPONSIVE
  * ------------------ */
 @media screen and (min-width: 481px) {
     .products.main .item {
