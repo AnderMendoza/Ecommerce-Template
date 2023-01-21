@@ -257,17 +257,6 @@ h4 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------
  * Structure Styling
 
@@ -280,11 +269,12 @@ h4 {
         d. Search form
         e. Responsive MENU - Off Canvas    
     02. PAGE SINGLE
-        a. Breadcrumb
-        b. Product details
-        c. Product description
-        d. Product Review
-        e. Product Review Form
+        a. Category
+        b. Breadcrumb
+        c. Product details
+        d. Product description
+        e. Product Review
+        f. Product Review Form
     03. PRODUCT
         a. Global product
         b. MAIN product
@@ -295,13 +285,13 @@ h4 {
     05. BOTTOM MENU
         a.Search
     06. OVERLAY
-    07. CART
-    08. PAGE CART
-    09. PAGE CHECKOUT
-    10. MODAL
-    11. RESPONSIVE
+    07. WISH LIST
+    08. CART
+    09. BACK TO TOP
+    10. RESPONSIVE
  *
  * ------------------ */
+
 
 
 /* ------------------
@@ -313,7 +303,6 @@ h4 {
     line-height: inherit;
     transition: var(--trans-color);
 }
-
 
 
 
@@ -507,6 +496,8 @@ nav .fly-item,
     text-decoration: underline;
 }
 
+
+
 /* 01. HEADER --------------------------
     *  d. Search Form
     * ------------------ */
@@ -554,6 +545,7 @@ form.search button {
 form.search button:hover {
     background-color: var(--dark-color);
 }
+
 
 
 /* 01. HEADER --------------------------
@@ -686,12 +678,9 @@ form.search button:hover {
 
 
 
-
 /* ------------------
  * 02. PAGE SINGLE
  * ------------------ */
-
-
 
 
 
@@ -706,7 +695,6 @@ form.search button:hover {
 .showctg .ctg-trigger .ri-close-line {
     display: block;
 }
-
 
 
 
@@ -730,7 +718,6 @@ form.search button:hover {
     text-overflow: ellipsis;
     color: var(--light-text-color);
 }
-
 
 
 
@@ -768,7 +755,6 @@ form.search button:hover {
     height: var(--percent100);
     display: block;
 }
-
 
 
 
@@ -858,8 +844,6 @@ form.search button:hover {
 
 
 
-
-
 /* 02. PAGE SINGLE --------------------------
     *  e. Product Review
     * ------------------ */
@@ -904,10 +888,6 @@ form.search button:hover {
 }
 
 
-
-/* 02. PAGE SINGLE --------------------------
-    *  f. Product Review
-    * ------------------ */
 .products .reviews h4 {
     font-size: 2em;
     color: var(--light-text-color);
@@ -1012,7 +992,6 @@ form label {
     margin-bottom: 0.5em;
     text-transform: uppercase;
 }
-
 
 
 
@@ -1259,10 +1238,10 @@ form label {
 
 
 
-
 /* ------------------
  * 04. FOOTER
  * ------------------ */
+
 
 
 /* 04. FOOTER --------------------------
@@ -1292,6 +1271,7 @@ form label {
     max-width: 500px;
     width: var(--percent100);
 }
+
 
 
 /* 04. FOOTER --------------------------
@@ -1426,7 +1406,6 @@ form label {
 
 
 
-
 /* ------------------
  * 06. OVERLAY
  * ------------------ */
@@ -1448,8 +1427,10 @@ form label {
     visibility: inherit;
 }
 
+
+
 /* ------------------
- * 08. WISH LIST
+ * 07. WISH LIST
  * ------------------ */
 
 .wish-list {
@@ -1545,6 +1526,7 @@ form label {
     max-width: 300px;
     width: 90%;
 }
+
 
 
 /* ------------------
@@ -1654,10 +1636,31 @@ form label {
 
 
 
+/* ------------------
+ * 09. BACK TO TOP
+ * ------------------ */
+ .backtotop {
+    position: fixed;
+    bottom: 6em;
+    right: 2em;
+    text-align: center;
+    gap: 0;
+    font-size: var(--font-small);
+    padding: 3px;
+    z-index: 999;
+    background-color: var(--light-bg-color);
+    transition: var(--trans-background-color);
+}
+
+.backtotop a:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
 
 
 /* ------------------
- * 15. RESPONSIVE
+ * 10. RESPONSIVE
  * ------------------ */
 @media screen and (min-width: 481px) {
     .products.main .item {
