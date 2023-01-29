@@ -28,7 +28,6 @@ closeButton.addEventListener('click', function () {
     addclass.classList.remove('showmenu')
 })
 
-
 //show sub menu on mobile
 const submenu = document.querySelectorAll('.has-child .icon-small');
 submenu.forEach((menu) => menu.addEventListener('click', toggle));
