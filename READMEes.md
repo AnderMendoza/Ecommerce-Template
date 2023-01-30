@@ -15,9 +15,9 @@
     Plantilla creada siguiendo la guia de <a href="#acknowledgments">dotWebdesign</a>
     <br />
     <br />
-    <a href="https://github.com/AnderMendoza/Ecommerce-Template/issues/new?assignees=&labels=feature&template=bug_report.md&title=">Reportar un Bug</a>
+    <a href="https://github.com/AnderMendoza/Ecommerce-Template/issues/new?assignees=&labels=feature&template=bug_report_es.md&title=">Reportar un Bug</a>
     ·
-    <a href="https://github.com/AnderMendoza/Ecommerce-Template/issues/new?assignees=&labels=feature&template=feature_request.md&title=">Solicitar fusión</a>
+    <a href="https://github.com/AnderMendoza/Ecommerce-Template/issues/new?assignees=&labels=feature&template=feature_request_es.md&title=">Solicitar fusión</a>
   </p>
   <p align="center">
     <a href="/README.md">English</a>
